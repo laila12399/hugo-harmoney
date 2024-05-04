@@ -639,6 +639,30 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.parts {
+  padding: 60px 0px;
+}
+.parts .card h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+.parts .card h2 span {
+  font-size: 34px;
+}
+.parts .line {
+  position: relative;
+}
+.parts .line .lin {
+  position: absolute;
+  background-color: var(--yellow);
+  content: "";
+  width: 2px;
+  height: 60px;
+  left: 50%;
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
