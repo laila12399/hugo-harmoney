@@ -80,7 +80,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 90px;
   z-index: 997;
   transition: all 0.5s ease-in-out;
   background: #fff;
@@ -90,7 +90,7 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 60px;
+  height: 80px;
 }
 
 /*--------------------------------------------------------------
