@@ -687,6 +687,10 @@ h6 {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  border-top: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -694,8 +698,8 @@ h6 {
 }
 
 .logo img {
-  width: 150px;
-  height: 100px;
+  height: 200px;
+  width: auto;
 }
 
 .logo-container {
