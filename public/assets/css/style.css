@@ -237,7 +237,7 @@ h6 {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  padding: 60px 0px;
+  padding-top: 60px;
   background-color: rgba(0, 0, 0, 0.04);
   background-repeat: no-repeat;
   background-position: center;
@@ -680,30 +680,24 @@ h6 {
 
 /*---------------------------------------------------- Logo Wall CSS -----------------------------------------*/
 
-.logo-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-top: 1px solid #ccc; 
-  border-bottom: 1px solid #ccc; 
-  margin-bottom: 50px;
-  margin-bottom: 50px;
-}
-
 .logo {
   text-align: center;
 }
 
 .logo img {
-  height: 200px;
+  height: 150px;
   width: auto;
+  margin-right: 50px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#logo-wall-container {
+  background-color: rgba(0, 0, 0, 0.04);
 }
