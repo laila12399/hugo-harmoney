@@ -300,6 +300,60 @@ h6 {
 /*--------------------------------------------------------------
 # Our Clients
 --------------------------------------------------------------*/
+.titles {
+  margin-top: 200px;
+}
+.titles .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 20px 12px rgba(0, 0, 0, 0.05);
+  border: none;
+  padding: 1rem 2rem 2rem 2rem;
+}
+.titles .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.titles h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #444444;
+}
+
+.titles h4 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0 0 15px 0;
+}
+
+.titles .quote-icon-left,
+.titles .quote-icon-right {
+  color: var(--yellow);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.titles .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.titles .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
 .testimonials {
   padding: 30px 0px;
 }
