@@ -326,7 +326,19 @@ h6 {
   margin: 10px 0 5px 0;
   color: #444444;
 }
-
+.see-more-btn {
+  display: block;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  color: var(--yellow);
+}
+.titles .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .titles h4 {
   font-size: 14px;
   color: #6c757d;
