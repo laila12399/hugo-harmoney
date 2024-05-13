@@ -48,7 +48,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  /* transition: all 0.2s; */
+  transition: all 0.4s;
 }
 
 .back-to-top i {
@@ -70,11 +70,11 @@ h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-} */
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -82,7 +82,7 @@ h6 {
 #header {
   height: 90px;
   z-index: 997;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -126,7 +126,7 @@ h6 {
   font-weight: 600;
   color: #565e49;
   white-space: nowrap;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .navbar a i,
@@ -168,7 +168,7 @@ h6 {
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -193,7 +193,7 @@ h6 {
   left: 0;
   bottom: 0;
   background: rgba(34, 36, 29, 0.9);
-  transition: 0.2s;
+  transition: 0.3s;
   z-index: 999;
 }
 
@@ -213,7 +213,7 @@ h6 {
   padding: 10px 0;
   background-color: #fff;
   overflow-y: auto;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .navbar-mobile a,
@@ -233,11 +233,12 @@ h6 {
 .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
+
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  padding-top: 60px;
+  padding: 60px 0px;
   background-color: rgba(0, 0, 0, 0.04);
   background-repeat: no-repeat;
   background-position: center;
@@ -261,7 +262,7 @@ h6 {
   border: 1px solid #000;
   border-radius: 500px;
   padding: 0.5rem 3rem;
-  transition: 0.2s all;
+  transition: 0.3s all;
 }
 #hero .content a:hover {
   background-color: #000;
@@ -300,6 +301,72 @@ h6 {
 /*--------------------------------------------------------------
 # Our Clients
 --------------------------------------------------------------*/
+.titles {
+  margin-top: 200px;
+}
+.titles .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 20px 12px rgba(0, 0, 0, 0.05);
+  border: none;
+  padding: 1rem 2rem 2rem 2rem;
+}
+.titles .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.titles h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #444444;
+}
+.see-more-btn {
+  display: block;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  color: var(--yellow);
+}
+.titles .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titles h4 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0 0 15px 0;
+}
+
+.titles .quote-icon-left,
+.titles .quote-icon-right {
+  color: var(--yellow);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.titles .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.titles .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
 .testimonials {
   padding: 30px 0px;
 }
@@ -440,7 +507,7 @@ h6 {
   color: #fff;
   padding: 0.5rem 1.5rem;
   border-radius: 500px;
-  transition: 0.2s all;
+  transition: 0.3s all;
   border: var(--yellow) 1px solid;
 }
 .cta .container .btn .call {
@@ -517,7 +584,7 @@ h6 {
   font-size: 18px;
   line-height: 24px;
   margin: 0 30px 0 0;
-  transition: 0.2s;
+  transition: 0.3s;
   cursor: pointer;
   display: flex;
   align-items: flex-start;
@@ -535,7 +602,7 @@ h6 {
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
 }
@@ -551,7 +618,7 @@ h6 {
   right: 20px;
   font-size: 16px;
   line-height: 0;
-  transition: 0.2s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -620,7 +687,7 @@ h6 {
   border: 0;
   padding: 10px 24px;
   color: #fff;
-  transition: 0.2s;
+  transition: 0.4s;
   border-radius: 50px;
 }
 
@@ -676,28 +743,4 @@ h6 {
 }
 #footer a {
   color: #fff;
-}
-
-/*---------------------------------------------------- Logo Wall CSS -----------------------------------------*/
-
-.logo {
-  text-align: center;
-}
-
-.logo img {
-  height: 150px;
-  width: auto;
-  margin-right: 50px;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  margin-bottom: 50px;
-}
-
-#logo-wall-container {
-  background-color: rgba(0, 0, 0, 0.04);
 }

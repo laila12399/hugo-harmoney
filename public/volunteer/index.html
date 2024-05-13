@@ -54,7 +54,7 @@
       <ul>
         <li><a href="/faq">Your Questions</a></li>
         <li><a href="/story">Tale as old as Time</a></li>
-        
+        <li><a href="/testimonials">Your Stories</a></li>
 
         <li><a class="getstarted" href="/#cta">Get Started</a></li>
       </ul>
@@ -180,6 +180,30 @@
 
 
 <script src="/assets/js/main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".content");
+
+    contents.forEach(function (content) {
+      const shortText = content.querySelector(".short-text");
+      const fullText = content.querySelector(".full-text");
+      const seeMoreBtn = content.querySelector(".see-more-btn");
+
+      seeMoreBtn.addEventListener("click", function () {
+        if (fullText.style.display === "none") {
+          shortText.style.display = "none";
+          fullText.style.display = "block";
+          seeMoreBtn.textContent = "See Less";
+        } else {
+          shortText.style.display = "block";
+          fullText.style.display = "none";
+          seeMoreBtn.textContent = "See More";
+        }
+      });
+    });
+  });
+</script>
 
   </body>
 </html>

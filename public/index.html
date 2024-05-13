@@ -55,7 +55,7 @@
       <ul>
         <li><a href="/faq">Your Questions</a></li>
         <li><a href="/story">Tale as old as Time</a></li>
-        
+        <li><a href="/testimonials">Your Stories</a></li>
 
         <li><a class="getstarted" href="/#cta">Get Started</a></li>
       </ul>
@@ -69,6 +69,21 @@
 
     <main id="main">
       
+<style>
+  .logo img {
+    height: 150px;
+    width: auto;
+    margin-right: 50px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+</style>
 
 <section id="hero">
   <div class="container">
@@ -91,7 +106,7 @@
       </div>
       <div class="col-md-6">
         <img
-          src="/assets/img/hero-img.webp"
+          src="/assets/img/hero_logo_new.webp"
           alt="Hero Img"
           class="img-fluid editable"
         />
@@ -102,7 +117,6 @@
 
 
 <section id="logo-wall-container">
-
   <div class="logo-container">
         <div class="logo"><img src="/assets/img/microsoft-logo.svg" alt="Logo 1"></div>
         <div class="logo"><img src="/assets/img/sentry.svg" alt="Logo 2"></div>
@@ -384,7 +398,9 @@
       </div>
       
       <div class="col-lg-9 mt-5 text-center">
-        
+        <p>
+          fill
+        </p> 
       </div>
     </div>
   </div>
@@ -392,7 +408,7 @@
 
 
 
-<section class="cta editable" id="cta" data-aos="fade-up" data-aos-delay="50">
+<section class="cta editable" id="cta">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-md-11 col-lg-9 content">
@@ -401,8 +417,8 @@
         <h4>Speak with our advisor today.</h4>
 
         <div class="btn text-center">
-          <a href="callto:0123 456 789" class="call"
-            ><i class="bi bi-telephone"></i> 0123 456 789</a
+          <a href="callto: 0203 916 6073" class="call"
+            ><i class="bi bi-telephone"></i> 0203 916 6073</a
           >
 
           </div>
@@ -465,6 +481,30 @@
 
 
 <script src="/assets/js/main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".content");
+
+    contents.forEach(function (content) {
+      const shortText = content.querySelector(".short-text");
+      const fullText = content.querySelector(".full-text");
+      const seeMoreBtn = content.querySelector(".see-more-btn");
+
+      seeMoreBtn.addEventListener("click", function () {
+        if (fullText.style.display === "none") {
+          shortText.style.display = "none";
+          fullText.style.display = "block";
+          seeMoreBtn.textContent = "See Less";
+        } else {
+          shortText.style.display = "block";
+          fullText.style.display = "none";
+          seeMoreBtn.textContent = "See More";
+        }
+      });
+    });
+  });
+</script>
 
   </body>
 </html>

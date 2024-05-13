@@ -54,7 +54,7 @@
       <ul>
         <li><a href="/faq">Your Questions</a></li>
         <li><a href="/story">Tale as old as Time</a></li>
-        
+        <li><a href="/testimonials">Your Stories</a></li>
 
         <li><a class="getstarted" href="/#cta">Get Started</a></li>
       </ul>
@@ -97,13 +97,11 @@
           <div class="faq-item faq-active">
             <h3>
               <span class="num">1.</span>
-              <span>Non consectetur a erat nam at lectus urna duis?</span>
+              <span>What does practical help from the companion include?</span>
             </h3>
             <div class="faq-content">
               <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
-                volutpat lacus laoreet non curabitur gravida. Venenatis lectus
-                magna fringilla urna porttitor rhoncus dolor purus non.
+                Practical help from the companion covers a range of tasks including household chores such as cleaning, cooking, laundry, and organising, gardening, and assistance with groceries. Companions are there to lend a hand with daily tasks to make life easier for the homeholder.
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -114,17 +112,13 @@
             <h3>
               <span class="num">2.</span>
               <span
-                >Feugiat scelerisque varius morbi enim nunc faucibus a
-                pellentesque?</span
+                >What checks and vetting are performed on companions?</span
               >
             </h3>
             <div class="faq-content">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant
-                morbi. Id interdum velit laoreet id donec ultrices. Fringilla
-                phasellus faucibus scelerisque eleifend donec pretium. Est
-                pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                cursus turpis massa tincidunt dui.
+                We conduct thorough background checks and vetting processes on all companions to ensure the safety and security of our homeholders. This includes checking references, conducting interviews, verifying identification documents, and assessing character references. Additionally, companions may be required to provide a letter of recommendation from a previous employer or landlord.
+
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -135,17 +129,13 @@
             <h3>
               <span class="num">3.</span>
               <span
-                >Dolor sit amet consectetur adipiscing elit pellentesque?</span
+                >QQQ</span
               >
             </h3>
             <div class="faq-content">
               <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                sagittis orci. Faucibus pulvinar elementum integer enim. Sem
-                nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                tellus. Urna molestie at elementum eu facilisis sed odio morbi
-                quis
+                QQQ
+
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -156,17 +146,12 @@
             <h3>
               <span class="num">4.</span>
               <span
-                >Ac odio tempor orci dapibus. Aliquam eleifend mi in
-                nulla?</span
+                >What about grocery costs?</span
               >
             </h3>
             <div class="faq-content">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant
-                morbi. Id interdum velit laoreet id donec ultrices. Fringilla
-                phasellus faucibus scelerisque eleifend donec pretium. Est
-                pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                cursus turpis massa tincidunt dui.
+                Companions are responsible for sorting and paying for their own groceries. However, the costs for shared meals are typically split between the homeholder and companion, ensuring fair and equitable arrangements.
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -177,16 +162,13 @@
             <h3>
               <span class="num">5.</span>
               <span
-                >Tempus quam pellentesque nec nam aliquam sem et tortor
-                consequat?</span
+                >Does the companion contribute to household bills?</span
               >
             </h3>
             <div class="faq-content">
               <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo.
-                Dignissim suspendisse in est ante in. Nunc vel risus commodo
-                viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
-                bibendum est. Purus gravida quis blandit turpis cursus in
+                Yes, depending on the agreement between the homeholder and companion, the companion may contribute towards household bills. Typically, companions will pay up to £110 to the homeholder each month to cover their share of utilities.
+
               </p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -239,6 +221,30 @@
 
 
 <script src="/assets/js/main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".content");
+
+    contents.forEach(function (content) {
+      const shortText = content.querySelector(".short-text");
+      const fullText = content.querySelector(".full-text");
+      const seeMoreBtn = content.querySelector(".see-more-btn");
+
+      seeMoreBtn.addEventListener("click", function () {
+        if (fullText.style.display === "none") {
+          shortText.style.display = "none";
+          fullText.style.display = "block";
+          seeMoreBtn.textContent = "See Less";
+        } else {
+          shortText.style.display = "block";
+          fullText.style.display = "none";
+          seeMoreBtn.textContent = "See More";
+        }
+      });
+    });
+  });
+</script>
 
   </body>
 </html>
