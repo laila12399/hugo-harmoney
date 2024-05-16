@@ -57,7 +57,7 @@
         <li><a href="/story">Tale as old as Time</a></li>
         <li><a href="/testimonials">Your Stories</a></li>
 
-        <li><a class="getstarted" href="/#cta">Get Started</a></li>
+        <li><a class="getstarted" href="/#cta">Gain your companion</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -80,8 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding-top: 20px;
   }
 </style>
 
@@ -113,33 +112,34 @@
       </div>
     </div>
   </div>
+  
+  <section id="logo-wall-container">
+    <div class="logo-container">
+          <div class="logo"><img src="/assets/img/microsoft-logo.svg" alt="Logo 1"></div>
+          <div class="logo"><img src="/assets/img/sentry.svg" alt="Logo 2"></div>
+          <div class="logo"><img src="/assets/img/zendesk.svg" alt="Logo 3"></div>
+          
+    </div>
+    <div style="text-align: center; margin-bottom: 50px;padding-bottom: 50px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
+        <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
+        </svg>
+    </div>
+  </section>
+  
 </section>
 
 
-<section id="logo-wall-container">
-  <div class="logo-container">
-        <div class="logo"><img src="/assets/img/microsoft-logo.svg" alt="Logo 1"></div>
-        <div class="logo"><img src="/assets/img/sentry.svg" alt="Logo 2"></div>
-        <div class="logo"><img src="/assets/img/zendesk.svg" alt="Logo 3"></div>
-        
-  </div>
-</section>
 
 
-
-<section id="testimonials" class="testimonials editable">
+<section id="testimonials" class="testimonials editable" style="margin-bottom: 30px;">
   <div class="container">
+    <h2 style="font-size: 42px;font-weight: 600;text-align: center;margin-bottom: 40px;">
+      Don't take our word for it
+    </h2>
     <div class="row align-items-center">
-      <div class="col-lg-5" data-aos="fade-right" >
-        <img
-          src="/assets/img/feedback-2.webp"
-          alt="feedback"
-          class="img-fluid"
-        />
-        
-      </div>
-
-      <div class="col-lg-7">
+      
+      <div class="col-lg-7 ">
         <div class="slides-1 swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -248,6 +248,8 @@
 
 
 
+
+
 <section class="dream bg editable">
   <div class="container">
     <div class="row justify-content-center align-items-center">
@@ -275,23 +277,20 @@
 <section class="dream editable">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div
-        class="col-lg-5 d-flex justify-content-center"
-        data-aos="fade-left"
-        
-      >
-        <img src="/assets/img/dream-2.webp" alt="img" class="img-fluid" />
-      </div>
-      <div class="col-lg-7" >
+      <div class="col-lg-7">
         <h2>Share the Responsibilities, and Gain Independence</h2>
-
         <p>
           Bid farewell to the stress of managing chores alone. Your live-in companion extends a hand around the house, granting you more freedom and enabling you to live life on your terms.
         </p>
         
         </p>
       </div>
-      
+      <div
+        class="col-lg-5 d-flex justify-content-center"
+        data-aos="fade-left"
+      >
+        <img src="/assets/img/dream-2.webp" alt="img" class="img-fluid" />
+      </div>
     </div>
   </div>
 </section>
@@ -482,29 +481,6 @@
 
 <script src="/assets/js/main.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".content");
-
-    contents.forEach(function (content) {
-      const shortText = content.querySelector(".short-text");
-      const fullText = content.querySelector(".full-text");
-      const seeMoreBtn = content.querySelector(".see-more-btn");
-
-      seeMoreBtn.addEventListener("click", function () {
-        if (fullText.style.display === "none") {
-          shortText.style.display = "none";
-          fullText.style.display = "block";
-          seeMoreBtn.textContent = "See Less";
-        } else {
-          shortText.style.display = "block";
-          fullText.style.display = "none";
-          seeMoreBtn.textContent = "See More";
-        }
-      });
-    });
-  });
-</script>
 
   </body>
 </html>

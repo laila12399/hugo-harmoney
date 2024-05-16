@@ -238,7 +238,7 @@ h6 {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  padding: 60px 0px;
+  padding: 0px 0px;
   background-color: rgba(0, 0, 0, 0.04);
   background-repeat: no-repeat;
   background-position: center;
@@ -258,6 +258,9 @@ h6 {
   font-size: 18px;
   margin-bottom: 0.5rem;
 }
+#testimonials .row {
+  justify-content: center;
+}
 #hero .content a {
   border: 1px solid #000;
   border-radius: 500px;
@@ -268,6 +271,7 @@ h6 {
   background-color: #000;
   color: #fff;
 }
+
 #hero .ball-animation {
   position: relative;
   height: 100px;
@@ -286,6 +290,10 @@ h6 {
   animation: bounce 2s infinite alternate;
 }
 
+span#arrow-down {
+  font-size: 70px; /* font size to make the arrow bigger */
+}
+
 @keyframes bounce {
   0% {
     bottom: 0; /* Start position */
@@ -301,7 +309,10 @@ h6 {
 /*--------------------------------------------------------------
 # Our Clients
 --------------------------------------------------------------*/
-
+.titles {
+  margin-top: 100px;
+  padding-bottom: 70px;
+}
 .titles .card {
   text-align: center;
   display: flex;
@@ -366,7 +377,7 @@ h6 {
 }
 
 .testimonials {
-  padding: 30px 0px;
+  padding: 0px 0px;
 }
 
 .testimonials .section-header {

@@ -56,7 +56,7 @@
         <li><a href="/story">Tale as old as Time</a></li>
         <li><a href="/testimonials">Your Stories</a></li>
 
-        <li><a class="getstarted" href="/#cta">Get Started</a></li>
+        <li><a class="getstarted" href="/#cta">Gain your companion</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -174,11 +174,62 @@
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
           
+
+          <div class="faq-item">
+            <h3>
+              <span class="num">6.</span>
+              <span
+                >What if the home isn’t as tidy as it could be?</span
+              >
+            </h3>
+            <div class="faq-content">
+              <p>
+                Bringing a companion into your home can actually improve its tidiness. One of the key benefits of having a companion is the assistance they provide with daily chores. So, if you're concerned about the tidiness of your home, having a companion can be a great solution to lighten the workload.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
+<section class="cta editable" id="cta">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-11 col-lg-9 content">
+        <img src="/assets/img/logo-white-2.webp" alt="logo" class="img-fluid" />
+        <h2>Discover Your Ideal Home Companion</h2>
+        <h4>Speak with our advisor today.</h4>
+
+        <div class="btn text-center">
+          <a href="callto: 0203 916 6073" class="call"
+            ><i class="bi bi-telephone"></i> 0203 916 6073</a
+          >
+
+          </div>
+        <a> Or schedule a time:</a>
+        
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/laila123123/30min?hide_gdpr_banner=1&primary_color=0b2993"
+          style="width: 100%; height: 400px"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -222,29 +273,6 @@
 
 <script src="/assets/js/main.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".content");
-
-    contents.forEach(function (content) {
-      const shortText = content.querySelector(".short-text");
-      const fullText = content.querySelector(".full-text");
-      const seeMoreBtn = content.querySelector(".see-more-btn");
-
-      seeMoreBtn.addEventListener("click", function () {
-        if (fullText.style.display === "none") {
-          shortText.style.display = "none";
-          fullText.style.display = "block";
-          seeMoreBtn.textContent = "See Less";
-        } else {
-          shortText.style.display = "block";
-          fullText.style.display = "none";
-          seeMoreBtn.textContent = "See More";
-        }
-      });
-    });
-  });
-</script>
 
   </body>
 </html>

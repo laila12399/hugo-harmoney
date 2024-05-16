@@ -56,7 +56,7 @@
         <li><a href="/story">Tale as old as Time</a></li>
         <li><a href="/testimonials">Your Stories</a></li>
 
-        <li><a class="getstarted" href="/#cta">Get Started</a></li>
+        <li><a class="getstarted" href="/#cta">Gain your companion</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -68,24 +68,9 @@
 
     <main id="main">
       
-<section class="article">
-    <div class="container">
-      <div class="row">
-        <div
-          class="col-12 col-sm-12 col-md-10 col-lg-9"
-          data-aos="fade-up"
-          data-aos-delay="0"
-        >
-          <h2><strong>Tale as old as Time</strong></h2>
-          <hr />
-        </div>
-      </div>
-    </div>
-  </section>
-
 
 <section class="dream bg editable">
-    <div class="container"> 
+    <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-5 d-flex justify-content-center" data-aos="fade-right">
                 <img src="/assets/img/dream-1.webp" alt="img" class="img-fluid" />
@@ -224,29 +209,6 @@
 
 <script src="/assets/js/main.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".content");
-
-    contents.forEach(function (content) {
-      const shortText = content.querySelector(".short-text");
-      const fullText = content.querySelector(".full-text");
-      const seeMoreBtn = content.querySelector(".see-more-btn");
-
-      seeMoreBtn.addEventListener("click", function () {
-        if (fullText.style.display === "none") {
-          shortText.style.display = "none";
-          fullText.style.display = "block";
-          seeMoreBtn.textContent = "See Less";
-        } else {
-          shortText.style.display = "block";
-          fullText.style.display = "none";
-          seeMoreBtn.textContent = "See More";
-        }
-      });
-    });
-  });
-</script>
 
   </body>
 </html>
