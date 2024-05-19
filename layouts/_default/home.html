@@ -1,4 +1,18 @@
 {{define "main"}}
+<style>
+  .logo img {
+    height: 150px;
+    width: auto;
+    margin-right: 50px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+</style>
 <!-- ======= Hero Section ======= -->
 <section id="hero">
   <div class="container">
@@ -16,74 +30,54 @@
  
         </p>
         <div class="btn mt-4 mx-0 px-0">
-          <a href="#cta" class="scrollto">Get Started</a>
+          <a href="#cta" class="scrollto">Gain Companion</a>
         </div>
       </div>
       <div class="col-md-6">
         <img
-          src="/assets/img/hero-img.png"
+          src="/assets/img/hero_logo_new.webp"
           alt="Hero Img"
           class="img-fluid editable"
         />
       </div>
     </div>
-    <div class="logo">
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <img src="/assets/img/logo-1.png" alt="Logo" class="img-fluid">
-        </div>
-        <div class="col-lg-3">
-          <img src="/assets/img/logo-2.png" alt="Logo" class="img-fluid">
-
-        </div>
-        <div class="col-lg-3">
-          <img src="/assets/img/logo-3.png" alt="Logo" class="img-fluid">
-
-        </div>
-      </div>
-    </div>
   </div>
+  <!-- Logo Wall -->
+  <section id="logo-wall-container">
+    <div class="logo-container">
+          <div class="logo"><img src="/assets/img/microsoft-logo.svg" alt="Logo 1"></div>
+          <div class="logo"><img src="/assets/img/sentry.svg" alt="Logo 2"></div>
+          <div class="logo"><img src="/assets/img/zendesk.svg" alt="Logo 3"></div>
+          <!-- Add more logos as needed -->
+    </div>
+    <div style="text-align: center; margin-bottom: 50px;padding-bottom: 50px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
+        <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
+        </svg>
+    </div>
+  </section>
+  <!-- Logo Wall End -->
 </section>
 <!-- End Hero -->
 
 <!-- ======= Testimonials Section ======= -->
-<section id="testimonials" class="testimonials editable">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-5" data-aos="fade-right" >
-        <img
-          src="/assets/img/feedback-2.png"
-          alt="feedback"
-          class="img-fluid"
-        />
-        
-      </div>
-
-      <div class="col-lg-7">
-        <div class="slides-1 swiper">
-          <div class="swiper-wrapper">
-            {{ partial "testimonial.html"}}
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "testimonial.html"}}
 <!-- End Testimonials -->
 
 <!-- ======= Dream Section ======= -->
-<section class="dream bg editable" id="dream">
+<section class="dream bg editable">
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div
         class="col-lg-5 d-flex justify-content-center"
         data-aos="fade-right"
+        data-aos-delay="0" data-aos-duration="1000" data-aos-offset="0" data-aos-easing="ease-in-out"
+        
       >
-        <img src="/assets/img/dream-1.png" alt="img" class="img-fluid" />
+        <img src="/assets/img/dream-1.webp" alt="img" class="img-fluid" />
       </div>
-      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
-        <h2>Lorem ipsum dolor sit amet.</h2>
+      <div class="col-lg-7" >
+        <h2>Peace of Mind, Day and Night</h2>
 
         <p>
           Experience the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and camaraderie are available to you day and night, creating a sense of security and tranquility in your home.
@@ -105,9 +99,8 @@
 <section class="dream editable">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="col-lg-7" data-aos="fade-right" data-aos-delay="400">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-
+      <div class="col-lg-7">
+        <h2>Share the Responsibilities, and Gain Independence</h2>
         <p>
           Bid farewell to the stress of managing chores alone. Your live-in companion extends a hand around the house, granting you more freedom and enabling you to live life on your terms.
         </p>
@@ -123,7 +116,7 @@
         class="col-lg-5 d-flex justify-content-center"
         data-aos="fade-left"
       >
-        <img src="/assets/img/dream-2.png" alt="img" class="img-fluid" />
+        <img src="/assets/img/dream-2.webp" alt="img" class="img-fluid" />
       </div>
     </div>
   </div>
@@ -134,14 +127,17 @@
 <section class="dream bg editable">
   <div class="container">
     <div class="row justify-content-center align-items-center">
+
       <div
         class="col-lg-5 d-flex justify-content-center"
         data-aos="fade-right"
+        
       >
-        <img src="/assets/img/dream-3.png" alt="img" class="img-fluid" />
+        <img src="/assets/img/dream-3.webp" alt="img" class="img-fluid" />
       </div>
-      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
-        <h2>Lorem ipsum dolor sit amet.</h2>
+      
+      <div class="col-lg-7" >
+        <h2>Day-to-Day Delights, Shared Joys</h2>
 
         <p>
           Find comfort and contentment in reliable company. After all, we are made to live with company, and with them, moments become a celebration of togetherness.
@@ -154,6 +150,7 @@
           possimus voluptates at.-->
         </p>
       </div>
+      
     </div>
   </div>
 </section>
@@ -234,7 +231,7 @@
       <div class="col-lg-9 mt-5 text-center">
         <p>
           fill
-        </p>
+        </p> 
       </div>
     </div>
   </div>
