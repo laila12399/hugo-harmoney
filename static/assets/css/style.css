@@ -183,7 +183,19 @@ h6 {
   .navbar ul {
     display: none;
   }
-}
+
+  .dream-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .home-proposition .home-proposition-image {
+    order: 1;
+  }
+ }
 
 .navbar-mobile {
   position: fixed;
@@ -312,7 +324,6 @@ span#arrow-down {
 .titles {
   margin-top: 100px;
   padding-bottom: 70px;
-
 }
 .titles .card {
   text-align: center;
@@ -336,13 +347,18 @@ span#arrow-down {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #444444;
+
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: #ffffffb2;
 }
 .see-more-btn {
   display: block;
   margin-top: 10px;
   border: none;
-  background-color: transparent;
-  color: var(--yellow);
+  background-color: #000088aa;
+  color: #fff;
+  border-radius: 5px;
 }
 .titles .content {
   display: flex;
@@ -353,7 +369,24 @@ span#arrow-down {
 .titles h4 {
   font-size: 14px;
   color: #6c757d;
-  margin: 0 0 15px 0;
+
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: #fffa;
+  width:fit-content;
+}
+.white-transparent {
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: #fffa;
+  width:fit-content;
+  margin: 5px 0px
+}
+.short-text {
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: #fffa;
+  width:fit-content;
 }
 
 .titles .quote-icon-left,
@@ -496,7 +529,8 @@ span#arrow-down {
   font-weight: 400;
 }
 .cta .container img {
-  max-width: 400px;
+  max-width: 380px;
+  margin-bottom: 30px;
 }
 .cta .container .content {
   display: flex;
