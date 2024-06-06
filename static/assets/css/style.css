@@ -336,8 +336,7 @@ span#arrow-down {
   padding: 1rem 2rem 2rem 2rem;
 }
 .titles .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
+  height: 250px;
   margin-top: 0px;
   padding-top: 0px;
 }
@@ -356,9 +355,8 @@ span#arrow-down {
   display: block;
   margin-top: 10px;
   border: none;
-  background-color: #000088aa;
-  color: #fff;
-  border-radius: 5px;
+  background-color: transparent;
+  color: var(--yellow);
 }
 .titles .content {
   display: flex;
@@ -529,7 +527,7 @@ span#arrow-down {
   font-weight: 400;
 }
 .cta .container img {
-  max-width: 380px;
+  max-width: 300px;
   margin-bottom: 30px;
 }
 .cta .container .content {
