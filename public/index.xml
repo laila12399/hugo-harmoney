@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HARMONEY | Living Network on My New Hugo Site</title>
-    <link>http://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in HARMONEY | Living Network on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 May 2024 18:24:19 +0500</lastBuildDate>
-    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tale as old as Time</title>
-      <link>http://example.org/story/</link>
+      <link>http://localhost:1313/story/</link>
       <pubDate>Tue, 07 May 2024 18:24:19 +0500</pubDate>
-      <guid>http://example.org/story/</guid>
+      <guid>http://localhost:1313/story/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy Policy</title>
-      <link>http://example.org/privacy-policy/</link>
+      <link>http://localhost:1313/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/privacy-policy/</guid>
+      <guid>http://localhost:1313/privacy-policy/</guid>
       <description>This Privacy Policy describes how Example.com (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) collects, uses, and discloses information that we obtain from visitors to our website (the &amp;ldquo;Site&amp;rdquo;).&#xA;By accessing or using the Site, you agree to the terms of this Privacy Policy. If you do not agree with this Privacy Policy, please do not access or use the Site.&#xA;Information We Collect&#xA;We may collect personal information from you when you voluntarily submit it to us.</description>
     </item>
     <item>
       <title>Terms and Condition</title>
-      <link>http://example.org/terms-and-conditions/</link>
+      <link>http://localhost:1313/terms-and-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/terms-and-conditions/</guid>
+      <guid>http://localhost:1313/terms-and-conditions/</guid>
       <description>Welcome to Example.com! These terms and conditions outline the rules and regulations for the use of Example.com&amp;rsquo;s Website, located at www.example.com.&#xA;By accessing this website, we assume you accept these terms and conditions. Do not continue to use Example.com if you do not agree to take all of the terms and conditions stated on this page.&#xA;The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: &amp;ldquo;Client&amp;rdquo;, &amp;ldquo;You&amp;rdquo; and &amp;ldquo;Your&amp;rdquo; refers to you, the person log on this website and compliant to the Company’s terms and conditions.</description>
     </item>
     <item>
       <title>Volunteer</title>
-      <link>http://example.org/volunteer/</link>
+      <link>http://localhost:1313/volunteer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/volunteer/</guid>
+      <guid>http://localhost:1313/volunteer/</guid>
       <description></description>
     </item>
     <item>
       <title>Your Questions</title>
-      <link>http://example.org/faq/</link>
+      <link>http://localhost:1313/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/faq/</guid>
+      <guid>http://localhost:1313/faq/</guid>
       <description></description>
     </item>
     <item>
       <title>Your Stories</title>
-      <link>http://example.org/testimonials/</link>
+      <link>http://localhost:1313/testimonials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/testimonials/</guid>
+      <guid>http://localhost:1313/testimonials/</guid>
       <description></description>
     </item>
   </channel>
