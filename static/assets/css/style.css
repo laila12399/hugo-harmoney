@@ -191,11 +191,10 @@ h6 {
     text-align: center;
   }
 
-
   .home-proposition .home-proposition-image {
     order: 1;
   }
- }
+}
 
 .navbar-mobile {
   position: fixed;
@@ -371,20 +370,20 @@ span#arrow-down {
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #fffa;
-  width:fit-content;
+  width: fit-content;
 }
 .white-transparent {
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #fffa;
-  width:fit-content;
-  margin: 5px 0px
+  width: fit-content;
+  margin: 5px 0px;
 }
 .short-text {
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #fffa;
-  width:fit-content;
+  width: fit-content;
 }
 
 .titles .quote-icon-left,
@@ -747,6 +746,29 @@ span#arrow-down {
   }
 }
 
+/*--------------------------------------------------------------
+# TEAM
+--------------------------------------------------------------*/
+.team {
+  padding-bottom: 3rem;
+}
+.team .card {
+  border: none;
+}
+.team .card img {
+  width: 150px;
+  padding-bottom: 1rem;
+}
+.team .card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+}
+.team .card p {
+  font-size: 16px;
+  font-weight: 400;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
