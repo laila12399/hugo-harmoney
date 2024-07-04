@@ -754,9 +754,13 @@ span#arrow-down {
 }
 .team .card {
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .team .card img {
-  width: 150px;
+  width: 100px;
   padding-bottom: 1rem;
 }
 .team .card h3 {
