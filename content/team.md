@@ -1,7 +1,5 @@
 ---
-title: Tale as old as Time
+title: "Meet the team"
+layout: tam
 description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ad.
-date: 2024-05-07T18:24:19+05:00
-layout: story
-type: "page"
 ---
