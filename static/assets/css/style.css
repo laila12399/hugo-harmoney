@@ -772,6 +772,7 @@ span#arrow-down {
 .team .card p {
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 0px;
 }
 
 .logo-wall .logo img {
