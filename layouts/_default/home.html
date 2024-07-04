@@ -1,8 +1,5 @@
 {{define "main"}}
-<style>
 
-  
-</style>
 <!-- ======= Hero Section ======= -->
 <section id="hero">
   <div class="container">
@@ -41,12 +38,21 @@
       <div class="row justify-content-center">
         <div class="col-md-2">
           <div class="logo d-flex justify-content-center" >
-            
+           <div class="click">
+            <img src="/assets/img/klick-click.gif" alt="click"  >
+           </div>
             <a href="https://finance.yahoo.com/news/golden-years-home-must-cost-143000676.html" target="_blank">
               <img src="/assets/img/yahoo.png" id="firstLogo" loading="eager" alt="Logo 1">
             </a>
           </div>
         </div>
+        <script>
+          window.onload = function() {
+    setTimeout(function() {
+        document.querySelector('.logo-wall .logo .click img').classList.add('show');
+    }, 10000); // 10 seconds = 10000 milliseconds
+};
+        </script>
 
         <div class="col-md-2">
           <div class="logo d-flex justify-content-center"><a href="https://www.google.com/" target="_blank"><img src="/assets/img/mopsul.png" loading="eager" alt="Logo 2"></a></div>
@@ -233,9 +239,7 @@ Within 4 days, you'll receive an email introduction to a companion carefully vet
       </div>
       <!---->
       <div class="col-lg-9 mt-5 text-center">
-         <!--<p>
-          fill
-        </p>--> 
+         
       </div>
     </div>
   </div>

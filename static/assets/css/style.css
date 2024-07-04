@@ -786,7 +786,23 @@ span#arrow-down {
   justify-content: center;
   padding-top: 20px;
 }
+.logo-wall .logo .click {
+  position: relative;
+}
 
+.logo-wall .logo .click img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 25px;
+  left: 120px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.logo-wall .logo .click img.show {
+  opacity: 1;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
