@@ -803,6 +803,10 @@ span#arrow-down {
 .logo-wall .logo .click img.show {
   opacity: 1;
 }
+
+.logo-wall .logo .click img.hide {
+  opacity: 0;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
