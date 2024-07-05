@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://companionhelper.com/'
 languageCode = 'en-us'
 title = 'Companion Helper'
 disableKinds = ['taxonomy', 'term']
