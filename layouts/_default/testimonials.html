@@ -10,7 +10,7 @@
 <section class="titles">
   <div class="container">
     <div class="row">
-      <div style="font-size: 30px;margin-top: 25px;font-weight: bolder;" >
+      <div style="font-size: 30px;margin-top: 25px;font-weight: bolder;">
         <span>Your Stories</span>
         <hr>
       </div>
@@ -66,10 +66,10 @@
           <h4>Paddington, May 2024</h4>
           <div class="content">
             <p class="short-text">
-              67-year-old retired carpenter John sought companionship and assistance, while  27-year-old teacher Edwardo desired good company and a homey environment. Together, they've found the perfect balance...
+              67-year-old retired carpenter John sought companionship and assistance, while 27-year-old teacher Edwardo desired good company and a homey environment. Together, they've found the perfect balance...
             </p>
             <span class="full-text" style="display: none">
-              67-year-old retired carpenter John sought companionship and assistance, while  27-year-old teacher Edwardo desired good company and a homey environment. Together, they've found the perfect balance, exploring new hobbies and sharing laughs.
+              67-year-old retired carpenter John sought companionship and assistance, while 27-year-old teacher Edwardo desired good company and a homey environment. Together, they've found the perfect balance, exploring new hobbies and sharing laughs.
               <div style="text-align: left;">
                 <h4>Companion:</h4> "Being with John has been amazing. We're like two peas in a pod, always finding new adventures and sharing chores. He keeps me smiling, and I keep him inspired!"
               </div>
@@ -137,4 +137,51 @@
               78-year-old artist Mary needed companionship and someone to share meals with. 29-year-old chef Alex joined her, and their shared meals have become moments of joy and connection...
             </p>
             <span class="full-text" style="display: none">
-              78-year-old artist Mary needed companionship and someone to share meals with. 29-year-old chef Alex joined
+              78-year-old artist Mary needed companionship and someone to share meals with. 29-year-old chef Alex joined her, and their shared meals have become moments of joy and connection. Mary enjoys the company and the culinary expertise Alex brings to their meals.
+              <div style="text-align: left;">
+                <h4>Companion:</h4> "Sharing meals with Mary has been delightful. Her stories and artistic insights add flavor to our dinners, making every meal special."
+              </div>
+              <div style="text-align: left;">
+                <h4>Family of Homeholder:</h4> "Alex has been a wonderful addition to Mary's life. Their shared meals have brought a new sense of joy and comfort to her daily routine."
+              </div>
+            </span>
+            <button class="see-more-btn">See More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CTA Section ======= -->
+{{ partial "cta.html" }}
+<!-- End CTA -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".content");
+
+    contents.forEach(function (content) {
+      try {
+        const shortText = content.querySelector(".short-text");
+        const fullText = content.querySelector(".full-text");
+        const seeMoreBtn = content.querySelector(".see-more-btn");
+
+        seeMoreBtn.addEventListener("click", function () {
+          if (fullText.style.display === "none") {
+            shortText.style.display = "none";
+            fullText.style.display = "block";
+            seeMoreBtn.textContent = "See Less";
+          } else {
+            shortText.style.display = "block";
+            fullText.style.display = "none";
+            seeMoreBtn.textContent = "See More";
+          }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  });
+</script>
+{{end}}
