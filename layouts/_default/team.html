@@ -1,132 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+{{define "main"}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Clients</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Specific styles for testing */
-        .testimonial-img {
-            height: 100px;
-            width: auto;
-            margin: 10px 0;
-        }
+<section class="article editable">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-10 col-lg-9">
+        <h2><strong>{{.Title}}</strong></h2>
+        <hr />
+      </div>
+    </div>
+  </div>
+</section>
 
-        .card {
-            text-align: center;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 10px;
-        }
-
-        .content {
-            padding: 10px;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .col-lg-4 {
-            flex: 1 0 30%;
-            max-width: 30%;
-            box-sizing: border-box;
-        }
-
-        .col-lg-4 img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            .col-lg-4 {
-                flex: 1 0 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header id="header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="logo">
-                <img src="logo.png" alt="Company Logo">
-            </div>
+<section class="team mt-5">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+          <img src="/assets/img/team.png" alt="Team" class="img-fluid team-img" />
+          <h3>Callum Pendleton</h3>
+          <p>Community Outreach Specialist</p>
+          <a href="mailto:callum.pendleton@companionhelper.com">
+            <i class="bi bi-envelope"></i> callum.pendleton@companionhelper.com
+          </a>
         </div>
-    </header>
+      </div>
 
-    <main id="main">
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="container">
-                <div class="content">
-                    <h1>Welcome to Our Company</h1>
-                    <h2>We Value Our Clients</h2>
-                    <a href="#clients" class="btn-get-started">See Our Clients</a>
-                </div>
-                <div class="ball-animation">
-                    <div class="ball"></div>
-                </div>
-            </div>
-        </section>
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+          <img src="/assets/img/team.png" alt="Team" class="img-fluid team-img" />
+          <h3>Elowen Rutherford</h3>
+          <p>Vetting and Checks Specialist</p>
+          <a href="mailto:elowen.rutherford@companionhelper.com">
+            <i class="bi bi-envelope"></i> elowen.rutherford@companionhelper.com
+          </a>
+        </div>
+      </div>
 
-        <!-- Our Clients Section -->
-        <section id="clients" class="titles">
-            <div class="container">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="client1.png" class="testimonial-img" alt="Client 1">
-                        <div class="content">
-                            <h3>Client 1</h3>
-                            <h4 class="white-transparent">CEO, Company 1</h4>
-                            <p class="short-text">"Client 1's testimonial goes here."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="client2.png" class="testimonial-img" alt="Client 2">
-                        <div class="content">
-                            <h3>Client 2</h3>
-                            <h4 class="white-transparent">CEO, Company 2</h4>
-                            <p class="short-text">"Client 2's testimonial goes here."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img src="client3.png" class="testimonial-img" alt="Client 3">
-                        <div class="content">
-                            <h3>Client 3</h3>
-                            <h4 class="white-transparent">CEO, Company 3</h4>
-                            <p class="short-text">"Client 3's testimonial goes here."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+          <img src="/assets/img/team.png" alt="Team" class="img-fluid team-img" />
+          <h3>Saffron Fothergill</h3>
+          <p>Companion Advisor</p>
+          <a href="mailto:saffron.fothergill@companionhelper.com">
+            <i class="bi bi-envelope"></i> saffron.fothergill@companionhelper.com
+          </a>
+        </div>
+      </div>
 
-    <button class="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+          <img src="/assets/img/team.png" alt="Team" class="img-fluid team-img" />
+          <h3>Orla Blackwood</h3>
+          <p>Program Coordinator</p>
+          <a href="mailto:orla.blackwood@companionhelper.com">
+            <i class="bi bi-envelope"></i> orla.blackwood@companionhelper.com
+          </a>
+        </div>
+      </div>
 
-    <script>
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                backToTopButton.classList.add('active');
-            } else {
-                backToTopButton.classList.remove('active');
-            }
-        });
-    </script>
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+          <img src="/assets/img/team.png" alt="Team" class="img-fluid team-img" />
+          <h3>Marie Weber</h3>
+          <p>Homeholder Advisor</p>
+          <a href="mailto:marie.weber@companionhelper.com">
+            <i class="bi bi-envelope"></i> marie.weber@companionhelper.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</body>
+<section class="article editable mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-10 col-lg-9">
+        <h2><strong>Contact Us</strong></h2>
+        <hr />
+      </div>
+    </div>
+  </div>
+</section>
 
-</html>
+<!-- ======= Contact Section ======= -->
+{{ partial "form.html" .}}
+<!-- End Contact Section -->
+
+{{end}}
