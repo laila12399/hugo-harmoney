@@ -4,7 +4,6 @@
 :root {
   --yellow: #000080;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -261,7 +260,6 @@ h6 {
   font-size: 42px;
   font-weight: 600;
 }
-
 #hero .content h2 {
   display: inline-block;
   color: #fff;
@@ -271,18 +269,15 @@ h6 {
   font-size: 18px;
   margin-bottom: 0.5rem;
 }
-
 #testimonials .row {
   justify-content: center;
 }
-
 #hero .content a {
   border: 1px solid #000;
   border-radius: 500px;
   padding: 0.5rem 3rem;
   transition: 0.3s all;
 }
-
 #hero .content a:hover {
   background-color: #000;
   color: #fff;
@@ -314,11 +309,9 @@ span#arrow-down {
   0% {
     bottom: 0; /* Start position */
   }
-
   50% {
     bottom: 90px; /* Peak position */
   }
-
   100% {
     bottom: 0; /* Return to start position */
   }
@@ -331,7 +324,6 @@ span#arrow-down {
   margin-top: 100px;
   padding-bottom: 70px;
 }
-
 .titles .card {
   text-align: center;
   display: flex;
@@ -342,9 +334,8 @@ span#arrow-down {
   border: none;
   padding: 1rem 2rem 2rem 2rem;
 }
-
 .titles .testimonial-img {
-  height: 85px;
+  height: 50px; /* Set height of testimonial images */
   margin-top: 0px;
   padding-top: 0px;
 }
@@ -354,11 +345,11 @@ span#arrow-down {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #444444;
+
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #ffffffb2;
 }
-
 .see-more-btn {
   display: block;
   margin-top: 10px;
@@ -366,23 +357,21 @@ span#arrow-down {
   background-color: transparent;
   color: var(--yellow);
 }
-
 .titles .content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 .titles h4 {
   font-size: 14px;
   color: #6c757d;
+
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #fffa;
   width: fit-content;
 }
-
 .white-transparent {
   padding: 2px 4px;
   border-radius: 5px;
@@ -390,7 +379,6 @@ span#arrow-down {
   width: fit-content;
   margin: 5px 0px;
 }
-
 .short-text {
   padding: 2px 4px;
   border-radius: 5px;
@@ -401,4 +389,4 @@ span#arrow-down {
 .titles .quote-icon-left,
 .titles .quote-icon-right {
   color: var(--yellow);
- 
+}
