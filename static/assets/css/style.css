@@ -49,9 +49,18 @@ header .logo img {
 }
 
 .card img {
-    max-height: 100px;
+    max-height: 100px; /* Adjusted height for card images */
     width: auto;
     margin-bottom: 10px;
+}
+
+/* Specific style for team images */
+.team-img {
+    width: 100px; /* Set the width to 100px */
+    height: 100px; /* Set the height to 100px */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .card .content h3 {
