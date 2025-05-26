@@ -146,7 +146,7 @@
 <!-- End Dream -->
 
 <!-- ======= Testimonials Section ======= -->
-<section class="testimonials bg editable">
+<section class="testimonials editable">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 text-center">
@@ -159,41 +159,61 @@
 <!-- End Testimonials -->
 
 <!-- ======= How It Works Section ======= -->
-<section class="parts editable">
+<section class="parts editable bg">
   <div class="container" style="max-width: 735px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center mb-4">
         <h2><strong>How it Works</strong></h2>
       </div>
-      <div class="row">
+      <div class="row align-items-stretch">
         <div class="col-lg-4 col-md-4 mt-3">
-          <div class="card p-4">
+          <div class="card p-4 h-100">
             <h2><span>✍️</span> Request</h2>
-            <p>In a short, 5-minute chat, you share your loved one’s needs, preferences with our compassionate advisors. They’ll ensure a thoughtful match.</p>
+            <p>In a quick 5-minute chat, share your loved one’s needs, preferences, and lifestyle with our compassionate advisors. Whether it’s help with daily chores or a companion who enjoys their favorite hobbies, we’ll ensure a thoughtful match.</p>
           </div>
         </div>
+        <div class="col-lg-4 col-md-4 mt-3 d-flex align-items-center">
+          <div class="horizontal-line"></div>
+        </div>
         <div class="col-lg-4 col-md-4 mt-3">
-          <div class="card p-4">
+          <div class="card p-4 h-100">
             <h2><span>📩</span> Receive</h2>
-            <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted companion, chosen to bring safety, support, and warmth.</p>
+            <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and warmth to your loved one’s home.</p>
           </div>
         </div>
+        <div class="col-lg-4 col-md-4 mt-3 d-flex align-items-center">
+          <div class="horizontal-line"></div>
+        </div>
         <div class="col-lg-4 col-md-4 mt-3">
-          <div class="card p-4">
+          <div class="card p-4 h-100">
             <h2><span>👍</span> Review</h2>
-            <p>Meet your matched companion to check compatibility. If it’s not perfect, we’ll keep introducing companions until your loved one is happy.</p>
+            <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
           </div>
         </div>
       </div>
-      <div>
-    <div class="col-lg-12 mt-5 text-center">
-      <p><strong>All matches are made in 4 days.</strong></p>
+      <div class="col-lg-12 mt-5 text-center">
+        <p><strong>All matches are made in 4 days.</strong></p>
+      </div>
     </div>
   </div>
+  <style>
+    .horizontal-line {
+      width: 100%;
+      height: 4px;
+      background-color: #007bff; /* Blue color to match original 'lin' style */
+      margin: 0 auto;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+    }
+  </style>
 </section>
-<!-- End How it Works -->
+<!-- End How It Works -->
 
 <!-- ======= CTA Section ======= -->
-{{ partial "cta" }}
+{{ partial "cta.html" }}
 <!-- End CTA -->
 {{end}}
