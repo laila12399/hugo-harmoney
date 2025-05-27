@@ -164,34 +164,24 @@
       <div class="col-lg-12 text-center mb-4">
         <h2><strong>How it Works</strong></h2>
       </div>
-      <div class="row align-items-stretch">
-        <div class="col-lg-4 col-md-4 mt-3">
-          <div class="card p-4 h-100">
-            <h2><span>✍️</span> Request</h2>
-            <p>In a quick 5-minute chat, share your loved one’s needs, preferences, and lifestyle with our compassionate advisors. Whether it’s help with daily chores or a companion who enjoys their favorite hobbies, we’ll ensure a thoughtful match.</p>
-          </div>
+      <div class="d-flex align-items-center">
+        <div class="card p-4 how-it-works-card">
+          <h2><span>✍️</span> Request</h2>
+          <p>In a quick 5-minute chat, share your loved one’s needs, preferences, and lifestyle with our compassionate advisors. Whether it’s help with daily chores or a companion who enjoys their favorite hobbies, we’ll ensure a thoughtful match.</p>
         </div>
-        <div class="col-auto mt-3 d-flex align-items-center">
-          <div class="line">
-            <div class="lin"></div>
-          </div>
+        <div class="line-horizontal">
+          <div class="line-horizontal-inner"></div>
         </div>
-        <div class="col-lg-4 col-md-4 mt-3">
-          <div class="card p-4 h-100">
-            <h2><span>📩</span> Receive</h2>
-            <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and warmth to your loved one’s home.</p>
-          </div>
+        <div class="card p-4 how-it-works-card">
+          <h2><span>📩</span> Receive</h2>
+          <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and warmth to your loved one’s home.</p>
         </div>
-        <div class="col-auto mt-3 d-flex align-items-center">
-          <div class="line">
-            <div class="lin"></div>
-          </div>
+        <div class="line-horizontal">
+          <div class="line-horizontal-inner"></div>
         </div>
-        <div class="col-lg-4 col-md-4 mt-3">
-          <div class="card p-4 h-100">
-            <h2><span>👍</span> Review</h2>
-            <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
-          </div>
+        <div class="card p-4 how-it-works-card">
+          <h2><span>👍</span> Review</h2>
+          <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
         </div>
       </div>
       <div class="col-lg-12 mt-5 text-center">
@@ -200,34 +190,28 @@
     </div>
   </div>
   <style>
-    .card {
+    .d-flex {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 100%;
+      align-items: center;
+      width: 100%;
+    }
+    .how-it-works-card {
+      flex: 1;
       margin: 0;
       padding: 15px;
+      min-width: 200px;
+      max-width: 220px;
     }
-    .line {
-      width: 100%;
-      height: 4px;
-      margin: 0 -5px;
-      display: flex;
-      flex-direction: row;
-      position: relative;
+    .line-horizontal {
+      flex: 0 0 auto;
+      width: 100px;
+      height: 2px;
+      margin: 0;
     }
-    .lin {
+    .line-horizontal-inner {
       width: 100%;
       height: 100%;
       background-color: #007bff;
-    }
-    .col-auto {
-      padding: 0;
-      width: 30px;
-    }
-    .col-lg-4 {
-      padding-left: 5px;
-      padding-right: 5px;
     }
   </style>
 </section>
