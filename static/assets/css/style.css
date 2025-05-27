@@ -8,26 +8,17 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
 a {
   color: #000;
   text-decoration: none;
 }
-
 a:hover {
   color: #272727;
   text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
 #main {
   margin-top: 70px;
   z-index: 3;
@@ -40,30 +31,30 @@ h6 {
 # How It Works
 --------------------------------------------------------------*/
 .parts {
-  padding: 60px 0px;
+  padding: 60px 0;
 }
 .parts .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px; /* Ensure enough width for horizontal layout */
+  max-width: 1000px;
 }
 .parts .row {
   display: flex;
-  flex-wrap: nowrap !important; /* Force horizontal layout */
-  justify-content: center; /* Center the boxes */
-  align-items: stretch; /* Equal height for boxes */
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  align-items: stretch;
 }
 .parts .card {
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 250px; /* Fixed width for compact boxes */
-  min-height: 350px; /* Taller boxes to fit content */
-  box-sizing: border-box; /* Include padding in size */
-  margin: 0 5px; /* Small margin for spacing */
-  padding: 20px; /* Consistent padding */
+  width: 250px;
+  min-height: 350px;
+  box-sizing: border-box;
+  margin: 0 5px;
+  padding: 20px;
 }
 .parts .card h2 {
   font-weight: 700;
@@ -73,30 +64,30 @@ h6 {
   font-size: 34px;
 }
 .parts .card p {
-  font-size: 14px; /* Smaller text for better fit */
+  font-size: 14px;
 }
 .parts .connector-line {
-  width: 20px; /* Short lines for close boxes */
-  height: 2px; /* Thin line */
-  background-color: var(--yellow); /* Navy blue (#000080) */
-  margin: 0 5px; /* Space between boxes and line */
+  width: 20px;
+  height: 2px;
+  background-color: var(--yellow);
+  margin: 0 5px;
 }
 .parts .connector {
-  flex: 0 0 auto; /* Prevent connector stretching */
+  flex: 0 0 auto;
   display: flex;
-  align-items: center; /* Center lines vertically */
+  align-items: center;
 }
 @media (max-width: 992px) {
   .parts .row {
-    flex-wrap: wrap; /* Stack vertically on mobile */
+    flex-wrap: wrap;
   }
   .parts .connector-line {
-    display: none; /* Hide lines on mobile */
+    display: none;
   }
   .parts .card {
-    width: 100%; /* Full width on mobile */
-    min-height: auto; /* Natural height on mobile */
-    margin: 10px 0; /* Vertical spacing between cards */
+    width: 100%;
+    min-height: auto;
+    margin: 10px 0;
   }
 }
 
