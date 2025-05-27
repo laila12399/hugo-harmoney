@@ -203,7 +203,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(34, 36, 29, 0 узнаете.9);
+  background: rgba(34, 36, 29, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -825,8 +825,9 @@ span#arrow-down {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100%;
   width: 250px; /* Fixed width for compact, consistent boxes */
+  min-height: 300px; /* Increased height to fit content */
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
 }
 .parts .card h2 {
   font-weight: 700;
@@ -834,6 +835,9 @@ span#arrow-down {
 }
 .parts .card h2 span {
   font-size: 34px;
+}
+.parts .card p {
+  font-size: 14px; /* Slightly smaller text for better fit */
 }
 .parts .connector-line {
   width: 20px; /* Reduced for closer boxes, like Demand Curve */
@@ -856,6 +860,7 @@ span#arrow-down {
   }
   .parts .card {
     width: 100%; /* Full width on mobile for better readability */
+    min-height: auto; /* Allow natural height on mobile */
     margin-bottom: 20px; /* Space between stacked cards */
   }
 }
