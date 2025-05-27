@@ -35,8 +35,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
+# Back to top button
+--------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -68,8 +68,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-  # Disable AOS delay on mobile
-  --------------------------------------------------------------*/
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -77,8 +77,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
+# Header
+--------------------------------------------------------------*/
 #header {
   height: 90px;
   z-index: 997;
@@ -94,11 +94,11 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
+# Navigation Menu
+--------------------------------------------------------------*/
 /**
-  * Desktop Navigation 
-  */
+* Desktop Navigation 
+*/
 .navbar {
   padding: 0;
 }
@@ -160,8 +160,8 @@ h6 {
 }
 
 /**
-  * Mobile Navigation 
-  */
+* Mobile Navigation 
+*/
 .mobile-nav-toggle {
   color: #3c4133;
   font-size: 28px;
@@ -203,7 +203,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(34, 36, 29, 0.9);
+  background: rgba(34, 36, 29, 0 узнаете.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -246,8 +246,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-  # Hero
-  --------------------------------------------------------------*/
+# Hero
+--------------------------------------------------------------*/
 #hero {
   padding: 0px 0px;
   background-color: rgba(0, 0, 0, 0.04);
@@ -318,8 +318,8 @@ span#arrow-down {
 }
 
 /*--------------------------------------------------------------
-  # Our Clients
-  --------------------------------------------------------------*/
+# Our Clients
+--------------------------------------------------------------*/
 .titles {
   margin-top: 100px;
   padding-bottom: 70px;
@@ -345,7 +345,6 @@ span#arrow-down {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #444444;
-
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #ffffffb2;
@@ -366,7 +365,6 @@ span#arrow-down {
 .titles h4 {
   font-size: 14px;
   color: #6c757d;
-
   padding: 2px 4px;
   border-radius: 5px;
   background-color: #fffa;
@@ -504,8 +502,8 @@ span#arrow-down {
   }
 }
 /*--------------------------------------------------------------
-  # CTA
-  --------------------------------------------------------------*/
+# CTA
+--------------------------------------------------------------*/
 .cta {
   padding: 60px 0px;
   background: linear-gradient(to bottom, white 50%, #141611 50%);
@@ -568,8 +566,8 @@ span#arrow-down {
 }
 
 /*--------------------------------------------------------------
-  # Dream
-  --------------------------------------------------------------*/
+# Dream
+--------------------------------------------------------------*/
 .bg {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -594,7 +592,7 @@ span#arrow-down {
 }
 
 /* Faq Section - Home Page
-  ------------------------------*/
+------------------------------*/
 .faq {
   padding: 0px 0px 80px 0px;
 }
@@ -684,8 +682,8 @@ span#arrow-down {
 }
 
 /*--------------------------------------------------------------
-  # Contact
-  --------------------------------------------------------------*/
+# Contact
+--------------------------------------------------------------*/
 .contact {
   padding: 0px 0px 60px 0px;
 }
@@ -747,8 +745,8 @@ span#arrow-down {
 }
 
 /*--------------------------------------------------------------
-  # TEAM
-  --------------------------------------------------------------*/
+# TEAM
+--------------------------------------------------------------*/
 .team {
   padding-bottom: 3rem;
 }
@@ -775,6 +773,9 @@ span#arrow-down {
   margin-bottom: 0px;
 }
 
+/*--------------------------------------------------------------
+# Logo Wall
+--------------------------------------------------------------*/
 .logo-wall .logo img {
   height: 150px;
   width: auto;
@@ -812,11 +813,20 @@ span#arrow-down {
 .logo-wall .logo .click img.hide {
   opacity: 0;
 }
+
 /*--------------------------------------------------------------
-  # Contact
-  --------------------------------------------------------------*/
+# How It Works
+--------------------------------------------------------------*/
 .parts {
   padding: 60px 0px;
+}
+.parts .card {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  width: 250px; /* Fixed width for compact, consistent boxes */
 }
 .parts .card h2 {
   font-weight: 700;
@@ -825,20 +835,34 @@ span#arrow-down {
 .parts .card h2 span {
   font-size: 34px;
 }
-.parts .line {
-  position: relative;
+.parts .connector-line {
+  width: 20px; /* Reduced for closer boxes, like Demand Curve */
+  height: 2px; /* Thinner line */
+  background-color: var(--yellow); /* Matches Testimonials blue */
+  margin: 0 5px; /* Reduced space between boxes and line */
 }
-.parts .line .lin {
-  position: absolute;
-  background-color: var(--yellow);
-  content: "";
-  width: 2px;
-  height: 60px;
-  left: 50%;
+.parts .connector {
+  flex: 0 0 auto; /* Ensure connector divs don't stretch */
 }
+.parts .flex-nowrap {
+  flex-wrap: nowrap; /* Keep all items in one row */
+}
+@media (max-width: 768px) {
+  .parts .flex-nowrap {
+    flex-wrap: wrap; /* Stack boxes vertically on mobile */
+  }
+  .parts .connector-line {
+    display: none; /* Hide lines on mobile */
+  }
+  .parts .card {
+    width: 100%; /* Full width on mobile for better readability */
+    margin-bottom: 20px; /* Space between stacked cards */
+  }
+}
+
 /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
+# Footer
+--------------------------------------------------------------*/
 #footer {
   background: #141611;
   padding: 30px 0 30px 0;
