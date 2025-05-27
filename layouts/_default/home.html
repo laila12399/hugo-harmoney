@@ -160,31 +160,31 @@
 
 <!-- ======= How It Works Section ======= -->
 <section class="parts editable bg">
-  <div class="container" style="max-width: 735px;">
+  <div class="container" style="max-width: 1000px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center mb-4">
         <h2><strong>How it Works</strong></h2>
       </div>
-      <div class="row align-items-stretch">
-        <div class="col-lg-4 col-md-4 mt-3">
+      <div class="row align-items-center flex-nowrap">
+        <div class="col-lg-4 col-md-4">
           <div class="card p-4 h-100">
             <h2><span>✍️</span> Request</h2>
             <p>In a quick 5-minute chat, share your loved one’s needs, preferences, and lifestyle with our compassionate advisors. Whether it’s help with daily chores or a companion who enjoys their favorite hobbies, we’ll ensure a thoughtful match.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 mt-3 d-flex align-items-center">
-          <div class="horizontal-line"></div>
+        <div class="col-auto d-flex align-items-center connector">
+          <div class="connector-line"></div>
         </div>
-        <div class="col-lg-4 col-md-4 mt-3">
+        <div class="col-lg-4 col-md-4">
           <div class="card p-4 h-100">
             <h2><span>📩</span> Receive</h2>
             <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and warmth to your loved one’s home.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 mt-3 d-flex align-items-center">
-          <div class="horizontal-line"></div>
+        <div class="col-auto d-flex align-items-center connector">
+          <div class="connector-line"></div>
         </div>
-        <div class="col-lg-4 col-md-4 mt-3">
+        <div class="col-lg-4 col-md-4">
           <div class="card p-4 h-100">
             <h2><span>👍</span> Review</h2>
             <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
@@ -197,17 +197,23 @@
     </div>
   </div>
   <style>
-    .horizontal-line {
-      width: 100%;
+    .connector-line {
+      width: 50px; /* Adjust width as needed */
       height: 4px;
-      background-color: #007bff; /* Blue color to match original 'lin' style */
-      margin: 0 auto;
+      background-color: #007bff; /* Matches assumed CTA background; update to exact color if provided */
+      margin: 0 10px; /* Space between boxes and line */
     }
     .card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       min-height: 100%;
+    }
+    .connector {
+      flex: 0 0 auto; /* Ensure connector divs don't stretch */
+    }
+    .flex-nowrap {
+      flex-wrap: nowrap; /* Keep all items in one row */
     }
   </style>
 </section>
