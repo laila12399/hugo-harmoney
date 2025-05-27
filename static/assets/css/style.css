@@ -46,11 +46,11 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px; /* Increased to ensure boxes fit horizontally */
+  max-width: 1000px; /* Ensure enough width for horizontal layout */
 }
 .parts .row {
   display: flex;
-  flex-wrap: nowrap; /* Force boxes into a single row */
+  flex-wrap: nowrap !important; /* Force horizontal layout */
   justify-content: center; /* Center the boxes */
   align-items: stretch; /* Equal height for boxes */
 }
@@ -86,9 +86,9 @@ h6 {
   display: flex;
   align-items: center; /* Center lines vertically */
 }
-@media (max-width: 992px) { /* Increased breakpoint to prevent early stacking */
+@media (max-width: 992px) {
   .parts .row {
-    flex-wrap: wrap; /* Stack boxes vertically on mobile */
+    flex-wrap: wrap; /* Stack vertically on mobile */
   }
   .parts .connector-line {
     display: none; /* Hide lines on mobile */
