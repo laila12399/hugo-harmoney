@@ -138,7 +138,9 @@
       </div>
       <div class="col-lg-7 home-proposition-content">
         <h2>Day-to-Day Delights, Shared Joys</h2>
-        <p>Find comfort and contentment in reliable company. After all, we are made to live with company, and with them, moments become a celebration of togetherness.</p>
+        <p>Find comfort and contentment in reliable company. After all, we are made to live with
+
+ company, and with them, moments become a celebration of togetherness.</p>
       </div>
     </div>
   </div>
@@ -200,7 +202,7 @@
     .connector-line {
       width: 50px; /* Adjust width as needed */
       height: 2px; /* Thinner line */
-      background-color: #007bff; /* Matches assumed Testimonials blue; update if specific color provided */
+      background-color: #000080; /* Matches --yellow from style.css, used in Testimonials */
       margin: 0 10px; /* Space between boxes and line */
     }
     .card {
@@ -214,6 +216,14 @@
     }
     .flex-nowrap {
       flex-wrap: nowrap; /* Keep all items in one row */
+    }
+    @media (max-width: 768px) {
+      .flex-nowrap {
+        flex-wrap: wrap; /* Stack boxes vertically on mobile */
+      }
+      .connector-line {
+        display: none; /* Hide lines on mobile */
+      }
     }
   </style>
 </section>
