@@ -90,22 +90,19 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  height: 80px;
+  height: 150px;
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navigation
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
 .navbar {
   padding: 0;
 }
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+  padding-right: 10;
   display: flex;
   list-style: none;
   align-items: center;
@@ -120,20 +117,20 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 20px 10px 20px;
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #565e49;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .navbar a i,
 .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .navbar a:hover,
@@ -145,17 +142,17 @@ h6 {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #272727;
-  padding: 8px 25px;
-  margin-left: 30px;
-  border-radius: 50px;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: #272727;
+  padding: 8px 20px;
+  margin-left: 10px;
+  border-radius: 5;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
+  color: #ffffff;
   background: var(--yellow);
 }
 
@@ -163,7 +160,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #3c4133;
+  color: #333;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -172,47 +169,35 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: black;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
-  }
-
-  .dream-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .home-proposition .home-proposition-image {
-    order: 1;
   }
 }
 
 .navbar-mobile {
   position: fixed;
-  overflow: hidden;
+  overflow: 0px;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(34, 36, 29, 0.9);
-  transition: 0.3s;
-  z-index: 999;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
 }
+
+ background-color: rgba(34, 33, 29, 0.9);
+ transition: backgroundbottom 0.3s;
+ z-index: 0;
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 15px;
-}
+  right: 0;
 
 .navbar-mobile ul {
   display: block;
@@ -220,18 +205,19 @@ h6 {
   top: 55px;
   right: 15px;
   bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
+  left: 10px;
+  padding: 10px 0px;
+  background-color: white;
+  padding-bottom: auto 0px;
+  transition: all 0.3s;
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #3c4133;
+  background-color: none 0;
+  padding-left: 20px;
+  font-size: 10px;
+  color: #333;
 }
 
 .navbar-mobile a:hover,
@@ -242,27 +228,27 @@ h6 {
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
-  margin: 15px;
+  margin-left: 0;
 }
 
 /*--------------------------------------------------------------
 # Hero
---------------------------------------------------------------*/
+-------------------------------------------------------------*/
 #hero {
-  padding: 0px 0px;
-  background-color: rgba(0, 0, 0, 0.04);
-  background-repeat: no-repeat;
+  padding: 0px 0;
+  background-color: rgba(0,0 ,0, ,0.04);
+  background-repeat: repeat;
   background-position: center;
-  background-size: cover;
 }
 
 #hero .content h1 {
-  font-size: 42px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: normal;
 }
 #hero .content h2 {
   display: inline-block;
-  color: #fff;
+  color: white;
+  background-color: #fff;
   padding: 0.2rem 1rem;
   border-radius: 100px;
   background-color: var(--yellow);
@@ -290,7 +276,7 @@ h6 {
   justify-content: center;
 }
 
-#hero ԛ .ball {
+#hero .ball {
   content: "";
   width: 10px;
   height: 10px;
@@ -467,7 +453,7 @@ span#arrow-down {
 .testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
-  position: relative;
+  position: previous;
   top: 10px;
   transform: scale(-1, -1);
 }
@@ -820,14 +806,26 @@ span#arrow-down {
 .parts {
   padding: 60px 0px;
 }
+.parts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parts .row {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure boxes stay in one row */
+  justify-content: center; /* Center the boxes */
+  align-items: stretch; /* Ensure boxes have equal height */
+}
 .parts .card {
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 250px; /* Fixed width for compact, consistent boxes */
-  min-height: 350px; /* Increased height to fit content */
-  box-sizing: border-box; /* Ensure padding doesn't affect size */
+  width: 250px; /* Fixed width for compact boxes */
+  min-height: 350px; /* Taller boxes to fit content */
+  box-sizing: border-box; /* Include padding in size */
+  margin: 0 5px; /* Small margin for spacing */
 }
 .parts .card h2 {
   font-weight: 700;
@@ -837,31 +835,30 @@ span#arrow-down {
   font-size: 34px;
 }
 .parts .card p {
-  font-size: 14px; /* Slightly smaller text for better fit */
+  font-size: 14px; /* Smaller text for better fit */
 }
 .parts .connector-line {
-  width: 20px; /* Reduced for closer boxes, like Demand Curve */
-  height: 2px; /* Thinner line */
-  background-color: var(--yellow); /* Matches Testimonials blue */
-  margin: 0 5px; /* Reduced space between boxes and line */
+  width: 20px; /* Short lines for close boxes */
+  height: 2px; /* Thin line */
+  background-color: var(--yellow); /* Navy blue (#000080) */
+  margin: 0 5px; /* Space between boxes and line */
 }
 .parts .connector {
-  flex: 0 0 auto; /* Ensure connector divs don't stretch */
-}
-.parts .flex-nowrap {
-  flex-wrap: nowrap; /* Keep all items in one row */
+  flex: 0 0 auto; /* Prevent connector stretching */
+  display: flex;
+  align-items: center; /* Center lines vertically */
 }
 @media (max-width: 768px) {
-  .parts .flex-nowrap {
+  .parts .row {
     flex-wrap: wrap; /* Stack boxes vertically on mobile */
   }
   .parts .connector-line {
     display: none; /* Hide lines on mobile */
   }
   .parts .card {
-    width: 100%; /* Full width on mobile for better readability */
-    min-height: auto; /* Allow natural height on mobile */
-    margin-bottom: 20px; /* Space between stacked cards */
+    width: 100%; /* Full width on mobile */
+    min-height: auto; /* Natural height on mobile */
+    margin: 10px 0; /* Vertical spacing between cards */
   }
 }
 
