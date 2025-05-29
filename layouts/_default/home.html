@@ -198,15 +198,17 @@
   <style>
     .how-it-works-cards {
       display: flex;
-      align-items: stretch;
+      align-items: stretch; /* Ensures equal height for all cards */
+      justify-content: center;
     }
     .how-it-works-cards .card {
       display: flex;
       flex-direction: column;
       min-height: 300px; /* Maintains ~50% taller height */
-      width: 240px; /* Retained from previous code (4x 60px) */
+      width: 240px; /* Retained from previous code */
       box-sizing: border-box;
       padding: 20px !important; /* Increased padding for taller appearance */
+      margin: 0; /* Remove any default margins */
     }
     .how-it-works-cards .card h2 {
       margin-bottom: 15px;
@@ -218,9 +220,10 @@
       margin-right: 8px; /* Space between emoji and text */
     }
     .how-it-works-cards .card p {
-      flex-grow: 1;
+      flex-grow: 1; /* Ensures content stretches to fill card height */
       font-size: 1rem;
       line-height: 1.5;
+      margin-bottom: 0; /* Remove extra margin to keep height consistent */
     }
     .connector {
       min-width: 50px; /* Adjust connector width if needed */
@@ -232,7 +235,7 @@
     }
     @media (max-width: 768px) {
       .how-it-works-cards {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Stack cards on mobile */
       }
       .connector {
         display: none; /* Hide connectors on mobile */
