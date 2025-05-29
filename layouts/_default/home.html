@@ -1,282 +1,280 @@
-{{define "Homepage"}}
-<main id="main">
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 content text-center editable">
-          <div class="ball-animation">
-            <div class="ball"></div>
-          </div>
-          <h1>Empowered Living, Daily Cheer: Find Your Life-in Companion</h1>
-          <p>
-            Through our carefully vetted companion program, our elders with a spare room gain independence by being matched with companions who bring the reassuring presence of practical help and the warmth of camaraderie. Companion match email introduction within 4 days.
-          </p>
-          <div class="btn mt-4 mx-0 px-0">
-            <a href="#cta">Gain Companion</a>
-          </div>
+{{ define "main" }}
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 content text-center editable">
+        <div class="ball-animation">
+          <div class="ball"></div>
         </div>
-        <div class="col-md-6">
-          <img
-            src="/assets/img/home_logo.png"
-            loading="eager"
-            alt="Hero Image"
-            class="img-fluid editable"
-            style="padding: 20px 5px;"
-          />
+        <h1>Empowered Living, Daily Cheer: Find Your Live-in Companion</h1>
+        <p>
+          Through our carefully vetted companion program, our elders with a spare room gain independence by being matched with companions who bring the reassuring presence of practical help and the warmth of camaraderie. Companion match email introduction within 4 days.
+        </p>
+        <div class="btn mt-4 mx-0 px-0">
+          <a href="#cta">Gain Companion</a>
         </div>
       </div>
+      <div class="col-md-6">
+        <img
+          src="/assets/img/home_logo.webp"
+          loading="eager"
+          alt="Hero Img"
+          class="img-fluid editable"
+          style="padding: 20px 5px;"
+        />
+      </div>
     </div>
-    <!-- Logo Wall -->
-    <div class="logo-wall">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-4 col-md-2">
-            <div class="logo d-flex justify-content-center">
-              <div class="click">
-                <img src="/assets/img/klick-click.gif" alt="click">
-              </div>
-              <a href="https://finance.yahoo.com/news/golden-years-home-must-cost-143000876.html" target="_blank">
-                <img src="/assets/img/yahoo.png" id="firstLogo" loading="eager" alt="Logo 1">
-              </a>
+  </div>
+  <!-- Logo Wall -->
+  <div class="logo-wall">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-4 col-md-2">
+          <div class="logo d-flex justify-content-center">
+            <div class="click">
+              <img src="/assets/img/klick-click.gif" alt="click">
             </div>
+            <a href="https://finance.yahoo.com/news/golden-years-home-must-cost-143000676.html" target="_blank">
+              <img src="/assets/img/yahoo.png" id="firstLogo" loading="eager" alt="Logo 1">
+            </a>
           </div>
-          <script>
-            window.onload = function() {
+        </div>
+        <script>
+          window.onload = function() {
+            setTimeout(function() {
+              const img = document.querySelector('.logo-wall .logo .click img');
+              img.classList.add('show');
               setTimeout(function() {
-                const img = document.querySelector('.logo-wall .logo .click img');
-                img.classList.add('show');
-                setTimeout(function() {
-                  img.classList.remove('show');
-                  img.classList.add('hide');
-                }, 2000);
-              }, 5000);
-            };
-          </script>
-          <div class="col-4 col-md-2">
-            <div class="logo d-flex justify-content-center">
-              <a href="https://mopsul.co.uk/living-lively-a-new-era-of-independence-for-britains-elders/" target="_blank">
-                <img src="/assets/img/mopsul.png" loading="eager" alt="Logo 2">
-              </a>
-            </div>
+                img.classList.remove('show');
+                img.classList.add('hide');
+              }, 2000);
+            }, 5000);
+          };
+        </script>
+        <div class="col-4 col-md-2">
+          <div class="logo d-flex justify-content-center">
+            <a href="https://mopsul.co.uk/living-lively-a-new-era-of-independence-for-britains-elders/" target="_blank">
+              <img src="/assets/img/mopsul.png" loading="eager" alt="Logo 2">
+            </a>
           </div>
-          <div class="col-4 col-md-2">
-            <div class="logo d-flex justify-content-center">
-              <a href="https://www.google.com/" target="_blank">
-                <img src="/assets/img/metro.png" loading="eager" alt="Logo 3">
-              </a>
-            </div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="logo d-flex justify-content-center">
+            <a href="https://www.google.com/" target="_blank">
+              <img src="/assets/img/metro.png" loading="eager" alt="Logo 3">
+            </a>
           </div>
         </div>
       </div>
-      <div style="text-align: center; margin-bottom: 50px;padding-bottom: 50px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
-          <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#000"/>
-        </svg>
-      </div>
     </div>
-    <!-- End Logo Wall -->
-  </section>
-  <!-- End Hero -->
+    <div style="text-align: center; margin-bottom: 50px;padding-bottom: 50px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
+        <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
+      </svg>
+    </div>
+  </div>
+  <!-- Logo Wall End -->
+</section>
+<!-- End Hero -->
 
-  <!-- ======= Reality Section ======= -->
-  <section class="reality editable">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12 text-center">
-          <h2>Reality: Your Loved One Deserves Safety and Companionship—Without the Worry</h2>
-          <p>As a family member, the thought of your parent living alone can weigh heavily on your heart. Research shows that isolation can shorten lives, sometimes by years. The fear of a fall or emergency at night, with no one there to help, keeps you awake. You may feel a deep sense of guilt, wondering if you’re doing enough to support their independence. And traditional live-in care? It often costs £2,100–£8,500 a month, far beyond what most families can afford, yet much of it is simply companionship and help with daily tasks.</p>
-          <p>At Companion Helper, we believe no one should face these challenges alone. As a dedicated social enterprise, we’ve carefully vetted a network of compassionate, trustworthy companions who provide 28–30 hours of weekly help with chores, a reassuring presence day and night, and genuine companionship that uplifts spirits—all for just £98 a month. Our rigorous selection process ensures every companion is someone we’d trust in our own homes, giving you peace of mind that your loved one is in caring hands.</p>
-          <p>Share your loved one’s needs with our dedicated advisors, and within 4 days, we’ll introduce you to a companion perfectly matched to bring safety, joy, and connection to their life.</p>
-          <p>Keep scrolling to learn how we make this happen</p>
-        </div>
+<!-- ======= Reality Section ======= -->
+<section class="reality editable">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 text-center">
+        <h2>Reality: Your Loved One Deserves Safety and Companionship—Without the Worry</h2>
+        <p>As a family member, the thought of your parent living alone can weigh heavily on your heart. Research shows that isolation can shorten lives, sometimes by years. The fear of a fall or emergency at night, with no one there to help, keeps you awake. You may feel a deep sense of guilt, wondering if you’re doing enough to support their independence. And traditional live-in care? It often costs £2,100–£8,500 a month, far beyond what most families can afford, yet much of it is simply companionship and help with daily tasks.</p>
+        <p>At Companion Helper, we believe no one should face these challenges alone. As a dedicated social enterprise, we’ve carefully vetted a network of compassionate, trustworthy companions who provide 15–20 hours of weekly help with chores, a reassuring presence day and night, and genuine companionship that uplifts spirits—all for just £98 a month. Our rigorous selection process ensures every companion is someone we’d trust in our own homes, giving you peace of mind that your loved one is in caring hands.</p>
+        <p>Share your loved one’s needs with our dedicated advisors, and within 4 days, we’ll introduce you to a companion perfectly matched to bring safety, joy, and connection to their life.</p>
+        <p>Keep scrolling to learn how we make this happen ↓</p>
       </div>
     </div>
-  </section>
-  <!-- End Reality -->
+  </div>
+</section>
+<!-- End Reality -->
 
-  <!-- ======= Why Partner Section ======= -->
-  <section class="partner bg">
-    <div class="container">
-      <h4 style="text-align: center;font-size: 30px;padding-top: 20px;">Why get a companion helper?</h4>
-      <p style="text-align: center;font-size: 20px;">We’ve manually matched hundreds of thousands of companions and homeholders.</p>
-      <div class="row justify-content-center align-items-center home-proposition">
-        <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-          <img src="/assets/img/proposition1.png" style="padding: 25px 15px;" loading="lazy" alt="Image 1" class="img-fluid" />
-        </div>
-        <div class="col-lg-7 home-proposition-content">
-          <h2>Share the Responsibilities, and Gain Independence</h2>
-          <p>Bid goodbye to the stress of managing chores alone. Your live-in companion extends a hand around the house, granting you independence and enabling you to live life on your terms.</p>
-        </div>
+<!-- ======= Why Companion Section ======= -->
+<section class="dream bg">
+  <div class="container">
+    <h4 style="text-align: center;font-size: xx-large;padding-top: 20px;">Why get a companion helper?</h4>
+    <p style="text-align: center;">We’ve manually matched hundreds of thousands of companions and homeholders.</p>
+    <div class="row justify-content-center align-items-center home-proposition">
+      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
+        <img src="/assets/img/proposition1.webp" style="padding: 25px 15px;" loading="eager" alt="img" class="img-fluid" />
+      </div>
+      <div class="col-lg-7 home-proposition-content">
+        <h2>Share the Responsibilities, and Gain Independence</h2>
+        <p>Bid farewell to the stress of managing chores alone. Your live-in companion extends a hand around the house, granting you more freedom and enabling you to live life on your terms.</p>
       </div>
     </div>
-  </section>
-  <!-- End Why Partner -->
+  </div>
+</section>
+<!-- End Why Companion -->
 
-  <!-- ======= Dream Section ======= -->
-  <section class="dream">
-    <div class="container">
-      <div class="row justify-content-center align-items-center home-items">
-        <div class="col-lg-7 home-content">
-          <h2>Peace of Mind, Day and Night</h2>
-          <p>Enjoy the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and companionship are available to you day and night, creating a sense of security and tranquility in your home.</p>
-        </div>
-        <div class="col-lg-5 d-flex justify-content-center home-image">
-          <img src="/assets/img/proposition2.png" style="padding: 25px 15px;" loading="lazy" alt="Image 2" class="img-fluid" />
-        </div>
+<!-- ======= Dream Section ======= -->
+<section class="dream">
+  <div class="container">
+    <div class="row justify-content-center align-items-center home-proposition">
+      <div class="col-lg-7 home-proposition-content">
+        <h2>Peace of Mind, Day and Night</h2>
+        <p>Experience the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and camaraderie are available to you day and night, creating a sense of security and tranquility in your home.</p>
+      </div>
+      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
+        <img src="/assets/img/proposition2.webp" style="padding: 25px 15px;" loading="eager" alt="img" class="img-fluid" />
       </div>
     </div>
-  </section>
-  <!-- End Dream -->
+  </div>
+</section>
+<!-- End Dream -->
 
-  <!-- ======= Dream Section ======= -->
-  <section class="dream bg">
-    <div class="container">
-      <div class="row justify-content-center align-items-center home-proposition">
-        <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-          <img src="/assets/img/proposition3.png" style="padding: 25px 15px;" loading="lazy" alt="Image 3" class="img-fluid" />
-        </div>
-        <div class="col-lg-7 home-proposition-content">
-          <h2>Day-to-Day Delights, Shared Joys</h2>
-          <p>Find comfort and contentment in reliable company. After all, we are made to live with company, and with them, moments become a celebration of togetherness.</p>
-        </div>
+<!-- ======= Dream Section ======= -->
+<section class="dream bg">
+  <div class="container">
+    <div class="row justify-content-center align-items-center home-proposition">
+      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
+        <img src="/assets/img/proposition3.webp" style="padding: 25px 15px;" loading="eager" alt="img" class="img-fluid" />
+      </div>
+      <div class="col-lg-7 home-proposition-content">
+        <h2>Day-to-Day Delights, Shared Joys</h2>
+        <p>Find comfort and contentment in reliable company. After all, we are made to live with company, and with them, moments become a celebration of togetherness.</p>
       </div>
     </div>
-  </section>
-  <!-- End Dream -->
+  </div>
+</section>
+<!-- End Dream -->
 
-  <!-- ======= Testimonials Section ======= -->
-  <section class="testimonials editable">
-    <div class="container-fluid">
-      {{ partial "testimonials.html" }}
-    </div>
-    <style>
-      .testimonials {
-        width: 100vw; /* Full viewport width */
-        margin: 0; /* Remove margins */
-        padding: 0; /* Remove padding */
-        position: relative; /* Center section */
-        left: 50%; /* Shift to account for viewport */
-        transform: translateX(-50%); /* Center content */
-        overflow-x: hidden; /* Prevent scrollbars */
-      }
-      .testimonials .container-fluid {
-        width: 100%; /* Full width */
-        margin: 0; /* Remove margins */
-        padding: 0; /* Remove padding */
-      }
-    </style>
-  </section>
-  <!-- End Testimonials -->
+<!-- ======= Testimonials Section ======= -->
+<section class="testimonials editable">
+  <div class="container-fluid">
+    {{ partial "testimonials.html" }}
+  </div>
+  <style>
+    .testimonials {
+      width: 100vw; /* Full viewport width */
+      margin: 0; /* Remove margins */
+      padding: 0; /* Remove padding */
+      position: relative; /* Center section */
+      left: 50%; /* Shift to account for viewport */
+      transform: translateX(-50%); /* Center perfectly */
+      overflow-x: hidden; /* Prevent scrollbars */
+    }
+    .testimonials .container-fluid {
+      width: 100%; /* Full width */
+      margin: 0; /* Remove margins */
+      padding: 0; /* Remove padding */
+    }
+  </style>
+</section>
+<!-- End Testimonials -->
 
-  <!-- ======= How It Works Section ======= -->
-  <section class="parts editable bg">
-    <div class="container" style="max-width: 900px;">
-      <div class="row justify-content-center">
-        <div class="col-lg-12 text-center mb-4">
-          <h2><strong>How it Works</strong></h2>
-        </div>
-        <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works-cards">
-          <div class="col-auto">
-            <div class="card p-4">
-              <h2><span>✍️</span> Request</h2>
-              <p>In a quick 5-minute chat, share your loved one’s needs, preferences, and lifestyle with us. Whether it’s help with daily chores or a companion who enjoys their favorite hobbies, we’ll ensure a tailored match.</p>
-            </div>
-          </div>
-          <div class="col-auto d-flex align-items-center connector">
-            <div class="connect-line"></div>
-          </div>
-          <div class="col-auto">
-            <div class="card p-4">
-              <h2><span>📧</span> Receive</h2>
-              <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and warmth to your loved one’s home.</p>
-            </div>
-          </div>
-          <div class="col-auto d-flex align-items-center connector">
-            <div class="connect-line"></div>
-          </div>
-          <div class="col-auto">
-            <div class="card p-4">
-              <h2><span>👍</span> Review</h2>
-              <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
-            </div>
+<!-- ======= How It Works Section ======= -->
+<section class="parts editable bg">
+  <div class="container" style="max-width: 900px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center mb-4">
+        <h2><strong>How it Works</strong></h2>
+      </div>
+      <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works-cards">
+        <div class="col-auto">
+          <div class="card p-3">
+            <h2><span>✍️</span> Request</h2>
+            <p>In a quick 5-minute chat, share your loved one’s needs, preferences, and lifestyle with our compassionate advisors. Whether it’s help with daily chores or a companion who enjoys their favorite hobbies, we’ll ensure a thoughtful match.</p>
           </div>
         </div>
-        <div class="col-lg-12 mt-5 text-center">
-          <p><strong>All matches are made in 4 days.</strong></p>
+        <div class="col-auto d-flex align-items-center connector">
+          <div class="connector-line"></div>
+        </div>
+        <div class="col-auto">
+          <div class="card p-3">
+            <h2><span>📩</span> Receive</h2>
+            <p>Within 4 days, we’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and warmth to your loved one’s home.</p>
+          </div>
+        </div>
+        <div class="col-auto d-flex align-items-center connector">
+          <div class="connector-line"></div>
+        </div>
+        <div class="col-auto">
+          <div class="card p-3">
+            <h2><span>👍</span> Review</h2>
+            <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
+          </div>
         </div>
       </div>
+      <div class="col-lg-12 mt-5 text-center">
+        <p><strong>All matches are made in 4 days.</strong></p>
+      </div>
     </div>
-    <style>
+  </div>
+  <style>
+    .how-it-works-cards {
+      display: flex;
+      align-items: stretch; /* Ensures all cards are the same height */
+      justify-content: center;
+      box-sizing: border-box;
+    }
+    .how-it-works-cards .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%; /* Explicitly stretch to container height */
+      min-height: 300px; /* Maintains ~50% taller height */
+      width: 240px; /* Retained from previous code */
+      box-sizing: border-box;
+      padding: 20px !important; /* Consistent padding */
+      margin: 0; /* Remove any default margins */
+      border: none; /* Reset potential Bootstrap borders */
+      overflow: hidden; /* Prevent content overflow */
+    }
+    .how-it-works-cards .card h2 {
+      margin: 0 0 15px 0; /* Strict margin control */
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .how-it-works-cards .card h2 span {
+      margin-right: 8px; /* Space between emoji and text */
+    }
+    .how-it-works-cards .card p {
+      flex-grow: 1; /* Stretch content to fill card height */
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0; /* Remove all margins for consistency */
+    }
+    .connector {
+      min-width: 50px; /* Connector width */
+      display: flex;
+      align-items: center;
+    }
+    .connector-line {
+      width: 100%;
+      height: 2px;
+      background-color: #5F5757;
+    }
+    @media (max-width: 768px) {
       .how-it-works-cards {
-        display: flex;
-        align-items: stretch; /* Ensures all cards are the same height */
-        justify-content: center;
-        box-sizing: border-box;
-      }
-      .how-it-works-cards .card {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        min-height: 300px; /* Maintains height */
-        width: 240px; /* Fixed width */
-        box-sizing: border-box;
-        padding: 20px !important; /* Consistent padding */
-        margin: 0; /* Remove default margins */
-        border: none; /* Reset Bootstrap borders */
-        overflow: hidden; /* Prevent content overflow */
-      }
-      .how-it-works-cards .card h2 {
-        margin: 0 0 15px 0; /* Strict margin control */
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-      }
-      .how-it-works-cards .card h2 span {
-        margin-right: 8px; /* Space between emoji and content */
-      }
-      .how-it-works-cards .card p {
-        flex-grow: 1; /* Stretch content to fill card height */
-        font-size: 1rem;
-        line-height: 1.5;
-        margin: 0; /* Remove all margins */
-      }
-      .connect-line {
-        width: 100%;
-        height: 2px;
-        background-color: #000;
+        flex-wrap: wrap; /* Stack cards on mobile */
       }
       .connector {
-        min-width: 50px; /* Connector width */
-        display: flex;
-        align-items: center;
+        display: none; /* Hide connectors on mobile */
       }
-      @media (max-width: 768px) {
-        .how-it-works-cards {
-          flex-wrap: wrap !important; /* Stack cards on mobile */
-        }
-        .connector {
-          display: none; /* Hide connectors on mobile */
-        }
-        .how-it-works-cards .card {
-          height: auto; /* Allow natural height on mobile */
-          min-height: 250px; /* Slightly smaller */
-          width: 100%; /* Full width on mobile */
-          margin-bottom: 20px;
-        }
-        .how-it-works-cards .card h2 {
-          font-size: 1.5rem;
-        }
-        .how-it-works-cards .card p {
-          font-size: 1rem;
-        }
+      .how-it-works-cards .card {
+        height: auto; /* Allow natural height on mobile */
+        min-height: 250px; /* Slightly smaller on mobile */
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px;
       }
-    </style>
-  </section>
-  <!-- End How It Works -->
+      .how-it-works-cards .card h2 {
+        font-size: 1.5rem;
+      }
+      .how-it-works-cards .card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</section>
+<!-- End How It Works -->
 
-  <!-- ======= CTA Section ======= -->
-  {{ partial "cta.html" }}
-  <!-- End CTA -->
-</main>
-{{end}}
+<!-- ======= CTA Section ======= -->
+{{ partial "cta.html" }}
+<!-- End CTA -->
+{{ end }}
