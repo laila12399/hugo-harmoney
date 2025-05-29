@@ -290,7 +290,7 @@ h6 {
   justify-content: center;
 }
 
-#hero ԛ .ball {
+#hero .ball {
   content: "";
   width: 10px;
   height: 10px;
@@ -826,7 +826,7 @@ span#arrow-down {
   flex-direction: column;
   justify-content: space-between;
   width: 250px; /* Fixed width for compact, consistent boxes */
-  min-height: 350px; /* Increased height to fit content */
+  min-height: 300px; /* Increased height to fit content */
   box-sizing: border-box; /* Ensure padding doesn't affect size */
 }
 .parts .card h2 {
