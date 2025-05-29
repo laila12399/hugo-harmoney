@@ -1,4 +1,3 @@
-{{ define "main" }}
 <section class="titles">
   <div class="content-wrapper">
     <div class="row justify-content-center" style="margin: 0;">
@@ -44,7 +43,7 @@
             <span class="full-text" style="display: none">
               Margaret and Robert, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old Sociology student Julian, makes dinners 3-4 nights a week and enjoys gardening. Dinners have become the highlight of their day.
               <div style="text-align: left;">
-                <h4>Companion:</h4> "Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment.”
+                <h4>Companion:</h4> "Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment."
               </div>
               <div style="text-align: left;">
                 <h4>Homeholder:</h4> "Having Julian around has added a delightful spark into our home. His company and assistance with chores have made our evening mealtimes genuinely enjoyable."
@@ -136,7 +135,7 @@
             <span class="full-text" style="display: none">
               Seventy-eight-year-old Edith, who treasures her Downton Abbey marathons and could use a bit of help with technology, found a wonderful match with 30-year-old Alice. Alice not only assists Edith with her smartphone but also enjoys the beloved series. Together, they've created a routine that blends practical support with enjoyable companionship.
               <div style="text-align: left;">
-                <h4>Companion:</h4> "Being in Edith’s home has been such a delightful change. It’s so cozy and homey here.”
+                <h4>Companion:</h4> "Being in Edith’s home has been such a delightful change. It’s so cozy and homey here."
               </div>
               <div style="text-align: left;">
                 <h4>Homeholder:</h4> "It’s been so nice to have someone else around. Alice makes everything feel more lively and enjoyable."
@@ -153,7 +152,7 @@
       background-color: #fff; /* Match Reality section */
       margin: 0; /* Remove margins */
       padding: 0; /* Remove padding */
-      width: 100%; /* Full width within parent */
+      width: 100%; /* Full width */
       overflow-x: hidden; /* Prevent scrollbars */
     }
     .titles .content-wrapper {
@@ -190,7 +189,7 @@
         padding: 0 10px; /* Reduced padding for mobile */
       }
       .titles .col-md-6 {
-        padding: 0 10px !important; /* Mobile padding */
+        padding: 0 10px !important; Mobile padding */
       }
       .titles .card {
         margin-bottom: 20px; /* Space between stacked cards */
@@ -199,7 +198,7 @@
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const contents = document.querySelectorAll(".titles .content");
+      const contents = document.querySelectorAll(".content");
       contents.forEach(function (content) {
         try {
           const shortText = content.querySelector(".short-text");
@@ -223,4 +222,3 @@
     });
   </script>
 </section>
-{{ end }}
