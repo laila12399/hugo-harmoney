@@ -204,19 +204,18 @@
       display: flex;
       flex-direction: column;
       min-height: 300px; /* Maintains ~50% taller height */
-      width: 60px; /* Assuming original width ~300px, 20% is ~60px */
+      width: 240px; /* 4x the previous 60px width */
       box-sizing: border-box;
       padding: 20px !important; /* Increased padding for taller appearance */
     }
     .how-it-works-cards .card h2 {
       margin-bottom: 15px;
-      white-space: nowrap; /* Prevent text wrapping in narrow cards */
-      font-size: 1.2rem; /* Smaller font for narrow cards */
+      font-size: 1.5rem; /* Restored larger font for wider cards */
     }
     .how-it-works-cards .card p {
       flex-grow: 1;
-      font-size: 0.9rem; /* Smaller font for readability */
-      line-height: 1.4; /* Adjust line height for narrow text */
+      font-size: 1rem; /* Restored readable font size */
+      line-height: 1.5; /* Normal line height for wider cards */
     }
     .connector {
       min-width: 50px; /* Adjust connector width if needed */
@@ -239,10 +238,10 @@
         margin-bottom: 20px;
       }
       .how-it-works-cards .card h2 {
-        font-size: 1.5rem; /* Restore larger font on mobile */
+        font-size: 1.5rem; /* Consistent font size */
       }
       .how-it-works-cards .card p {
-        font-size: 1rem; /* Restore readable font on mobile */
+        font-size: 1rem; /* Consistent font size */
       }
     }
   </style>
