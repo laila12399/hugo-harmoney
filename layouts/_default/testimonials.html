@@ -1,22 +1,15 @@
 {{define "main"}}
-<style>
-  .sqBlob {
-    background: linear-gradient(45deg, #e0739b, #ea8a6b);
-  }
-  .dateInfo {
-    color: #e5e5e3;
-  }
-</style>
 <section class="titles">
-  <div class="container">
-    <div class="row">
-      <div style="font-size: 30px;margin-top: 25px;font-weight: bolder;">
-        <span>Your Stories</span>
-        <hr>
+  <div class="content-wrapper">
+    <div class="row justify-content-center" style="margin: 0;">
+      <div class="col-12 text-center" style="margin: 0; padding: 0;">
+        <div style="font-size: 30px; margin-top: 25px; font-weight: bolder;">
+          <span>Your Stories</span>
+          <hr>
+        </div>
       </div>
-      
-      <!-- Updated Testimonial Tile 1 (moved to the top) -->
-      <div class="col-md-6 mt-5">
+      <!-- Testimonial Tile 1 -->
+      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
         <div class="card">
           <img src="/assets/img/t-bg/5t.webp" class="testimonial-img" alt="" />
           <h3>Baked Cakes and Walks for the Dog</h3>
@@ -38,9 +31,8 @@
           </div>
         </div>
       </div>
-      
-      <!-- Existing Testimonial Tiles -->
-      <div class="col-md-6 mt-5">
+      <!-- Testimonial Tile 2 -->
+      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
         <div class="card">
           <img src="/assets/img/t-bg/1t.webp" class="testimonial-img" alt="" />
           <h3>Garden Glee, Mealtime Ease</h3>
@@ -52,7 +44,7 @@
             <span class="full-text" style="display: none">
               Margaret and Robert, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old Sociology student Julian, makes dinners 3-4 nights a week and enjoys gardening. Dinners have become the highlight of their day.
               <div style="text-align: left;">
-                <h4>Companion:</h4>"Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment.”
+                <h4>Companion:</h4> "Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment.”
               </div>
               <div style="text-align: left;">
                 <h4>Homeholder:</h4> "Having Julian around has added a delightful spark into our home. His company and assistance with chores have made our evening mealtimes genuinely enjoyable."
@@ -62,9 +54,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Updated Testimonial Tile 3 (Evening Company & Cleaning Bliss) -->
-      <div class="col-md-6 mt-5">
+      <!-- Testimonial Tile 3 -->
+      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
         <div class="card">
           <img src="/assets/img/t-bg/4t.webp" class="testimonial-img" alt="" />
           <h3>Evening Company & Cleaning Bliss</h3>
@@ -86,8 +77,8 @@
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 mt-5">
+      <!-- Testimonial Tile 4 -->
+      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
         <div class="card">
           <img src="/assets/img/t-bg/2-t.webp" class="testimonial-img" alt="" />
           <h3>Chats & Chores</h3>
@@ -109,8 +100,8 @@
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 mt-5">
+      <!-- Testimonial Tile 5 -->
+      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
         <div class="card">
           <img src="/assets/img/t-bg/3-t.webp" class="testimonial-img" alt="" />
           <h3>Crafting Connections</h3>
@@ -132,9 +123,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Updated Testimonial Tile 2 -->
-      <div class="col-md-6 mt-5">
+      <!-- Testimonial Tile 6 -->
+      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
         <div class="card">
           <img src="/assets/img/t-bg/6t.webp" class="testimonial-img" alt="" />
           <h3>Smartphone Support and Shared Love for Downton Abbey</h3>
@@ -156,40 +146,81 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
-</section>
-
-<!-- ======= CTA Section ======= -->
-{{ partial "cta.html" }}
-<!-- End CTA -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".content");
-
-    contents.forEach(function (content) {
-      try {
-        const shortText = content.querySelector(".short-text");
-        const fullText = content.querySelector(".full-text");
-        const seeMoreBtn = content.querySelector(".see-more-btn");
-
-        seeMoreBtn.addEventListener("click", function () {
-          if (fullText.style.display === "none") {
-            shortText.style.display = "none";
-            fullText.style.display = "block";
-            seeMoreBtn.textContent = "See Less";
-          } else {
-            shortText.style.display = "block";
-            fullText.style.display = "none";
-            seeMoreBtn.textContent = "See More";
-          }
-        });
-      } catch (e) {
-        console.error(e);
+  <style>
+    .titles {
+      background-color: #fff; /* Match Reality section */
+      margin: 0; /* Remove margins */
+      padding: 0; /* Remove padding */
+      width: 100%; /* Full width within parent */
+      overflow-x: hidden; /* Prevent scrollbars */
+    }
+    .titles .content-wrapper {
+      max-width: 1200px; /* Match Bootstrap container */
+      margin: 0 auto; /* Center content */
+      padding: 0 15px; /* Horizontal padding only */
+      box-sizing: border-box;
+    }
+    .titles .row {
+      margin: 0 !important; /* Override Bootstrap row margins */
+    }
+    .titles .col-md-6 {
+      margin: 0 !important; /* Remove column margins */
+      padding: 0 15px !important; /* Consistent horizontal padding */
+    }
+    .titles .card {
+      border: none; /* Reset Bootstrap card borders */
+      margin-bottom: 0; /* No extra spacing */
+    }
+    .titles .testimonial-img {
+      width: 100%;
+      height: auto;
+    }
+    .titles .see-more-btn {
+      background: linear-gradient(45deg, #e0739b, #ea8a6b);
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    @media (max-width: 768px) {
+      .titles .content-wrapper {
+        padding: 0 10px; /* Reduced padding for mobile */
       }
+      .titles .col-md-6 {
+        padding: 0 10px !important; /* Mobile padding */
+      }
+      .titles .card {
+        margin-bottom: 20px; /* Space between stacked cards */
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const contents = document.querySelectorAll(".titles .content");
+      contents.forEach(function (content) {
+        try {
+          const shortText = content.querySelector(".short-text");
+          const fullText = content.querySelector(".full-text");
+          const seeMoreBtn = content.querySelector(".see-more-btn");
+          seeMoreBtn.addEventListener("click", function () {
+            if (fullText.style.display === "none") {
+              shortText.style.display = "none";
+              fullText.style.display = "block";
+              seeMoreBtn.textContent = "See Less";
+            } else {
+              shortText.style.display = "block";
+              fullText.style.display = "none";
+              seeMoreBtn.textContent = "See More";
+            }
+          });
+        } catch (e) {
+          console.error(e);
+        }
+      });
     });
-  });
-</script>
+  </script>
+</section>
 {{end}}
