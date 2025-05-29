@@ -1,16 +1,24 @@
+{{define "main"}}
+<style>
+  .sqBlob {
+    background: linear-gradient(45deg, #e0739b, #ea8a6b);
+  }
+  .dateInfo {
+    color: #e5e5e3;
+  }
+</style>
 <section class="titles">
-  <div class="content-wrapper">
-    <div class="row justify-content-center" style="margin: 0;">
-      <div class="col-12 text-center" style="margin: 0; padding: 0;">
-        <div style="font-size: 30px; margin-top: 25px; font-weight: bolder;">
-          <span>Over 500+ families have found trusted companions for their loved ones through our network.</span>
-          <hr>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div style="font-size: 30px;margin-top: 25px;font-weight: bolder;">
+        <span>Your Stories</span>
+        <hr>
       </div>
-      <!-- Testimonial Tile 1 -->
-      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
+      
+      <!-- Updated Testimonial Tile 1 (moved to the top) -->
+      <div class="col-md-6 mt-5">
         <div class="card">
-          <img src="/assets/img/t-bg/5t.webp" class="testimonial-img" alt="Margaret and Emily" />
+          <img src="/assets/img/t-bg/5t.webp" class="testimonial-img" alt="" />
           <h3>Baked Cakes and Walks for the Dog</h3>
           <h4>York, Mar. 2023</h4>
           <div class="content">
@@ -30,10 +38,11 @@
           </div>
         </div>
       </div>
-      <!-- Testimonial Tile 2 -->
-      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
+      
+      <!-- Existing Testimonial Tiles -->
+      <div class="col-md-6 mt-5">
         <div class="card">
-          <img src="/assets/img/t-bg/1t.webp" class="testimonial-img" alt="Margaret, Robert, and Julian" />
+          <img src="/assets/img/t-bg/1t.webp" class="testimonial-img" alt="" />
           <h3>Garden Glee, Mealtime Ease</h3>
           <h4>Harrow, Jan. 2024</h4>
           <div class="content">
@@ -43,7 +52,7 @@
             <span class="full-text" style="display: none">
               Margaret and Robert, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old Sociology student Julian, makes dinners 3-4 nights a week and enjoys gardening. Dinners have become the highlight of their day.
               <div style="text-align: left;">
-                <h4>Companion:</h4> "Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment."
+                <h4>Companion:</h4>"Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment.”
               </div>
               <div style="text-align: left;">
                 <h4>Homeholder:</h4> "Having Julian around has added a delightful spark into our home. His company and assistance with chores have made our evening mealtimes genuinely enjoyable."
@@ -53,10 +62,11 @@
           </div>
         </div>
       </div>
-      <!-- Testimonial Tile 3 -->
-      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
+
+      <!-- Updated Testimonial Tile 3 (Evening Company & Cleaning Bliss) -->
+      <div class="col-md-6 mt-5">
         <div class="card">
-          <img src="/assets/img/t-bg/4t.webp" class="testimonial-img" alt="Josephine and Sarah" />
+          <img src="/assets/img/t-bg/4t.webp" class="testimonial-img" alt="" />
           <h3>Evening Company & Cleaning Bliss</h3>
           <h4>Maidenhead, Feb. 2023</h4>
           <div class="content">
@@ -76,18 +86,18 @@
           </div>
         </div>
       </div>
-      <!-- Testimonial Tile 4 -->
-      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
+
+      <div class="col-md-6 mt-5">
         <div class="card">
-          <img src="/assets/img/t-bg/2-t.webp" class="testimonial-img" alt="Sofia and Janet" />
+          <img src="/assets/img/t-bg/2-t.webp" class="testimonial-img" alt="" />
           <h3>Chats & Chores</h3>
           <h4>Brighton, Aug. 2023</h4>
           <div class="content">
             <p class="short-text">
-              36-year-old wheelchair-using Sofia wanted someone to chat with and share household tasks. 31-year-old restaurant manager Janet was seeking a positive environment and companionship. Together, they've...
+              36-year-old wheelchair using Sofia wanted someone to chat with and share household tasks. 31-year-old Restaurant manager Janet was seeking a positive environment and companionship. Together, they've...
             </p>
             <span class="full-text" style="display: none">
-              36-year-old wheelchair-using Sofia wanted someone to chat with and share household tasks. 31-year-old restaurant manager Janet was seeking a positive environment and companionship. Together, they've become a team, sharing chores and creating daily joyous moments.
+              36-year-old wheelchair using Sofia wanted someone to chat with and share household tasks. 31-year-old Restaurant manager Janet was seeking a positive environment and companionship. Together, they've become a team, sharing chores and creating daily joyous moments.
               <div style="text-align: left;">
                 <h4>Companion:</h4> "Living with Sofia has been incredible. We share chores, stories, and support each other through life's ups and downs. It's like having a built-in best friend!"
               </div>
@@ -99,10 +109,10 @@
           </div>
         </div>
       </div>
-      <!-- Testimonial Tile 5 -->
-      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
+
+      <div class="col-md-6 mt-5">
         <div class="card">
-          <img src="/assets/img/t-bg/3-t.webp" class="testimonial-img" alt="John and Edwardo" />
+          <img src="/assets/img/t-bg/3-t.webp" class="testimonial-img" alt="" />
           <h3>Crafting Connections</h3>
           <h4>Paddington, May 2019</h4>
           <div class="content">
@@ -122,10 +132,11 @@
           </div>
         </div>
       </div>
-      <!-- Testimonial Tile 6 -->
-      <div class="col-md-6 mt-5" style="margin: 0; padding: 0 15px;">
+
+      <!-- Updated Testimonial Tile 2 -->
+      <div class="col-md-6 mt-5">
         <div class="card">
-          <img src="/assets/img/t-bg/6t.webp" class="testimonial-img" alt="Edith and Alice" />
+          <img src="/assets/img/t-bg/6t.webp" class="testimonial-img" alt="" />
           <h3>Smartphone Support and Shared Love for Downton Abbey</h3>
           <h4>Bristol, Dec. 2023</h4>
           <div class="content">
@@ -135,7 +146,7 @@
             <span class="full-text" style="display: none">
               Seventy-eight-year-old Edith, who treasures her Downton Abbey marathons and could use a bit of help with technology, found a wonderful match with 30-year-old Alice. Alice not only assists Edith with her smartphone but also enjoys the beloved series. Together, they've created a routine that blends practical support with enjoyable companionship.
               <div style="text-align: left;">
-                <h4>Companion:</h4> "Being in Edith’s home has been such a delightful change. It’s so cozy and homey here."
+                <h4>Companion:</h4> "Being in Edith’s home has been such a delightful change. It’s so cozy and homey here.”
               </div>
               <div style="text-align: left;">
                 <h4>Homeholder:</h4> "It’s been so nice to have someone else around. Alice makes everything feel more lively and enjoyable."
@@ -145,80 +156,40 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  <style>
-    .titles {
-      background-color: #fff; /* Match Reality section */
-      margin: 0; /* Remove margins */
-      padding: 0; /* Remove padding */
-      width: 100%; /* Full width */
-      overflow-x: hidden; /* Prevent scrollbars */
-    }
-    .titles .content-wrapper {
-      max-width: 1200px; /* Match Bootstrap container */
-      margin: 0 auto; /* Center content */
-      padding: 0 15px; /* Horizontal padding only */
-      box-sizing: border-box;
-    }
-    .titles .row {
-      margin: 0 !important; /* Override Bootstrap row margins */
-    }
-    .titles .col-md-6 {
-      margin: 0 !important; /* Remove column margins */
-      padding: 0 15px !important; /* Consistent horizontal padding */
-    }
-    .titles .card {
-      border: none; /* Reset Bootstrap card borders */
-      margin-bottom: 0; /* No extra spacing */
-    }
-    .titles .testimonial-img {
-      width: 100%;
-      height: auto;
-    }
-    .titles .see-more-btn {
-      background: linear-gradient(45deg, #e0739b, #ea8a6b);
-      color: #fff;
-      border: none;
-      padding: 8px 16px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    @media (max-width: 768px) {
-      .titles .content-wrapper {
-        padding: 0 10px; /* Reduced padding for mobile */
-      }
-      .titles .col-md-6 {
-        padding: 0 10px !important; Mobile padding */
-      }
-      .titles .card {
-        margin-bottom: 20px; /* Space between stacked cards */
-      }
-    }
-  </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const contents = document.querySelectorAll(".content");
-      contents.forEach(function (content) {
-        try {
-          const shortText = content.querySelector(".short-text");
-          const fullText = content.querySelector(".full-text");
-          const seeMoreBtn = content.querySelector(".see-more-btn");
-          seeMoreBtn.addEventListener("click", function () {
-            if (fullText.style.display === "none") {
-              shortText.style.display = "none";
-              fullText.style.display = "block";
-              seeMoreBtn.textContent = "See Less";
-            } else {
-              shortText.style.display = "block";
-              fullText.style.display = "none";
-              seeMoreBtn.textContent = "See More";
-            }
-          });
-        } catch (e) {
-          console.error(e);
-        }
-      });
-    });
-  </script>
 </section>
+
+<!-- ======= CTA Section ======= -->
+{{ partial "cta.html" }}
+<!-- End CTA -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".content");
+
+    contents.forEach(function (content) {
+      try {
+        const shortText = content.querySelector(".short-text");
+        const fullText = content.querySelector(".full-text");
+        const seeMoreBtn = content.querySelector(".see-more-btn");
+
+        seeMoreBtn.addEventListener("click", function () {
+          if (fullText.style.display === "none") {
+            shortText.style.display = "none";
+            fullText.style.display = "block";
+            seeMoreBtn.textContent = "See Less";
+          } else {
+            shortText.style.display = "block";
+            fullText.style.display = "none";
+            seeMoreBtn.textContent = "See More";
+          }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  });
+</script>
+{{end}}
