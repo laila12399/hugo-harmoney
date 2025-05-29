@@ -118,7 +118,7 @@
     <div class="row justify-content-center align-items-center home-proposition">
       <div class="col-lg-7 home-proposition-content">
         <h2>Peace of Mind, Day and Night</h2>
-        <p>Experience theCarlo comfort of having someone there. With a live-in companion, you can rest easy knowing that support and camaraderie are available to you day and night, creating a sense of security and tranquility in your home.</p>
+        <p>Experience the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and camaraderie are available to you day and night, creating a sense of security and tranquility in your home.</p>
       </div>
       <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
         <img src="/assets/img/proposition2.webp" style="padding: 25px 15px;" loading="eager" alt="img" class="img-fluid" />
@@ -203,15 +203,20 @@
     .how-it-works-cards .card {
       display: flex;
       flex-direction: column;
-      min-height: 300px; /* Adjust this value to make cards ~50% taller; adjust as needed */
+      min-height: 300px; /* Maintains ~50% taller height */
+      width: 60px; /* Assuming original width ~300px, 20% is ~60px */
       box-sizing: border-box;
       padding: 20px !important; /* Increased padding for taller appearance */
     }
     .how-it-works-cards .card h2 {
       margin-bottom: 15px;
+      white-space: nowrap; /* Prevent text wrapping in narrow cards */
+      font-size: 1.2rem; /* Smaller font for narrow cards */
     }
     .how-it-works-cards .card p {
       flex-grow: 1;
+      font-size: 0.9rem; /* Smaller font for readability */
+      line-height: 1.4; /* Adjust line height for narrow text */
     }
     .connector {
       min-width: 50px; /* Adjust connector width if needed */
@@ -226,11 +231,18 @@
         flex-wrap: wrap;
       }
       .connector {
-        display: none; /* Hide connectors on mobile for better layout */
+        display: none; /* Hide connectors on mobile */
       }
       .how-it-works-cards .card {
-        min-height: 250px; /* Slightly smaller on mobile, adjust as needed */
+        min-height: 250px; /* Slightly smaller on mobile */
+        width: 100%; /* Full width on mobile for readability */
         margin-bottom: 20px;
+      }
+      .how-it-works-cards .card h2 {
+        font-size: 1.5rem; /* Restore larger font on mobile */
+      }
+      .how-it-works-cards .card p {
+        font-size: 1rem; /* Restore readable font on mobile */
       }
     }
   </style>
