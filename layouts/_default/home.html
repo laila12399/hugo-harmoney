@@ -147,14 +147,7 @@
 <!-- ======= Testimonials Section ======= -->
 <section class="testimonials editable">
   <div class="container-fluid">
-    <div class="content-wrapper">
-      <div class="row justify-content-center" style="margin: 0;">
-        <div class="col-lg-9 text-center" style="margin: 0; padding: 0;">
-          <!-- Text previously removed -->
-        </div>
-      </div>
-      {{ partial "testimonial.html"}}
-    </div>
+    {{ partial "testimonial.html" }}
   </div>
   <style>
     .testimonials {
@@ -170,24 +163,6 @@
       width: 100%; /* Full width */
       margin: 0; /* Remove margins */
       padding: 0; /* Remove padding */
-    }
-    .testimonials .content-wrapper {
-      max-width: 1200px; /* Constrain content */
-      margin: 0 auto; /* Center content */
-      padding: 0 15px; /* Horizontal padding only */
-      box-sizing: border-box;
-    }
-    .testimonials .row {
-      margin: 0 !important; /* Override Bootstrap row margins */
-    }
-    .testimonials .col-lg-9 {
-      margin: 0 !important; /* Remove column margins */
-      padding: 0 !important; /* Remove column padding */
-    }
-    @media (max-width: 768px) {
-      .testimonials .content-wrapper {
-        padding: 0 10px; /* Reduced horizontal padding for mobile */
-      }
     }
   </style>
 </section>
