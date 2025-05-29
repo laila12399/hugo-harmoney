@@ -148,8 +148,8 @@
 <section class="testimonials editable">
   <div class="container-fluid">
     <div class="content-wrapper">
-      <div class="row justify-content-center">
-        <div class="col-lg-9 text-center">
+      <div class="row justify-content-center" style="margin: 0;">
+        <div class="col-lg-9 text-center" style="margin: 0; padding: 0;">
           <!-- Text previously removed -->
         </div>
       </div>
@@ -161,7 +161,10 @@
       width: 100vw; /* Full viewport width */
       margin: 0; /* Remove margins */
       padding: 0; /* Remove padding */
-      overflow-x: hidden; /* Prevent horizontal scrollbars */
+      position: relative; /* Center section */
+      left: 50%; /* Shift to account for viewport */
+      transform: translateX(-50%); /* Center perfectly */
+      overflow-x: hidden; /* Prevent scrollbars */
     }
     .testimonials .container-fluid {
       width: 100%; /* Full width */
@@ -169,14 +172,21 @@
       padding: 0; /* Remove padding */
     }
     .testimonials .content-wrapper {
-      max-width: 1200px; /* Constrain content width for readability */
+      max-width: 1200px; /* Constrain content */
       margin: 0 auto; /* Center content */
-      padding: 20px 15px; /* Add padding for content */
+      padding: 0 15px; /* Horizontal padding only */
       box-sizing: border-box;
+    }
+    .testimonials .row {
+      margin: 0 !important; /* Override Bootstrap row margins */
+    }
+    .testimonials .col-lg-9 {
+      margin: 0 !important; /* Remove column margins */
+      padding: 0 !important; /* Remove column padding */
     }
     @media (max-width: 768px) {
       .testimonials .content-wrapper {
-        padding: 15px 10px; /* Adjust padding for mobile */
+        padding: 0 10px; /* Reduced horizontal padding for mobile */
       }
     }
   </style>
