@@ -146,14 +146,40 @@
 
 <!-- ======= Testimonials Section ======= -->
 <section class="testimonials editable">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-9 text-center">
-        <!-- Removed: Over 500+ families have found trusted companions for their loved ones through our caring network. -->
+  <div class="container-fluid">
+    <div class="content-wrapper">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center">
+          <!-- Text previously removed -->
+        </div>
       </div>
+      {{ partial "testimonial.html"}}
     </div>
-    {{ partial "testimonial.html"}}
   </div>
+  <style>
+    .testimonials {
+      width: 100vw; /* Full viewport width */
+      margin: 0; /* Remove margins */
+      padding: 0; /* Remove padding */
+      overflow-x: hidden; /* Prevent horizontal scrollbars */
+    }
+    .testimonials .container-fluid {
+      width: 100%; /* Full width */
+      margin: 0; /* Remove margins */
+      padding: 0; /* Remove padding */
+    }
+    .testimonials .content-wrapper {
+      max-width: 1200px; /* Constrain content width for readability */
+      margin: 0 auto; /* Center content */
+      padding: 20px 15px; /* Add padding for content */
+      box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+      .testimonials .content-wrapper {
+        padding: 15px 10px; /* Adjust padding for mobile */
+      }
+    }
+  </style>
 </section>
 <!-- End Testimonials -->
 
