@@ -222,11 +222,11 @@
       box-sizing: border-box;
       padding: 20px !important; /* Consistent padding */
       margin: 0; /* Remove default margins */
-      border: none; /* Reset Bootstrap borders */
+      border: none; /* Remove borders */
       overflow: hidden; /* Prevent content overflow */
     }
     .how-it-works-cards .card h2 {
-      margin: 0 0 15px 0; /* Strict margin control */
+      margin: 0 0 15px; /* Strict margin control */
       font-size: 1.5rem;
       display: flex;
       align-items: center;
@@ -235,10 +235,10 @@
       margin-right: 8px; /* Space between emoji and text */
     }
     .how-it-works-cards .card p {
-      flex-grow: 1; /* Stretch content to fill card height */
+      flex-grow: 1; /* Fluent content to fill height */
       font-size: 1rem;
       line-height: 1.5;
-      margin: 0; /* Remove all margins for consistency */
+      margin: 0; /* Remove all margins */
     }
     .connector {
       min-width: 50px; /* Connector width */
@@ -258,9 +258,9 @@
         display: none; /* Hide connectors on mobile */
       }
       .how-it-works-cards .card {
-        height: auto; /* Allow natural height on mobile */
-        min-height: 250px; /* Slightly smaller on mobile */
-        width: 100%; /* Full width on mobile */
+        height: auto; /* Allow natural height */
+        min-height: 250px; /* Smaller on mobile */
+        width: 100%; /* Full width */
         margin-bottom: 20px;
       }
       .how-it-works-cards .card h2 {
@@ -274,7 +274,7 @@
 </section>
 <!-- End How It Works -->
 
-<!-- ======= CTA Section ======= -->
+<!-- CTA Section -->
 {{ partial "cta.html" }}
 <!-- End CTA -->
 {{ end }}
