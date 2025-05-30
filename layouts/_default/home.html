@@ -70,7 +70,7 @@
     </div>
     <div style="text-align: center; margin-bottom: 50px;padding-bottom: 50px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
-        <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
+        <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3581C15.4616 43.9676 15.4616 43.3344 15.0711 42.9439C14.6805 42.5534 14.0474 42.5534 13.6569 42.9439L8 48.585L2.34315 42.9439C1.95262 42.5534 1.31946 42.5534 0.928932 42.9439C0.538408 43.3344 0.538408 43.9676 0.928932 44.3581L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
       </svg>
     </div>
   </div>
@@ -222,11 +222,11 @@
       box-sizing: border-box;
       padding: 20px !important; /* Consistent padding */
       margin: 0; /* Remove default margins */
-      border: none; /* Remove borders */
+      border: none; /* Reset Bootstrap borders */
       overflow: hidden; /* Prevent content overflow */
     }
     .how-it-works-cards .card h2 {
-      margin: 0 0 15px; /* Strict margin control */
+      margin: 0 0 15px 0; /* Strict margin control */
       font-size: 1.5rem;
       display: flex;
       align-items: center;
@@ -235,10 +235,10 @@
       margin-right: 8px; /* Space between emoji and text */
     }
     .how-it-works-cards .card p {
-      flex-grow: 1; /* Fluent content to fill height */
+      flex-grow: 1; /* Stretch content to fill card height */
       font-size: 1rem;
       line-height: 1.5;
-      margin: 0; /* Remove all margins */
+      margin: 0; /* Remove all margins for consistency */
     }
     .connector {
       min-width: 50px; /* Connector width */
@@ -258,9 +258,9 @@
         display: none; /* Hide connectors on mobile */
       }
       .how-it-works-cards .card {
-        height: auto; /* Allow natural height */
-        min-height: 250px; /* Smaller on mobile */
-        width: 100%; /* Full width */
+        height: auto; /* Allow natural height on mobile */
+        min-height: 250px; /* Slightly smaller on mobile */
+        width: 100%; /* Full width on mobile */
         margin-bottom: 20px;
       }
       .how-it-works-cards .card h2 {
@@ -274,7 +274,7 @@
 </section>
 <!-- End How It Works -->
 
-<!-- CTA Section -->
+<!-- ======= CTA Section ======= -->
 {{ partial "cta.html" }}
 <!-- End CTA -->
 {{ end }}
