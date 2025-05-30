@@ -1,6 +1,6 @@
 {{ define "main" }}
 <!-- ======= Hero Section ======= -->
-<section id="hero">
+<section id="hero" class="section-spacing">
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-md-6 content text-center editable">
@@ -79,7 +79,7 @@
 <!-- End Hero -->
 
 <!-- ======= Reality Section ======= -->
-<section class="reality editable">
+<section class="reality editable section-spacing">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 text-center">
@@ -95,7 +95,7 @@
 <!-- End Reality -->
 
 <!-- ======= Why Companion Section ======= -->
-<section class="dream bg">
+<section class="dream bg section-spacing">
   <div class="container">
     <h4 style="text-align: center;font-size: xx-large;padding-top: 20px;">Why get a Companion Helper?</h4>
     <p style="text-align: center;">We’ve manually matched hundreds of thousands of companions and homeholders.</p>
@@ -113,7 +113,7 @@
 <!-- End Why Companion -->
 
 <!-- ======= Dream Section ======= -->
-<section class="dream">
+<section class="dream section-spacing">
   <div class="container">
     <div class="row justify-content-center align-items-center home-proposition">
       <div class="col-lg-7 home-proposition-content">
@@ -129,7 +129,7 @@
 <!-- End Dream -->
 
 <!-- ======= Dream Section ======= -->
-<section class="dream bg">
+<section class="dream bg section-spacing">
   <div class="container">
     <div class="row justify-content-center align-items-center home-proposition">
       <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
@@ -144,35 +144,35 @@
 </section>
 <!-- End Dream -->
 
-<!-- ======= Who This Is For / Who This Is Not For Section ======= -->
-<section class="who editable">
+<!-- ======= Is This For You Section ======= -->
+<section class="who editable section-spacing">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 text-center">
-        <h2>Who This Is For and Who This Is Not For</h2>
-        <div class="row mt-4">
-          <div class="col-lg-6">
+        <h2>Is This For You?</h2>
+        <div class="row mt-4 who-container">
+          <div class="col-lg-6 who-column">
             <h3>Who This Is For</h3>
             <div class="who-item">
-              <p><span>✅</span> Elders with a spare room seeking companionship and light assistance.</p>
+              <p><span>✅</span> Elders with a spare room, craving freedom from loneliness and the burden of chores, yearning for a trusted companion to share laughter and lighten the load.</p>
             </div>
             <div class="who-item">
-              <p><span>✅</span> Families wanting affordable, reliable support for their loved ones.</p>
+              <p><span>✅</span> Families desperate to end the sleepless nights worrying about their loved one’s safety, seeking an affordable way to restore joy and security.</p>
             </div>
             <div class="who-item">
-              <p><span>✅</span> Individuals valuing shared living for mutual support and connection.</p>
+              <p><span>✅</span> Individuals who cherish a vibrant home filled with mutual support, connection, and the warmth of shared moments that make life worth living.</p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 who-column">
             <h3>Who This Is Not For</h3>
             <div class="who-item">
-              <p><span>❌</span> Those requiring intensive medical or full-time professional care.</p>
+              <p><span>❌</span> Those needing intensive medical care or professional nursing for complex health conditions.</p>
             </div>
             <div class="who-item">
-              <p><span>❌</span> Individuals without a spare room to accommodate a companion.</p>
+              <p><span>❌</span> Individuals requiring round-the-clock personal care, such as assistance with bathing or mobility.</p>
             </div>
             <div class="who-item">
-              <p><span>❌</span> People seeking temporary or short-term care solutions.</p>
+              <p><span>❌</span> People seeking specialized healthcare services beyond light household help and companionship.</p>
             </div>
           </div>
         </div>
@@ -191,19 +191,40 @@
       font-size: 1.5rem;
       margin-bottom: 15px;
     }
+    .who-container {
+      position: relative;
+    }
+    .who-container::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #5F5757;
+      transform: translateX(-50%);
+    }
+    .who-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .who-item {
       display: flex;
-      align-items: center;
-      margin-bottom: 10px;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      min-height: 80px; /* Aligns bullet points by ensuring consistent height */
     }
     .who-item p {
       font-size: 1rem;
       line-height: 1.5;
       margin: 0;
+      flex: 1;
     }
     .who-item span {
       margin-right: 8px;
       font-size: 1.2rem;
+      line-height: 1.5;
     }
     @media (max-width: 768px) {
       .who h2 {
@@ -215,13 +236,19 @@
       .who-item p {
         font-size: 0.9rem;
       }
+      .who-container::before {
+        display: none; /* Hide vertical line on mobile */
+      }
+      .who-item {
+        min-height: auto; /* Remove fixed height on mobile */
+      }
     }
   </style>
 </section>
-<!-- End Who This Is For / Who This Is Not For -->
+<!-- End Is This For You -->
 
 <!-- ======= Testimonials Section ======= -->
-<section class="testimonials editable">
+<section class="testimonials editable section-spacing">
   <div class="container-fluid">
     {{ partial "testimonial.html" }}
   </div>
@@ -245,7 +272,7 @@
 <!-- End Testimonials -->
 
 <!-- ======= How It Works Section ======= -->
-<section class="parts editable bg">
+<section class="parts editable bg section-spacing">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center mb-4">
@@ -351,8 +378,26 @@
 <!-- End How It Works -->
 
 <!-- ======= CTA Section ======= -->
-<section>
+<section class="section-spacing">
   {{ partial "cta.html" }}
 </section>
 <!-- End CTA -->
+
+<style>
+  .section-spacing {
+    min-height: 100vh; /* Ensure each section fills the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding-top: 80px; /* Increased top padding */
+    padding-bottom: 80px; /* Increased bottom padding */
+  }
+  @media (max-width: 768px) {
+    .section-spacing {
+      padding-top: 50px; /* Adjusted for mobile */
+      padding-bottom: 50px;
+      min-height: auto; /* Allow natural height on mobile for better usability */
+    }
+  }
+</style>
 {{ end }}
