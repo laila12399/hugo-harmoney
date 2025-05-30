@@ -79,7 +79,7 @@
 <!-- End Hero -->
 
 <!-- ======= Safety and Companionship Section ======= -->
-<section class="reality editable section-spacing">
+<section class="reality editable section-spacing-non-hero">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 text-center">
@@ -99,7 +99,7 @@
 <!-- End Safety and Companionship -->
 
 <!-- ======= Why Companion Section ======= -->
-<section class="dream bg section-spacing">
+<section class="dream bg section-spacing-non-hero">
   <div class="container">
     <h4 style="text-align: center;font-size: xx-large;padding-top: 20px;">Why get a Companion Helper?</h4>
     <p style="text-align: center;">We’ve manually matched hundreds of companions and homeholders.</p>
@@ -117,7 +117,7 @@
 <!-- End Why Companion -->
 
 <!-- ======= Dream Section ======= -->
-<section class="dream section-spacing">
+<section class="dream section-spacing-non-hero">
   <div class="container">
     <div class="row justify-content-center align-items-center home-proposition">
       <div class="col-lg-7 home-proposition-content">
@@ -133,7 +133,7 @@
 <!-- End Dream -->
 
 <!-- ======= Dream Section ======= -->
-<section class="dream bg section-spacing">
+<section class="dream bg section-spacing-non-hero">
   <div class="container">
     <div class="row justify-content-center align-items-center home-proposition">
       <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
@@ -149,7 +149,7 @@
 <!-- End Dream -->
 
 <!-- ======= Is This For You Section ======= -->
-<section class="who editable section-spacing">
+<section class="who editable section-spacing-non-hero">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 text-center">
@@ -252,7 +252,7 @@
 <!-- End Is This For You -->
 
 <!-- ======= Testimonials Section ======= -->
-<section class="testimonials editable section-spacing">
+<section class="testimonials editable bg section-spacing-non-hero">
   <div class="container-fluid">
     {{ partial "testimonial.html" }}
   </div>
@@ -276,7 +276,7 @@
 <!-- End Testimonials -->
 
 <!-- ======= How It Works Section ======= -->
-<section class="parts editable section-spacing">
+<section class="parts editable section-spacing-non-hero">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center mb-4">
@@ -385,25 +385,38 @@
 <!-- End How It Works -->
 
 <!-- ======= CTA Section ======= -->
-<section class="section-spacing">
+<section class="section-spacing-non-hero">
   {{ partial "cta.html" }}
 </section>
 <!-- End CTA -->
 
 <style>
   .section-spacing {
-    min-height: 100vh; /* Ensure each section fills the viewport height */
+    min-height: 100vh; /* Full viewport height for Hero */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
-    padding-top: 80px; /* Increased top padding */
-    padding-bottom: 80px; /* Increased bottom padding */
+    padding-top: 80px; /* Original padding for Hero */
+    padding-bottom: 80px; /* Original padding for Hero */
+  }
+  .section-spacing-non-hero {
+    min-height: calc(100vh - 70px); /* Viewport height minus navbar (assumed 70px) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding-top: 40px; /* Reduced padding for non-Hero sections */
+    padding-bottom: 40px; /* Reduced padding for non-Hero sections */
   }
   @media (max-width: 768px) {
     .section-spacing {
       padding-top: 50px; /* Adjusted for mobile */
       padding-bottom: 50px;
-      min-height: auto; /* Allow natural height on mobile for better usability */
+      min-height: auto; /* Allow natural height on mobile */
+    }
+    .section-spacing-non-hero {
+      padding-top: 30px; /* Further reduced for mobile */
+      padding-bottom: 30px;
+      min-height: auto; /* Allow natural height on mobile */
     }
   }
 </style>
