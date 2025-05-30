@@ -12,7 +12,7 @@
           Through our carefully vetted companion program, our elders with a spare room gain independence by being matched with companions who bring the reassuring presence of practical help and the warmth of camaraderie. Companion match email introduction within 4 days.
         </p>
         <div class="btn mt-4 mx-0 px-0">
-          <a href="#cta" class="companion-btn">Gain Companion</a>
+          <a href="#cta">Gain Companion</a>
         </div>
       </div>
       <div class="col-md-6">
@@ -279,132 +279,106 @@
 <section class="parts editable section-spacing-non-hero">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
-      <div class="col-lg-12 text-center mb-3">
-        <h2>How it Works</h2>
+      <div class="col-lg-12 text-center mb-4">
+        <h2><strong>How it Works</strong></h2>
       </div>
-      <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works">
+      <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works-cards">
         <div class="col-auto">
           <div class="card p-3">
-            <h3><span>📞</span> Request</h3>
-            <p>In a 5-minute call, share your loved one’s needs and preferences. Whether it’s chores or a helper who shares their hobbies, we’ll match them.</p>
+            <h2><span>📞</span> Request</h2>
+            <p>In a 5-minute call, share your loved one’s needs and preferences. Whether it’s chores or shared hobbies, we’ll match them with a compassionate companion.</p>
           </div>
         </div>
-        <div class="col-auto d-flex align-items-center">
-          <div class="center-align">
-            <div class="line-connect"></div>
-          </div>
-        </div>
-        <div class="col-auto">
-          <div class="card p-3">
-            <h3><span>📩</span> Receive</h3>
-            <p>We’ll send you an email introduction to a handpicked, vetted match, selected for their compatibility to bring safety, joy and support.</p>
-          </div>
-        </div>
-        <div class="col-auto d-flex align-items-center">
-          <div class="center-align">
-            <div class="line-connect"></div>
-          </div>
+        <div class="col-auto d-flex align-items-center connector">
+          <div class="connector-line"></div>
         </div>
         <div class="col-auto">
           <div class="card p-3">
-            <h3><span>👍</span> Review</h3>
-            <p>Meet your match to explore compatibility. If they’re not the one, we’ll keep introducing you to new helpers until you find the perfect fit.</p>
+            <h2><span>📩</span> Receive</h2>
+            <p>We’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and tell you exactly why we picked them.</p>
+          </div>
+        </div>
+        <div class="col-auto d-flex align-items-center connector">
+          <div class="connector-line"></div>
+        </div>
+        <div class="col-auto">
+          <div class="card p-3">
+            <h2><span>👍</span> Review</h2>
+            <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-12 mt-3 text-center">
-        <p><strong>All matches are made in 4 days.</strong></p>
-        <div class="btn mt-2">
-          <a href="#cta" class="companion-btn">Get a Helper</a>
+        <p class="mb-3"><strong>All matches are made in 4 days.</strong></p>
+        <div class="btn mt-2 mx-0 px-0">
+          <a href="#cta">Gain Companion</a>
         </div>
       </div>
     </div>
   </div>
   <style>
-    .how-it-works {
+    .how-it-works-cards {
       display: flex;
       align-items: stretch; /* Ensures all cards are the same height */
       justify-content: center;
-      box-sizing: content-box;
+      box-sizing: border-box;
     }
-    .how-it-works .card {
+    .how-it-works-cards .card {
       display: flex;
       flex-direction: column;
-      height: auto; /* Explicitly stretch to fit content height */
-      min-height: 300px; /* Adjusted for content */
-      width: 240px; /* Fixed width for mobile */
-      box-sizing: box-sizing;
+      height: 100%; /* Explicitly stretch to container height */
+      min-height: 300px; /* Maintains ~50% taller height */
+      width: 240px; /* Fixed width */
+      box-sizing: border-box;
       padding: 20px !important; /* Consistent padding */
       margin: 0; /* Remove default margins */
       border: none; /* Remove Bootstrap borders */
-      overflow-x: auto; /* Prevent content overflow */
+      overflow: hidden; /* Prevent content overflow */
     }
-    .how-it-works .card h3 {
+    .how-it-works-cards .card h2 {
       margin: 0 0 15px; /* Strict margin control */
-      font-size: 1.5rem; /* Slightly smaller for balance */
+      font-size: 1.5rem;
       display: flex;
       align-items: center;
     }
-    .how-it-works .card h3 span {
+    .how-it-works-cards .card h2 span {
       margin-right: 8px; /* Space between emoji and text */
     }
-    .how-it-works .card p {
+    .how-it-works-cards .card p {
       flex-grow: 1; /* Stretch content to fill card height */
       font-size: 1rem;
       line-height: 1.5;
       margin: 0; /* Remove margins */
     }
-    .center-align {
+    .connector {
       min-width: 50px; /* Connector width */
       display: flex;
       align-items: center;
     }
-    .line-connect {
+    .connector-line {
       width: 100%;
       height: 2px;
       background-color: #5F5757;
     }
     @media (max-width: 768px) {
-      .how-it-works {
+      .how-it-works-cards {
         flex-wrap: wrap; /* Stack cards on mobile */
       }
-      .center-align {
+      .connector {
         display: none; /* Hide connectors on mobile */
       }
-      .how-it-works .card {
+      .how-it-works-cards .card {
         height: auto; /* Allow natural height on mobile */
         min-height: 250px; /* Slightly smaller on mobile */
         width: 100%; /* Full width on mobile */
         margin-bottom: 20px;
       }
-      .how-it-works .card h3 {
+      .how-it-works-cards .card h2 {
         font-size: 1.5rem;
       }
-      .how-it-works .card p {
+      .how-it-works-cards .card p {
         font-size: 1rem;
       }
-    }
-    /* Button Styling */
-    .companion-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      font-size: 1.1rem;
-      font-weight: 500;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
-      background-color: #007bff; /* Primary color (customize as needed) */
-      border: 2px solid #0056b3; /* Border to match Hero button */
-      border-radius: 5px;
-      transition: background-color 0.3s, transform 0.1s;
-    }
-    .companion-btn:hover {
-      background-color: #0056b3; /* Darker shade on hover */
-      cursor: pointer;
-    }
-    .companion-btn:active {
-      background-color: #003d80; /* Even darker on click */
-      transform: scale(0.98); /* Slight scale-down effect on click */
     }
   </style>
 </section>
