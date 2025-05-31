@@ -82,7 +82,7 @@
 <section class="reality editable section-spacing-non-hero">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-9 text-center">
+      <div class="col-lg-8 text-left">
         <h2>Safety and Companionship—Without the Worry</h2>
         <p><strong>Everyone deserves the joy of connection and support at home.</strong></p>
         <p>Isolation can take years off a life. Worry of a fall can be overwhelming. <strong>Traditional live-in care often runs £2,100–£8,500 a month</strong>, yet most of it is simply companionship and everyday assistance.</p>
@@ -154,27 +154,19 @@
         <div class="row mt-4 who-container">
           <div class="col-lg-6 who-column">
             <h3>Who This Is For</h3>
-            <div class="who-item">
-              <p><span>✅</span> Seniors with a spare room wanting a trusted companion for safety at night.</p>
-            </div>
-            <div class="who-item">
-              <p><span>✅</span> Families seeking joyful company to ease their loved one(s).</p>
-            </div>
-            <div class="who-item">
-              <p><span>✅</span> Those needing help with chores, errands, or tech from a supportive friend.</p>
-            </div>
+            <ul class="who-list">
+              <li class="who-item"><span>✅</span> Seniors with a spare room wanting a trusted companion for safety at night.</li>
+              <li class="who-item"><span>✅</span> Families seeking joyful company to ease their loved one(s).</li>
+              <li class="who-item"><span>✅</span> Those needing help with chores, errands, or tech from a supportive friend.</li>
+            </ul>
           </div>
           <div class="col-lg-6 who-column">
             <h3>Who This Is Not For</h3>
-            <div class="who-item">
-              <p><span>❌</span> Those seeking specialized or nursing care.</p>
-            </div>
-            <div class="who-item">
-              <p><span>❌</span> Those needing full-time personal assistance.</p>
-            </div>
-            <div class="who-item">
-              <p><span>❌</span> People without a spare room.</p>
-            </div>
+            <ul class="who-list">
+              <li class="who-item"><span>❌</span> Those seeking specialized or nursing care.</li>
+              <li class="who-item"><span>❌</span> Those needing full-time personal assistance.</li>
+              <li class="who-item"><span>❌</span> People without a spare room.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -213,22 +205,24 @@
       align-items: flex-start;
       padding: 0 20px;
     }
+    .who-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
     .who-item {
       display: flex;
       align-items: flex-start;
       margin-bottom: 15px;
-      min-height: 60px;
-    }
-    .who-item p {
       font-size: 1rem;
       line-height: 1.5;
-      margin: 0;
-      flex: 1;
     }
     .who-item span {
       margin-right: 8px;
       font-size: 1.2rem;
       line-height: 1.5;
+      vertical-align: top;
     }
     @media (max-width: 768px) {
       .who h2 {
@@ -237,14 +231,11 @@
       .who h3 {
         font-size: 1.3rem;
       }
-      .who-item p {
+      .who-item {
         font-size: 0.9rem;
       }
       .who-container::before {
         display: none;
-      }
-      .who-item {
-        min-height: auto;
       }
       .who-column {
         padding: 0 10px;
