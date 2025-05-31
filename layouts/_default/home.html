@@ -28,7 +28,7 @@
   <div class="logo-wall">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-4 col-md-2">
+        <div class="col-12 col-md-2">
           <div class="logo d-flex justify-content-center">
             <div class="click">
               <img src="/assets/img/klick-click.gif" alt="click">
@@ -50,14 +50,14 @@
             }, 5000);
           };
         </script>
-        <div class="col-4 col-md-2">
+        <div class="col-12 col-md-2">
           <div class="logo d-flex justify-content-center">
             <a href="https://mopsul.co.uk/living-lively-a-new-era-of-independence-for-britains-elders/" target="_blank">
               <img src="/assets/img/mopsul.png" loading="eager" alt="Logo 2">
             </a>
           </div>
         </div>
-        <div class="col-4 col-md-2">
+        <div class="col-12 col-md-2">
           <div class="logo d-flex justify-content-center">
             <a href="https://www.google.com/" target="_blank">
               <img src="/assets/img/metro.png" loading="eager" alt="Logo 3">
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div style="text-align: center; margin-bottom: 50px; padding-bottom: 50px;">
+    <div style="text-align: center; margin-bottom: 20px; padding-bottom: 20px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
         <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
       </svg>
@@ -176,26 +176,26 @@
       <div class="col-lg-12 text-center">
         <h2><strong>How it Works</strong></h2>
       </div>
-      <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works-cards">
-        <div class="col-auto">
+      <div class="row align-items-stretch justify-content-center how-it-works-cards">
+        <div class="col-12">
           <div class="card p-3">
             <h2><span>📞</span> Request</h2>
             <p>In a 5-minute call, share your loved one’s needs and preferences. Whether it’s chores or shared hobbies, we’ll match them with a compassionate companion.</p>
           </div>
         </div>
-        <div class="col-auto d-flex align-items-center connector">
+        <div class="col-12 d-flex align-items-center connector">
           <div class="connector-line"></div>
         </div>
-        <div class="col-auto">
+        <div class="col-12">
           <div class="card p-3">
             <h2><span>📩</span> Receive</h2>
             <p>We’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and tell you exactly why we picked them.</p>
           </div>
         </div>
-        <div class="col-auto d-flex align-items-center connector">
+        <div class="col-12 d-flex align-items-center connector">
           <div class="connector-line"></div>
         </div>
-        <div class="col-auto">
+        <div class="col-12">
           <div class="card p-3">
             <h2><span>👍</span> Review</h2>
             <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
@@ -307,6 +307,7 @@
     align-items: stretch;
     justify-content: center;
     box-sizing: border-box;
+    flex-wrap: wrap;
   }
   .how-it-works-cards .card {
     display: flex;
@@ -315,7 +316,7 @@
     min-height: 300px;
     width: 240px;
     box-sizing: border-box;
-    padding: 20px !important;
+    padding: 15px !important;
     margin: 0;
     border: 1px solid #5F5757;
     border-radius: 8px;
@@ -397,6 +398,17 @@
     text-align: center;
     margin-bottom: 20px;
   }
+  .logo-wall {
+    padding: 20px 0;
+  }
+  .logo-wall img {
+    max-width: 120px;
+    height: auto;
+  }
+  .click img {
+    max-width: 50px;
+    height: auto;
+  }
   @media (max-width: 768px) {
     .section-spacing {
       padding: 40px 0;
@@ -433,6 +445,7 @@
       margin-bottom: 0;
     }
     .how-it-works-cards {
+      flex-direction: column;
       flex-wrap: wrap;
     }
     .connector {
@@ -440,15 +453,17 @@
     }
     .how-it-works-cards .card {
       height: auto;
-      min-height: 250px;
+      min-height: 200px;
       width: 100%;
+      max-width: 100%;
       margin-bottom: 15px;
+      padding: 15px !important;
     }
     .how-it-works-cards .card h2 {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
     .how-it-works-cards .card p {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
     .home-proposition-image img {
       padding: 15px 10px !important;
@@ -461,8 +476,18 @@
       font-size: 1rem;
       line-height: 1.4;
     }
-    .logo-wall .col-4 {
+    .logo-wall {
+      padding: 10px 0;
+    }
+    .logo-wall .col-12 {
       margin-bottom: 10px;
+      text-align: center;
+    }
+    .logo-wall img {
+      max-width: 100px;
+    }
+    .click img {
+      max-width: 40px;
     }
     .testimonials h2 {
       font-size: 1.8rem;
