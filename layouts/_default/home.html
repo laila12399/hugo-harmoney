@@ -12,7 +12,7 @@
           Through our carefully vetted companion program, our elders with a spare room gain independence by being matched with companions who bring the reassuring presence of practical help and the warmth of camaraderie. Companion match email introduction within 4 days.
         </p>
         <div class="btn mt-4">
-          <a href="#cta">Gain Companion</a>
+          <a href="#cta" class="cta-button">Gain Companion</a>
         </div>
       </div>
       <div class="col-md-6">
@@ -252,10 +252,10 @@
 <!-- End Testimonials -->
 
 <!-- ======= How It Works Section ======= -->
-<section class="parts editable section-spacing-non-hero">
+<section class="parts editable section-spacing-non-hero pb-3">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
-      <div class="col-lg-12 text-center mb-4">
+      <div class="col-lg-12 text-center">
         <h2><strong>How it Works</strong></h2>
       </div>
       <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works-cards">
@@ -284,10 +284,10 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12 mt-3 text-center">
+      <div class="col-lg-12 mt-2 text-center">
         <p><strong>All matches are made in 4 days.</strong></p>
         <div class="btn mt-4">
-          <a href="#cta">Gain Companion</a>
+          <a href="#cta" class="cta-button">Gain Companion</a>
         </div>
       </div>
     </div>
@@ -385,7 +385,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .btn a {
+  .section-spacing-non-hero.pb-3 {
+    padding-bottom: 16px;
+    min-height: auto; /* Allow section to shrink to content */
+  }
+  .cta-button {
     display: inline-block;
     padding: 12px 24px;
     border: 2px solid #5F5757;
@@ -396,11 +400,11 @@
     font-weight: 600;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
   }
-  .btn a:hover {
+  .cta-button:hover {
     background-color: #f8f8f8;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
-  .btn a:active {
+  .cta-button:active {
     transform: scale(0.98);
     box-shadow: none;
   }
@@ -415,7 +419,10 @@
       padding-bottom: 30px;
       min-height: auto;
     }
-    .btn a {
+    .section-spacing-non-hero.pb-3 {
+      padding-bottom: 12px;
+    }
+    .cta-button {
       padding: 10px 20px;
     }
   }
