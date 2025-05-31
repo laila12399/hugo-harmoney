@@ -12,7 +12,7 @@
           Through our carefully vetted companion program, our elders with a spare room gain independence by being matched with companions who bring the reassuring presence of practical help and the warmth of camaraderie. Companion match email introduction within 4 days.
         </p>
         <div class="btn mt-4">
-          <a href="#cta" class="cta-button">Gain Companion</a>
+          <a href="#cta">Gain Companion</a>
         </div>
       </div>
       <div class="col-md-6">
@@ -85,9 +85,9 @@
       <div class="col-lg-8 text-left">
         <h2>Safety and Companionship—Without the Worry</h2>
         <p><strong>Everyone deserves the joy of connection and support at home.</strong></p>
-        <p>Isolation can take years off a life. Worry of a fall can be overwhelming. <strong>Traditional live-in care often runs £2,100–£8,500 a month</strong>, yet most of it is simply companionship and everyday assistance.</p>
-        <p><strong>That’s exactly what Companion Helper was built to provide—for just £98 a month.</strong></p>
-        <p><strong>Carefully vetted, trustworthy companions</strong> who live in, provide 15–20 hours of weekly support, and joy through shared moments like a cup of tea or a friendly chat.</p>
+        <p>Isolation can take years off a life. Worry of a fall can be overwhelming. <strong>Traditional live-in care often runs £2,100–£5,277 a month</strong>, yet most of it is simply companionship and everyday assistance.</p>
+        <p><strong>That’s exactly what Companion Helper was built to provide—for just £7 a month.</strong></p>
+        <p><strong>Carefully vetted, trustworthy companions</strong> who live in, provide 14–20 hours of weekly support, and joy through shared moments like a cup of tea or a friendly chat.</p>
         <p>Keep scrolling to learn how it works 👇</p>
       </div>
     </div>
@@ -100,9 +100,9 @@
   <div class="container">
     <h4 style="text-align: center; font-size: xx-large; padding-top: 20px;">Why get a Companion Helper?</h4>
     <p style="text-align: center;">We’ve manually matched hundreds of companions and homeholders.</p>
-    <div class="row justify-content-center align-items-center home-proposition">
+    <div class="row justify-content-center align-items-center home-proposition-hero">
       <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-        <img src="/assets/img/proposition1.webp" style="padding: 25px 15px;" loading="eager" alt="Proposition 1" class="img-fluid" />
+        <img src="/assets/img/proposition1.webp" style="padding: 25px 15px;" loading="hero1" alt="Proposition 1" class="img-fluid" />
       </div>
       <div class="col-lg-7 home-proposition-content">
         <h2>Share the Responsibilities, and Gain Independence</h2>
@@ -111,18 +111,18 @@
     </div>
   </div>
 </section>
-<!-- End Why Companion -->
+<!-- End Hero -->
 
 <!-- ======= Dream Section ======= -->
 <section class="dream section-spacing-non-hero">
   <div class="container">
-    <div class="row justify-content-center align-items-center home-proposition">
+    <div class="row justify-content-center align-items-center home-proposition-hero">
       <div class="col-lg-7 home-proposition-content">
         <h2>Peace of Mind, Day and Night</h2>
-        <p>Experience the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and camaraderie are available to you day and night, creating a sense of security and tranquility in your home.</p>
+        <p>Experience the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and companionship is available to you day and night, creating a sense of safety and tranquility in your home.</p>
       </div>
-      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-        <img src="/assets/img/proposition2.webp" style="padding: 25px 15px;" loading="eager" alt="Proposition 2" class="img-fluid" />
+      <div class="col-lg-5 home-proposition-hero">
+        <img src="/assets/img/proposition2.webp" style="padding: 25px 25px;" loading="eager" alt="Hero 2" class="hero-img" />
       </div>
     </div>
   </div>
@@ -132,7 +132,7 @@
 <!-- ======= Dream Section ======= -->
 <section class="dream bg section-spacing-non-hero">
   <div class="container">
-    <div class="row justify-content-center align-items-center home-proposition">
+    <div class="row justify-content-center align-items-center home-proposition-hero">
       <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
         <img src="/assets/img/proposition3.webp" style="padding: 25px 15px;" loading="eager" alt="Proposition 3" class="img-fluid" />
       </div>
@@ -286,8 +286,8 @@
       </div>
       <div class="col-lg-12 mt-2 text-center">
         <p><strong>All matches are made in 4 days.</strong></p>
-        <div class="btn mt-4">
-          <a href="#cta" class="cta-button">Gain Companion</a>
+        <div class="btn mt-4 text-center">
+          <a href="callto:02039166073" class="call"><i class="bi bi-telephone"></i> 0203 916 6073</a>
         </div>
       </div>
     </div>
@@ -387,26 +387,49 @@
   }
   .section-spacing-non-hero.pb-3 {
     padding-bottom: 16px;
-    min-height: auto; /* Allow section to shrink to content */
+    min-height: auto;
   }
-  .cta-button {
+  .btn a {
     display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #5F5757;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #5F5757;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  }
+  .btn a:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .btn a:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+  .call {
+    display: inline-flex;
+    align-items: center;
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
-    background-color: #5F5757;
+    background-color: #0b2993;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
   }
-  .cta-button:hover {
-    background-color: #787171;
+  .call:hover {
+    background-color: #0a2380;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   }
-  .cta-button:active {
+  .call:active {
     transform: scale(0.98);
     box-shadow: none;
+  }
+  .call .bi-telephone {
+    margin-right: 8px;
   }
   @media (max-width: 768px) {
     .section-spacing {
@@ -422,7 +445,7 @@
     .section-spacing-non-hero.pb-3 {
       padding-bottom: 12px;
     }
-    .cta-button {
+    .btn a, .call {
       padding: 10px 20px;
     }
   }
