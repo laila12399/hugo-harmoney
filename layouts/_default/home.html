@@ -403,37 +403,48 @@
     margin-bottom: 20px;
   }
   @media (max-width: 768px) {
+    html, body {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
     .section-spacing {
       padding: 40px 0;
       min-height: auto;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .section-spacing-non-hero {
       padding: 10px 0;
       min-height: 100dvh;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .section-spacing-non-hero.pb-3 {
       padding-bottom: 8px;
       min-height: 100dvh;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .testimonials {
       min-height: 100dvh;
       padding: 10px 0;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .testimonials .container {
       height: 100%;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .slides-1.swiper {
       flex-grow: 1;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .parts .container {
       height: 100%;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .how-it-works-cards {
       flex-grow: 1;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .btn a, .call {
       padding: 10px 20px;
@@ -443,7 +454,7 @@
       font-size: 1.8rem;
     }
     .who h3 {
-      font-size:障 1.3rem;
+      font-size: 1.3rem;
     }
     .who-item {
       font-size: 0.9rem;
@@ -481,12 +492,13 @@
       font-size: 0.85rem;
     }
     .home-proposition-content h2 {
-      font-size: 1.3rem !important;
+      font-size: 1.56rem !important; /* 20% larger than 1.3rem */
     }
     .home-proposition-image img {
       padding: 15px 10px !important;
-      max-height: 200px;
-      object-fit: cover;
+      max-width: 130% !important; /* 30% larger */
+      height: auto;
+      object-fit: contain; /* Prevent distortion */
     }
     .logo-wall .row {
       display: flex;
@@ -514,6 +526,7 @@
     }
     .logo-wall .container {
       padding: 10px 0;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .testimonials h2 {
       font-size: 1.8rem;
@@ -542,9 +555,6 @@
     }
     .cta h4 {
       font-size: 1.3rem;
-    }
-    .parts h2 {
-      margin-top: 40px; /* Increased blank space above "How it Works" title */
     }
   }
 </style>
