@@ -1,572 +1,63 @@
-{{ define "main" }}
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="section-spacing">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-6 content text-center editable">
-        <div class="ball-animation">
-          <div class="ball"></div>
-        </div>
-        <h1>Companions for Elders Who Bring Joy and Support Daily</h1>
-        <p>Connect with caring companions for daily tasks, good company and thriving at home.</p>
-        <div class="btn mt-4">
-          <a href="#cta">Find Your Companion Now</a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img
-          src="/assets/img/home_logo.webp"
-          loading="eager"
-          alt="Hero Img"
-          class="img-fluid hero-img"
-          style="padding: 20px 5px;"
-        />
-      </div>
-    </div>
-  </div>
-  <!-- Logo Wall -->
-  <div class="logo-wall">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-4 col-md-2">
-          <div class="logo d-flex justify-content-center">
-            <div class="click">
-              <img src="/assets/img/klick-click.gif" alt="click">
-            </div>
-            <a href="https://finance.yahoo.com/news/golden-years-home-must-cost-143000676.html" target="_blank">
-              <img src="/assets/img/yahoo.png" id="firstLogo" loading="eager" alt="Logo 1">
-            </a>
-          </div>
-        </div>
-        <script>
-          window.onload = function() {
-            setTimeout(function() {
-              const img = document.querySelector('.logo-wall .logo .click img');
-              img.classList.add('show');
-              setTimeout(function() {
-                img.classList.remove('show');
-                img.classList.add('hide');
-              }, 2000);
-            }, 5000);
-          };
-        </script>
-        <div class="col-4 col-md-2">
-          <div class="logo d-flex justify-content-center">
-            <a href="https://mopsul.co.uk/living-lively-a-new-era-of-independence-for-britains-elders/" target="_blank">
-              <img src="/assets/img/mopsul.png" loading="eager" alt="Logo 2">
-            </a>
-          </div>
-        </div>
-        <div class="col-4 col-md-2">
-          <div class="logo d-flex justify-content-center">
-            <a href="https://www.google.com/" target="_blank">
-              <img src="/assets/img/metro.png" loading="eager" alt="Logo 3">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="text-align: center; margin-bottom: 50px; padding-bottom: 50px;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="51" viewBox="0 0 16 51" fill="none">
-        <path d="M7.29289 50.7071C7.68342 51.0976 8.31658 51.0976 8.70711 50.7071L15.0711 44.3431C15.4616 43.9526 15.4616 43.3195 15.0711 42.9289C14.6805 42.5384 14.0474 42.5384 13.6569 42.9289L8 48.5858L2.34315 42.9289C1.95262 42.5384 1.31946 42.5384 0.928932 42.9289C0.538408 43.3195 0.538408 43.9526 0.928932 44.3431L7.29289 50.7071ZM7 0L7 50H9L9 0L7 0Z" fill="#5F5757"/>
-      </svg>
-    </div>
-  </div>
-</section>
+/* Adjustments for "Who This Is Not For" column */
+.who-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Spread columns apart */
+  align-items: flex-start; /* Align items at the top */
+}
 
-<!-- ======= Safety and Companionship Section ======= -->
-<section class="reality editable section-spacing-non-hero">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-left">
-        <h2>Safety and Companionship—Without the Worry</h2>
-        <p><strong>Everyone deserves the joy of connection and support at home.</strong></p>
-        <p>Isolation can take years off a life. Worry of a fall can be overwhelming. <strong>Traditional live-in care often runs £2,100–£8,500 a month</strong>, yet most of it is simply companionship and everyday assistance.</p>
-        <p><strong>That’s exactly what Companion Helper was built to provide—for just £98 a month.</strong></p>
-        <p><strong>Carefully vetted, trustworthy companions</strong> who live in, provide 15–20 hours of weekly support, and joy through shared moments like a cup of tea or a friendly chat.</p>
-        <p>Keep scrolling to learn how it works 👇</p>
-      </div>
-    </div>
-  </div>
-</section>
+.who-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  min-height: 250px;
+}
 
-<!-- ======= Why Companion Section ======= -->
-<section class="dream bg section-spacing-non-hero">
-  <div class="container">
-    <h4 style="text-align: center; font-size: xx-large; padding-top: 20px;">Why get a Companion Helper?</h4>
-    <p style="text-align: center;">We’ve manually matched hundreds of companions and homeholders.</p>
-    <div class="row justify-content-center align-items-center home-proposition">
-      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-        <img src="/assets/img/proposition1.webp" style="padding: 25px 15px;" loading="eager" alt="Proposition 1" class="img-fluid" />
-      </div>
-      <div class="col-lg-7 home-proposition-content">
-        <h2>Share the Responsibilities, and Gain Independence</h2>
-        <p>Bid farewell to the stress of managing chores alone. Your live-in companion extends a hand around the house, granting you more freedom and enabling you to live life on your terms.</p>
-      </div>
-    </div>
-  </div>
-</section>
+.not-for-column {
+  position: relative;
+  left: 25%; /* Shift to center of right half (50% of container width - half of column width) */
+  transform: translateX(-50%); /* Center it within its own width */
+  max-width: 45%; /* Ensure it doesn't take full width */
+}
 
-<!-- ======= Dream Section ======= -->
-<section class="dream section-spacing-non-hero">
-  <div class="container">
-    <div class="row justify-content-center align-items-center home-proposition">
-      <div class="col-lg-7 home-proposition-content">
-        <h2>Peace of Mind, Day and Night</h2>
-        <p>Experience the comfort of having someone there. With a live-in companion, you can rest easy knowing that support and camaraderie are available to you day and night, creating a sense of security and tranquility in your home.</p>
-      </div>
-      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-        <img src="/assets/img/proposition2.webp" style="padding: 25px 15px;" loading="eager" alt="Proposition 2" class="img-fluid" />
-      </div>
-    </div>
-  </div>
-</section>
+/* Remove the vertical line on desktop since we're repositioning */
+.who-container::lettere
 
-<!-- ======= Dream Section ======= -->
-<section class="dream bg section-spacing-non-hero">
-  <div class="container">
-    <div class="row justify-content-center align-items-center home-proposition">
-      <div class="col-lg-5 d-flex justify-content-center home-proposition-image">
-        <img src="/assets/img/proposition3.webp" style="padding: 25px 15px;" loading="eager" alt="Proposition 3" class="img-fluid" />
-      </div>
-      <div class="col-lg-7 home-proposition-content">
-        <h2>Day-to-Day Delights, Shared Joys</h2>
-        <p>Find comfort and contentment in reliable company. After all, we are made to live with company, and with them, moments become a celebration of togetherness.</p>
-      </div>
-    </div>
-  </div>
-</section>
+System: You are Grok 3 built by xAI.
 
-<!-- ======= Is This For You Section ======= -->
-<section class="who editable section-spacing-non-hero">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 text-center">
-        <h2>Is This For You?</h2>
-        <div class="row mt-4 who-container">
-          <div class="col-lg-6 who-column">
-            <h3>Who This Is For</h3>
-            <ul class="who-list">
-              <li class="who-item"><span>✅</span> Seniors with a spare room wanting a trusted companion for safety at night.</li>
-              <li class="who-item"><span>✅</span> Families seeking joyful company to ease their loved one(s).</li>
-              <li class="who-item"><span>✅</span> Those needing help with chores, errands, or tech from a supportive friend.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 who-column">
-            <h3>Who This Is Not For</h3>
-            <ul class="who-list">
-              <li class="who-item"><span>❌</span> Those seeking specialized or nursing care.</li>
-              <li class="who-item"><span>❌</span> Those needing full-time personal assistance.</li>
-              <li class="who-item"><span>❌</span> People without a spare room.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+::before {
+  display: none;
+}
 
-<!-- ======= Testimonials Section ======= -->
-{{ partial "testimonial.html" }}
+/* Ensure left alignment of text */
+.not-for-column h3,
+.not-for-column .who-list {
+  text-align: left;
+}
 
-<!-- ======= How It Works Section ======= -->
-<section id="how-it-works" class="parts editable section-spacing-non-hero pb-3">
-  <div class="container" style="max-width: 900px;">
-    <div class="row justify-content-center">
-      <div class="col-lg-12 text-center">
-        <h2><strong>How it Works</strong></h2>
-      </div>
-      <div class="row align-items-stretch flex-nowrap justify-content-center how-it-works-cards">
-        <div class="col-auto">
-          <div class="card p-3">
-            <h2><span>📞</span> Request</h2>
-            <p>In a 5-minute call, share your loved one’s needs and preferences. Whether it’s chores or shared hobbies, we’ll match them with a compassionate companion.</p>
-          </div>
-        </div>
-        <div class="col-auto d-flex align-items-center connector">
-          <div class="connector-line"></div>
-        </div>
-        <div class="col-auto">
-          <div class="card p-3">
-            <h2><span>📩</span> Receive</h2>
-            <p>We’ll send you an email introduction to a handpicked, vetted match, chosen for their compatibility to bring safety, support, and tell you exactly why we picked them.</p>
-          </div>
-        </div>
-        <div class="col-auto d-flex align-items-center connector">
-          <div class="connector-line"></div>
-        </div>
-        <div class="col-auto">
-          <div class="card p-3">
-            <h2><span>👍</span> Review</h2>
-            <p>Meet your matched companion to explore compatibility. If they’re not the perfect fit, we’ll continue introducing new companions until your loved one feels truly at ease with their new friend.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-12 text-center">
-        <p>All matches are made in 4 days.</p>
-        <div class="btn mt-5">
-          <a href="#cta">Find Your Companion Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======= CTA Section ======= -->
-{{ partial "cta.html" }}
-
-<style>
-  .section-spacing {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .section-spacing-non-hero {
-    min-height: calc(100vh - 70px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f8f8f8;
-  }
-  .section-spacing-non-hero.pb-3 {
-    padding-bottom: 16px;
-    min-height: auto;
-  }
-  .testimonials {
-    min-height: auto;
-    padding: 20px 0;
-    background-color: #f8f8f8;
-  }
-  .btn a, .call {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 2px solid #5F5757;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #5F5757;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-    font-size: 1rem;
-  }
-  .btn a:hover, .call:hover {
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .btn a:active, .call:active {
-    transform: scale(0.98);
-    box-shadow: none;
-  }
-  .who-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 20px;
-    min-height: 250px;
-  }
-  .who-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  .who-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  .who-item span {
-    margin-right: 8px;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    vertical-align: top;
-  }
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .who-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  .who-container::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #5F5757;
-    transform: translateX(-50%);
-  }
-  .how-it-works-cards {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    margin-bottom: 20px;
-  }
-  .how-it-works-cards .card {
-    display: flex;
     flex-direction: column;
-    height: 100%;
-    min-height: 300px;
-    width: 240px;
-    box-sizing: border-box;
-    padding: 20px !important;
-    margin: 0;
-    border: 1px solid #5F5757;
-    border-radius: 8px;
-    background-color: #fff;
-    overflow: hidden;
-  }
-  .how-it-works-cards .card h2 {
-    margin: 0 0 15px;
-    font-size: 1.5rem;
-    display: flex;
     align-items: center;
   }
-  .how-it-works-cards .card h2 span {
-    margin-right: 8px;
-  }
-  .how-it-works-cards .card p {
-    flex-grow: 1;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-  }
-  .connector {
-    min-width: 50px;
-    display: flex;
-    align-items: center;
-  }
-  .connector-line {
-    width: 100%;
-    height: 2px;
-    background-color: #5F5757;
-  }
-  .testimonial-img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  .testimonial-item {
-    text-align: center;
-    padding: 20px;
-  }
-  .testimonial-item h3 {
-    font-size: 1.5rem;
-    margin: 10px 0 5px;
-  }
-  .testimonial-item h4 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  .testimonial-item p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  .swiper-slide {
-    width: 100%;
-  }
-  .swiper-pagination {
-    position: relative;
-    bottom: 10px;
-  }
-  .calendly-inline-widget {
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-  }
-  .cta .img-fluid {
-    max-width: 200px;
-    margin: 0 auto 20px;
-    display: block;
-  }
-  .cta h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .cta h4 {
-    font-size: 1.5rem;
-    text-align: center;
+  
+  .who-column {
+    padding: 0 10px;
     margin-bottom: 20px;
+    min-height: auto;
+    width: 100%;
+    max-width: 100%;
   }
-  .parts h2 {
-    margin-bottom: 20px;
+  
+  .not-for-column {
+    left: 0;
+    transform: none; /* Remove transform on mobile */
+    max-width: 100%; /* Full width on mobile */
   }
-  /* Larger text for Safety and Companionship section */
-  .reality h2 {
-    font-size: 2.5rem;
+  
+  .who-container::before {
+    display: none;
   }
-  .reality p {
-    font-size: 1.2rem;
-  }
-  /* Add blank space above How it Works */
-  #how-it-works {
-    margin-top: 60px;
-  }
-  @media (max-width: 768px) {
-    .section-spacing {
-      padding: 40px 0;
-      min-height: auto;
-    }
-    .section-spacing-non-hero {
-      padding: 10px 0;
-      min-height: 100dvh;
-    }
-    .section-spacing-non-hero.pb-3 {
-      padding: 90px 0 8px 0;
-      min-height: 100dvh;
-    }
-    .testimonials {
-      min-height: 100dvh;
-      padding: 10px 0;
-    }
-    .testimonials .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .slides-1.swiper {
-      flex-grow: 1;
-    }
-    .parts .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .how-it-works-cards {
-      flex-grow: 1;
-    }
-    .btn a, .call {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
-    .who h2 {
-      font-size: 1.8rem;
-    }
-    .who h3 {
-      font-size: 1.3rem;
-    }
-    .who-item {
-      font-size: 0.9rem;
-    }
-    .who-container::before {
-      display: none;
-    }
-    .who-column {
-      padding: 0 10px;
-      margin-bottom: 20px;
-      min-height: auto;
-    }
-    .who-column:last-child {
-      margin-bottom: 0;
-    }
-    .how-it-works-cards {
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    .connector {
-      display: none !important;
-    }
-    .how-it-works-cards .card {
-      height: auto;
-      min-height: 180px;
-      width: 100%;
-      max-width: 100%;
-      margin-bottom: 15px;
-      padding: 15px !important;
-    }
-    .how-it-works-cards .card h2 {
-      font-size: 1.3rem;
-    }
-    .how-it-works-cards .card p {
-      font-size: 0.85rem;
-    }
-    .home-proposition-image img {
-      padding: 15px 10px !important;
-    }
-    #hero h1 {
-      font-size: 1.8rem;
-      line-height: 1.2;
-    }
-    #hero p {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-    .logo-wall .row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      justify-content: flex-start;
-    }
-    .logo-wall .col-4 {
-      width: auto;
-      flex: 0 0 auto;
-      margin-bottom: 0;
-      padding: 0 5px;
-      text-align: center;
-    }
-    .logo-wall img {
-      max-width: 80px;
-      height: auto;
-    }
-    .click img {
-      max-width: 32px;
-      height: auto;
-    }
-    .logo-wall .container {
-      padding: 10px 0;
-    }
-    .testimonials h2 {
-      font-size: 1.8rem;
-      padding: 10px 5px;
-    }
-    .testimonial-img {
-      max-width: 80px;
-    }
-    .testimonial-item h3 {
-      font-size: 1.3rem;
-    }
-    .testimonial-item h4 {
-      font-size: 1rem;
-    }
-    .testimonial-item p {
-      font-size: 0.9rem;
-    }
-    .swiper-pagination {
-      bottom: 5px;
-    }
-    .cta .img-fluid {
-      max-width: 150px;
-    }
-    .cta h2 {
-      font-size: 1.8rem;
-    }
-    .cta h4 {
-      font-size: 1.3rem;
-    }
-    /* Larger text for Safety and Companionship section on mobile */
-    .reality h2 {
-      font-size: 2rem;
-    }
-    .reality p {
-      font-size: 1rem;
-    }
-    /* Add blank space above How it Works on mobile */
-    #how-it-works {
-      margin-top: 40px;
-    }
-  }
-</style>
-{{ end }}
+}
