@@ -1,0 +1,182 @@
+{{ define "main" }}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="bg section-spacing-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 content">
+          <h2>Your Companion Solution</h2>
+          <h1>Find a Trusted Companion for Your Loved Ones</h1>
+          <a href="#contact" class="btn">Get Started</a>
+        </div>
+      </div>
+      <div class="ball-animation">
+        <div class="ball"></div>
+      </div>
+    </div>
+    <style>
+      #hero {
+        padding: 80px 0;
+      }
+      @media (max-width: 768px) {
+        #hero {
+          min-height: 100dvh;
+          padding: 90px 0 0 0; /* Account for fixed navbar */
+        }
+      }
+    </style>
+  </section>
+  <!-- End Hero Section -->
+
+  <!-- ======= Dream Section ======= -->
+  <section id="dream" class="dream bg section-spacing-non-hero">
+    <div class="container">
+      <h2>A Dream Shared</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Connecting families with trusted companions to share a home, support, and friendship.</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      #dream {
+        padding: 60px 0;
+      }
+      @media (max-width: 768px) {
+        #dream {
+          min-height: 100dvh;
+          padding: 90px 0 0 0;
+        }
+      }
+    </style>
+  </section>
+  <!-- End Dream Section -->
+
+  <!-- ======= Testimonials Section ======= -->
+  {{ partial "testimonial.html" . }}
+  <!-- End Testimonials Section -->
+
+  <!-- ======= How it Works Section ======= -->
+  <section id="how-it-works" class="parts section-spacing-non-hero">
+    <div class="container">
+      <h2>How it Works</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <h2><span>1.</span> Register</h2>
+            <p>Sign up and tell us about your needs or availability as a companion.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h2><span>2.</span> Match</h2>
+            <p>We’ll pair you with a compatible companion or homeholder based on preferences.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h2><span>3.</span> Connect</h2>
+            <p>Start sharing a home and building a meaningful relationship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      #how-it-works {
+        padding: 60px 0;
+        margin-top: 60px; /* Added blank space above */
+      }
+      #how-it-works .card {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        #how-it-works {
+          min-height: 100dvh;
+          padding: 90px 0 0 0; /* Account for fixed navbar */
+          margin-top: 40px; /* Added blank space above on mobile */
+        }
+      }
+    </style>
+  </section>
+  <!-- End How it Works Section -->
+
+  <!-- ======= FAQ Section ======= -->
+  <section id="faq" class="faq section-spacing-non-hero">
+    <div class="container">
+      <div class="content">
+        <h3>Frequently Asked Questions</h3>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3><span class="num">1.</span> What is Companion Helper?</h3>
+          <p>Companion Helper connects families with trusted companions for shared living and support.</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      #faq {
+        padding: 60px 0;
+      }
+      @media (max-width: 768px) {
+        #faq {
+          min-height: 100dvh;
+          padding: 90px 0 0 0;
+        }
+      }
+    </style>
+  </section>
+  <!-- End FAQ Section -->
+
+  <!-- ======= CTA Section ======= -->
+  <section id="cta" class="cta section-spacing-non-hero">
+    <div class="container">
+      <h2>Ready to Find a Companion?</h2>
+      <div class="btn">
+        <a href="#contact" class="call">Get Started</a>
+      </div>
+    </div>
+    <style>
+      #cta {
+        padding: 60px 0;
+      }
+      @media (max-width: 768px) {
+        #cta {
+          min-height: 100dvh;
+          padding: 90px 0 0 0;
+        }
+      }
+    </style>
+  </section>
+  <!-- End CTA Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact section-spacing-non-hero">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="php-email-form">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <style>
+      #contact {
+        padding: 60px 0;
+      }
+      @media (max-width: 768px) {
+        #contact {
+          min-height: 100dvh;
+          padding: 90px 0 0 0;
+        }
+      }
+    </style>
+  </section>
+  <!-- End Contact Section -->
+{{ end }}
