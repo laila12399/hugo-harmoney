@@ -152,7 +152,7 @@
               <li class="who-item"><span>✅</span> Those needing help with chores, errands, or tech from a supportive friend.</li>
             </ul>
           </div>
-          <div class="col-lg-6 who-column not-for-column">
+          <div class="col-lg-6 who-column">
             <h3>Who This Is Not For</h3>
             <ul class="who-list">
               <li class="who-item"><span>❌</span> Those seeking specialized or nursing care.</li>
@@ -170,7 +170,7 @@
 {{ partial "testimonial.html" }}
 
 <!-- ======= How It Works Section ======= -->
-<section id="how-it-works" class="parts editable section-spacing-non-hero pb-3">
+<section class="parts editable section-spacing-non-hero pb-3">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center">
@@ -231,7 +231,6 @@
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #f8f8f8;
   }
   .section-spacing-non-hero.pb-3 {
     padding-bottom: 16px;
@@ -291,21 +290,17 @@
   .who-container {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .not-for-column {
-    position: relative;
-    left: 25%;
-    transform: translateX(-50%);
-    max-width: 45%;
-  }
-  .not-for-column h3,
-  .not-for-column .who-list {
-    text-align: left;
+    justify-content: center;
   }
   .who-container::before {
-    display: none;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #5F5757;
+    transform: translateX(-50%);
   }
   .how-it-works-cards {
     display: flex;
@@ -407,15 +402,6 @@
   .parts h2 {
     margin-bottom: 20px;
   }
-  .reality h2 {
-    font-size: 2.5rem;
-  }
-  .reality p {
-    font-size: 1.2rem;
-  }
-  #how-it-works {
-    margin-top: 60px;
-  }
   @media (max-width: 768px) {
     .section-spacing {
       padding: 40px 0;
@@ -426,7 +412,7 @@
       min-height: 100dvh;
     }
     .section-spacing-non-hero.pb-3 {
-      padding: 90px 0 8px 0;
+      padding-bottom: 8px;
       min-height: 100dvh;
     }
     .testimonials {
@@ -462,21 +448,13 @@
     .who-item {
       font-size: 0.9rem;
     }
-    .who-container {
-      flex-direction: column;
-      align-items: center;
+    .who-container::before {
+      display: none;
     }
     .who-column {
       padding: 0 10px;
       margin-bottom: 20px;
       min-height: auto;
-      width: 100%;
-      max-width: 100%;
-    }
-    .not-for-column {
-      left: 0;
-      transform: none;
-      max-width: 100%;
     }
     .who-column:last-child {
       margin-bottom: 0;
@@ -565,15 +543,6 @@
     }
     .cta h4 {
       font-size: 1.3rem;
-    }
-    .reality h2 {
-      font-size: 2rem;
-    }
-    .reality p {
-      font-size: 1rem;
-    }
-    #how-it-works {
-      margin-top: 40px;
     }
   }
 </style>
