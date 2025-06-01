@@ -170,7 +170,7 @@
 {{ partial "testimonial.html" }}
 
 <!-- ======= How It Works Section ======= -->
-<section class="parts editable section-spacing-non-hero pb-3">
+<section id="how-it-works" class="parts editable section-spacing-non-hero pb-3">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center">
@@ -231,10 +231,11 @@
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #f8f8f8; /* Consistent background */
   }
   .section-spacing-non-hero.pb-3 {
     padding-bottom: 16px;
-    min-height: auto;
+    min-height: auto; /* Keep as-is for desktop */
   }
   .testimonials {
     min-height: auto;
@@ -402,6 +403,10 @@
   .parts h2 {
     margin-bottom: 20px;
   }
+  /* Add blank space above How it Works */
+  #how-it-works {
+    margin-top: 60px;
+  }
   @media (max-width: 768px) {
     .section-spacing {
       padding: 40px 0;
@@ -412,8 +417,8 @@
       min-height: 100dvh;
     }
     .section-spacing-non-hero.pb-3 {
-      padding-bottom: 8px;
-      min-height: 100dvh;
+      padding: 90px 0 8px 0; /* Account for fixed navbar */
+      min-height: 100dvh; /* Match other sections */
     }
     .testimonials {
       min-height: 100dvh;
@@ -543,6 +548,10 @@
     }
     .cta h4 {
       font-size: 1.3rem;
+    }
+    /* Add blank space above How it Works on mobile */
+    #how-it-works {
+      margin-top: 40px;
     }
   }
 </style>
