@@ -404,16 +404,30 @@
       min-height: auto;
     }
     .section-spacing-non-hero {
-      padding: 20px 0;
-      min-height: calc(100vh - 70px);
+      padding: 10px 0;
+      min-height: calc(100dvh - 70px);
+      padding-top: 70px; /* Adjust if navbar is fixed */
     }
     .section-spacing-non-hero.pb-3 {
-      padding-bottom: 12px;
-      min-height: calc(100vh - 70px);
+      padding-bottom: 8px;
+      min-height: calc(100dvh - 70px);
     }
     .testimonials {
-      min-height: calc(100vh - 70px);
-      padding: 20px 0;
+      min-height: calc(100dvh - 70px);
+      padding: 10px 0;
+    }
+    .testimonials .container {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .slides-1.swiper {
+      flex-grow: 1;
+    }
+    .parts .container {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     .btn a, .call {
       padding: 10px 20px;
@@ -448,7 +462,7 @@
     }
     .how-it-works-cards .card {
       height: auto;
-      min-height: 150px;
+      min-height: 180px;
       width: 100%;
       max-width: 100%;
       margin-bottom: 15px;
