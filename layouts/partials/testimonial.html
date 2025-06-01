@@ -1,7 +1,7 @@
 <!-- ======= Testimonials Section ======= -->
 <section id="testimonials" class="testimonials editable bg section-spacing-non-hero">
   <div class="container">
-    <h2>Over 460+ families have found trusted companions for their loved ones through our network.</h2>
+    <h2>Over <span style="color: #000080;">460+</span> families have found trusted companions through our network.</h2>
     <div class="row align-items-center">
       <div class="col-lg-7">
         <div class="slides-1 swiper">
@@ -97,5 +97,134 @@
       </div>
     </div>
   </div>
+  <style>
+    /* Desktop Styles */
+    .testimonials {
+      min-height: auto;
+      padding: 20px 0;
+      background-color: #f8f8f8;
+    }
+    .testimonials .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .testimonials h2 {
+      font-size: 42px;
+      font-weight: 600;
+      text-align: center;
+      padding: 20px 10px;
+      margin-bottom: 15px;
+    }
+    .slides-1.swiper {
+      width: 100%;
+    }
+    .swiper-wrapper {
+      width: 100%;
+    }
+    .swiper-slide {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .testimonial-item {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .testimonial-img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .testimonial-item h3 {
+      font-size: 1.5rem;
+      margin: 10px 0 5px;
+    }
+    .testimonial-item h4 {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .testimonial-item p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .swiper-pagination {
+      position: relative;
+      bottom: 10px;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .testimonials {
+        min-height: calc(100dvh - 90px) !important;
+        height: calc(100dvh - 90px) !important;
+        padding: 90px 0 0 0 !important; /* 90px top padding for fixed navbar */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+      }
+      .testimonials .container {
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+      }
+      .testimonials h2 {
+        font-size: 1.8rem !important;
+        padding: 10px 5px !important;
+        margin-bottom: 10px !important;
+      }
+      .slides-1.swiper {
+        flex-grow: 1 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      .swiper-wrapper {
+        height: 100% !important;
+      }
+      .swiper-slide {
+        height: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .testimonial-item {
+        height: 100% !important;
+        padding: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+      }
+      .testimonial-img {
+        max-width: 80px !important;
+      }
+      .testimonial-item h3 {
+        font-size: 1.3rem !important;
+      }
+      .testimonial-item h4 {
+        font-size: 1rem !important;
+      }
+      .testimonial-item p {
+        font-size: 0.9rem !important;
+        flex-grow: 1 !important;
+      }
+      .swiper-pagination {
+        bottom: 5px !important;
+        margin-top: 10px !important;
+      }
+    }
+  </style>
 </section>
 <!-- End Testimonials -->
