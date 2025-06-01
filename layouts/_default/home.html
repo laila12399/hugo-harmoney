@@ -443,7 +443,7 @@
       font-size: 1.8rem;
     }
     .who h3 {
-      font-size: 1.3rem;
+      font-size:障 1.3rem;
     }
     .who-item {
       font-size: 0.9rem;
@@ -480,16 +480,13 @@
     .how-it-works-cards .card p {
       font-size: 0.85rem;
     }
+    .home-proposition-content h2 {
+      font-size: 1.3rem !important;
+    }
     .home-proposition-image img {
       padding: 15px 10px !important;
-    }
-    #hero h1 {
-      font-size: 1.8rem;
-      line-height: 1.2;
-    }
-    #hero p {
-      font-size: 1rem;
-      line-height: 1.4;
+      max-height: 200px;
+      object-fit: cover;
     }
     .logo-wall .row {
       display: flex;
@@ -508,10 +505,12 @@
     .logo-wall img {
       max-width: 80px;
       height: auto;
+      object-fit: contain; /* Prevent distortion */
     }
     .click img {
       max-width: 32px;
       height: auto;
+      object-fit: contain; /* Prevent distortion */
     }
     .logo-wall .container {
       padding: 10px 0;
@@ -543,6 +542,9 @@
     }
     .cta h4 {
       font-size: 1.3rem;
+    }
+    .parts h2 {
+      margin-top: 40px; /* Increased blank space above "How it Works" title */
     }
   }
 </style>
