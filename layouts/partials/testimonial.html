@@ -160,6 +160,12 @@
       position: relative;
       bottom: 10px;
     }
+    .quote-icon-left,
+    .quote-icon-right {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: #5F5757;
+    }
 
     /* Mobile Styles */
     @media (max-width: 768px) {
@@ -242,6 +248,13 @@
         margin: 0 !important;
         max-width: 100% !important; /* Ensure text fits within container */
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
+      }
+      .quote-icon-left,
+      .quote-icon-right {
+        display: inline-block !important; /* Ensure quote icons are visible */
+        font-size: 1.2rem !important;
+        color: #5F5757 !important;
+        vertical-align: middle !important;
       }
       .swiper-pagination {
         bottom: 5px !important;
