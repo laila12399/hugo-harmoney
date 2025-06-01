@@ -164,21 +164,22 @@
     /* Mobile Styles */
     @media (max-width: 768px) {
       .testimonials {
-        min-height: 100dvh !important;
-        height: 100dvh !important;
+        min-height: calc(100dvh - 90px) !important;
+        height: calc(100dvh - 90px) !important;
         padding: 90px 0 0 0 !important; /* 90px top padding for fixed navbar */
         margin-top: 0 !important; /* Override #main { margin-top: 70px } */
         display: flex !important;
         flex-direction: column !important;
         justify-content: flex-start !important;
         box-sizing: border-box !important;
+        background-color: #f8f8f8 !important; /* Ensure background fills */
       }
       .testimonials .container {
-        height: 100% !important;
         min-height: 100% !important;
+        height: 100% !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: flex-start !important;
+        justify-content: space-between !important; /* Distribute space */
         padding: 10px !important;
         box-sizing: border-box !important;
       }
@@ -186,11 +187,12 @@
         font-size: 1.8rem !important;
         padding: 10px 5px !important;
         margin-bottom: 10px !important;
+        flex-shrink: 0 !important; /* Prevent shrinking */
       }
       .slides-1.swiper {
-        flex-grow: 1 !important;
-        height: 100% !important;
-        min-height: 100% !important;
+        flex-grow: 1 !important; /* Grow to fill remaining space */
+        height: auto !important; /* Allow natural height */
+        min-height: 0 !important; /* Allow flex-grow to work */
         width: 100% !important;
       }
       .swiper-wrapper {
@@ -215,20 +217,25 @@
       }
       .testimonial-img {
         max-width: 80px !important;
+        flex-shrink: 0 !important;
       }
       .testimonial-item h3 {
         font-size: 1.3rem !important;
+        flex-shrink: 0 !important;
       }
       .testimonial-item h4 {
         font-size: 1rem !important;
+        flex-shrink: 0 !important;
       }
       .testimonial-item p {
         font-size: 0.9rem !important;
-        flex-grow: 1 !important;
+        flex-grow: 1 !important; /* Expand to fill space */
+        margin: 0 !important;
       }
       .swiper-pagination {
         bottom: 5px !important;
         margin-top: 10px !important;
+        flex-shrink: 0 !important;
       }
     }
   </style>
