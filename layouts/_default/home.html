@@ -464,7 +464,7 @@
       flex-wrap: wrap;
     }
     .connector {
-      display: none;
+      display: none !important;
     }
     .how-it-works-cards .card {
       height: auto;
@@ -491,17 +491,26 @@
       font-size: 1rem;
       line-height: 1.4;
     }
+    .logo-wall .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
     .logo-wall .col-4 {
-      width: 100%;
-      margin-bottom: 10px;
+      width: auto;
+      flex: 0 0 auto;
+      margin-bottom: 0;
+      padding: 0 5px;
       text-align: center;
     }
     .logo-wall img {
-      max-width: 100px;
+      max-width: 80px;
       height: auto;
     }
     .click img {
-      max-width: 40px;
+      max-width: 32px;
       height: auto;
     }
     .logo-wall .container {
