@@ -154,7 +154,7 @@
           </div>
           <div class="col-lg-6 who-column">
             <h3 style="text-align: center; width: 100%;">Who This Is Not For</h3>
-            <ul class="who-list" style="text-align: center; list-style-position: inside; margin-top: 5px;">
+            <ul class="who-list not-for-list" style="margin-top: 5px;">
               <li class="who-item"><span>❌</span> Those seeking specialized or nursing care.</li>
               <li class="who-item"><span>❌</span> Those needing full-time personal assistance.</li>
               <li class="who-item"><span>❌</span> People without a spare room.</li>
@@ -309,105 +309,18 @@
     background-color: #5F5757;
     transform: translateX(-50%);
   }
-  .how-it-works-cards {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    margin-bottom: 20px;
+  .not-for-list {
+    margin-top: 5px;
   }
-  .how-it-works-cards .card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-height: 300px;
-    width: 240px;
-    box-sizing: border-box;
-    padding: 20px !important;
-    margin: 0;
-    border: 1px solid #5F5757;
-    border-radius: 8px;
-    background-color: #fff;
-    overflow: hidden;
-  }
-  .how-it-works-cards .card h2 {
-    margin: 0 0 15px;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-  }
-  .how-it-works-cards .card h2 span {
-    margin-right: 8px;
-  }
-  .how-it-works-cards .card p {
-    flex-grow: 1;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-  }
-  .connector {
-    min-width: 50px;
-    display: flex;
-    align-items: center;
-  }
-  .connector-line {
-    width: 100%;
-    height: 2px;
-    background-color: #5F5757;
-  }
-  .testimonial-img {
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  .testimonial-item {
-    text-align: center;
-    padding: 20px;
-  }
-  .testimonial-item h3 {
-    font-size: 1.5rem;
-    margin: 10px 0 5px;
-  }
-  .testimonial-item h4 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  .testimonial-item p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  .swiper-slide {
-    width: 100%;
-  }
-  .swiper-pagination {
-    position: relative;
-    bottom: 10px;
-  }
-  .calendly-inline-widget {
-    width: 100%;
-    height: auto;
-    min-height: 300px;
-  }
-  .cta .img-fluid {
-    max-width: 200px;
-    margin: 0 auto 20px;
-    display: block;
-  }
-  .cta h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .cta h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .parts h2 {
-    margin-bottom: 20px;
+  @media (min-width: 769px) {
+    .who-column:last-child .not-for-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+    }
   }
   @media (max-width: 768px) {
     html, body {
