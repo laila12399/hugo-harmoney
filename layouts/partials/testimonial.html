@@ -225,7 +225,7 @@
         flex-direction: column !important;
         justify-content: center !important; /* Center content vertically */
         align-items: center !important;
-        max-width: 90% !important; /* Restrict width to prevent overflow */
+        max-width: 85% !important; /* Narrower width to fit screen */
         margin: 0 auto !important;
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
       }
@@ -247,6 +247,9 @@
         flex-grow: 1 !important;
         margin: 0 !important;
         max-width: 100% !important; /* Ensure text fits within container */
+        text-align: left !important; /* Left-align for better readability */
+        white-space: normal !important; /* Allow text wrapping */
+        word-wrap: break-word !important; /* Break long words */
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
       }
       .quote-icon-left,
