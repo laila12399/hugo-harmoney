@@ -170,7 +170,7 @@
 {{ partial "testimonial.html" }}
 
 <!-- ======= How It Works Section ======= -->
-<section class="parts editable section-spacing-non-hero pb-3">
+<section class="parts editable section-spacing-non-hero">
   <div class="container" style="max-width: 900px;">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center">
@@ -231,10 +231,6 @@
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-  .section-spacing-non-hero.pb-3 {
-    padding-bottom: 16px;
-    min-height: auto;
   }
   .testimonials {
     min-height: auto;
@@ -312,6 +308,52 @@
   .for-list, .not-for-list {
     margin-top: 5px;
   }
+  .how-it-works-cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+  .how-it-works .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    padding: 20px !important;
+    margin: 0;
+    border: 1px solid #5F5757;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+}
+  .how-it-works-cards .card h2 {
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .how-it-works-cards .card h2 span {
+    margin-right: 8px;
+  }
+  .how-it-works-cards .card p {
+    flex-grow: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .connector {
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .connector-line {
+    width: 100%;
+    height: 2px;
+    background-color: #5F5757;
+  }
   @media (min-width: 769px) {
     .who-column:first-child .for-list {
       display: flex;
@@ -331,171 +373,171 @@
       margin-right: auto;
       width: fit-content;
     }
+    .how-it-works-cards .card {
+      width: 200px;
+      max-width: 200px;
+    }
   }
   @media (max-width: 768px) {
-    html, body {
+    html, .container {
       overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     .section-spacing {
-      padding: 40px 0;
+      padding: 40px 20px;
       min-height: auto;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .section-spacing-non-hero {
-      padding: 10px 0;
-      min-height: 100dvh;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    .section-spacing-non-hero.pb-3 {
-      padding-bottom: 8px;
-      min-height: 100dvh;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      padding: 20px 20px;
+      min-height: auto;
+      overflow-x: hidden;
     }
     .testimonials {
-      min-height: 100dvh;
-      padding: 10px 0;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      min-height: auto;
+      padding: 20px;
+      overflow-x: hidden;
     }
     .testimonials .container {
-      height: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
-    .slides-1.swiper {
+    .slides-1 .card {
       flex-grow: 1;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .parts .container {
-      height: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
-    .how-it-works-cards {
+    .how-it-works {
       flex-grow: 1;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .btn a, .call {
       padding: 10px 20px;
-      font-size: 0.9rem;
+      font-size: 0.9rem !important;
     }
     .who h2 {
-      font-size: 1.8rem;
+      font-size: 1.8rem !important;
     }
     .who h3 {
-      font-size: 1.3rem;
+      font-size: 1.3rem !important;
     }
     .who-item {
       font-size: 0.9rem;
     }
     .who-container::before {
-      display: none;
+      content: none !important;
     }
     .who-column {
-      padding: 0 10px;
-      margin-bottom: 20px;
-      min-height: auto;
+      padding: 0 !important;
+      margin-bottom: 20px !important;
+      min-height: auto !important;
     }
     .who-column:last-child {
-      margin-bottom: 0;
+      margin-bottom: 0 !important;
     }
     .who-column h3 {
-      text-align: center;
+      text-align: center !important;
       width: 100%;
-      margin-bottom: 5px;
+      margin-bottom: 5px !important;
     }
     .who-column:last-child .who-list {
-      text-align: center;
-      list-style-position: inside;
-      margin-top: 5px;
+      text-align: center !important;
+      list-style-position: inside !important;
+      margin-top: 5px !important;
     }
-    .how-it-works-cards {
-      flex-direction: column;
-      flex-wrap: wrap;
+    .how-it-works {
+      flex-direction: column !important;
+      flex-wrap: wrap !important;
     }
     .connector {
       display: none !important;
     }
     .how-it-works-cards .card {
-      height: auto;
-      min-height: 180px;
-      width: 100%;
-      max-width: 100%;
-      margin-bottom: 15px;
+      height: auto !important;
+      min-height: 180px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-bottom: 15px !important;
       padding: 15px !important;
     }
-    .how-it-works-cards .card h2 {
-      font-size: 1.3rem;
+    .how-it-works .card h2 {
+      font-size: 1.3rem !important;
     }
-    .how-it-works-cards .card p {
-      font-size: 0.85rem;
+    .how-it-works .card p {
+      font-size: 0.85rem !important;
     }
     .home-proposition-content h2 {
-      font-size: 1.56rem !important; /* 20% larger than 1.3rem */
+      font-size: 1.56rem !important;
     }
-    .home-proposition-image img {
-      padding: 15px 10px !important;
-      max-width: 85% !important; /* 15% smaller */
-      height: auto;
-      object-fit: contain; /* Prevent distortion */
+    .home-proposition-content img {
+      padding: 15px !important;
+      max-width: 85% !important;
+      height: auto !important;
+      object-fit: contain !important;
     }
     .logo-wall .row {
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      justify-content: flex-start;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      justify-content: flex-start !important;
     }
     .logo-wall .col-4 {
-      width: auto;
-      flex: 0 0 auto;
-      margin-bottom: 0;
-      padding: 0 5px;
-      text-align: center;
+      width: auto !important;
+      margin-bottom: 0 !important;
+      padding: 0 5px !important;
+      text-align: center !important;
     }
     .logo-wall img {
-      max-width: 80px;
-      height: auto;
-      object-fit: contain; /* Prevent distortion */
+      width: 80px !important;
+      height: auto !important;
+      object-fit: contain !important;
+    }
     }
     .click img {
-      max-width: 32px;
-      height: auto;
-      object-fit: contain; /* Prevent distortion */
+      width: 32px !important;
+      height: auto !important;
+      object-fit: contain !important;
     }
     .logo-wall .container {
-      padding: 10px 0;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      padding: 10px 0 !important;
+      overflow-x: hidden !important;
     }
     .testimonials h2 {
-      font-size: 1.8rem;
-      padding: 10px 5px;
+      font-size: 1.8rem !important;
+      padding: 10px !important;
     }
-    .testimonial-img {
-      max-width: 80px;
+    .testimonials-img {
+      width: 80px !important;
     }
     .testimonial-item h3 {
-      font-size: 1.3rem;
+      font-size: 1.3rem !important;
     }
     .testimonial-item h4 {
-      font-size: 1rem;
+      font-size: 1rem !important;
     }
-    .testimonial-item p {
-      font-size: 0.9rem;
+    .item p {
+      font-size: 0.9rem !important;
     }
     .swiper-pagination {
-      bottom: 5px;
+      bottom: 5px !important;
     }
     .cta .img-fluid {
-      max-width: 150px;
+      max-width: 150px !important;
     }
     .cta h2 {
-      font-size: 1.8rem;
+      font-size: 1.5rem !important;
     }
     .cta h4 {
-      font-size: 1.3rem;
+      font-size: 1.2rem !important;
     }
   }
+}
 </style>
 {{ end }}
