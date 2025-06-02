@@ -146,7 +146,7 @@
         <div class="row mt-4 who-container">
           <div class="col-lg-6 who-column">
             <h3 style="text-align: center; width: 100%;">Who This Is For</h3>
-            <ul class="who-list">
+            <ul class="who-list for-list" style="margin-top: 5px;">
               <li class="who-item"><span>✅</span> Seniors with a spare room wanting a trusted companion for safety at night.</li>
               <li class="who-item"><span>✅</span> Families seeking joyful company to ease their loved one(s).</li>
               <li class="who-item"><span>✅</span> Those needing help with chores, errands, or tech from a supportive friend.</li>
@@ -309,10 +309,18 @@
     background-color: #5F5757;
     transform: translateX(-50%);
   }
-  .not-for-list {
+  .for-list, .not-for-list {
     margin-top: 5px;
   }
   @media (min-width: 769px) {
+    .who-column:first-child .for-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+    }
     .who-column:last-child .not-for-list {
       display: flex;
       flex-direction: column;
