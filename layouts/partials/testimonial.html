@@ -225,12 +225,12 @@
         flex-direction: column !important;
         justify-content: center !important; /* Center content vertically */
         align-items: center !important;
-        max-width: 65% !important; /* Further narrowed width to fit screen */
+        max-width: 50% !important; /* Further narrowed width to fit screen */
         margin: 0 auto !important;
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
       }
       .testimonial-img {
-        max-width: 80px !important;
+        max-width: 60px !important; /* Smaller image size */
         flex-shrink: 0 !important;
       }
       .testimonial-item h3 {
@@ -242,14 +242,16 @@
         flex-shrink: 0 !important;
       }
       .testimonial-item p {
-        font-size: 0.7rem !important; /* Smaller font size */
-        line-height: 1.2 !important; /* Tighter line height */
+        font-size: 0.6rem !important; /* Smaller font size */
+        line-height: 1.0 !important; /* Tighter line height */
         flex-grow: 1 !important;
         margin: 0 !important;
+        padding: 2px !important; /* Minimal padding */
         max-width: 100% !important; /* Ensure text fits within container */
         text-align: center !important; /* Center-align for better readability */
         white-space: normal !important; /* Allow text wrapping */
         word-wrap: break-word !important; /* Break long words */
+        box-sizing: border-box !important; /* Include padding in width */
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
       }
       .quote-icon-left,
