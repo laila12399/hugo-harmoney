@@ -243,4 +243,29 @@
       }
       .testimonial-item p {
         font-size: 0.7rem !important; /* Smaller font size */
-        line-height: 1.2
+        line-height: 1.2 !important; /* Tighter line height */
+        flex-grow: 1 !important;
+        margin: 0 !important;
+        max-width: 100% !important; /* Ensure text fits within container */
+        text-align: center !important; /* Center-align for better readability */
+        white-space: normal !important; /* Allow text wrapping */
+        word-wrap: break-word !important; /* Break long words */
+        overflow-x: hidden !important; /* Prevent horizontal scrolling */
+      }
+      .quote-icon-left,
+      .quote-icon-right {
+        display: inline-block !important; /* Ensure quote icons are visible */
+        font-size: 1.2rem !important;
+        color: #5F5757 !important;
+        vertical-align: middle !important;
+      }
+      .swiper-pagination {
+        bottom: 5px !important;
+        margin-top: 10px !important;
+        flex-shrink: 0 !important;
+        overflow-x: hidden !important; /* Prevent horizontal scrolling */
+      }
+    }
+  </style>
+</section>
+<!-- End Testimonials -->
