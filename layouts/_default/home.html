@@ -145,7 +145,7 @@
         <h2>Is This For You?</h2>
         <div class="row mt-4 who-container">
           <div class="col-lg-6 who-column">
-            <h3>Who This Is For</h3>
+            <h3 style="text-align: center;">Who This Is For</h3>
             <ul class="who-list">
               <li class="who-item"><span>✅</span> Seniors with a spare room wanting a trusted companion for safety at night.</li>
               <li class="who-item"><span>✅</span> Families seeking joyful company to ease their loved one(s).</li>
@@ -153,11 +153,9 @@
             </ul>
           </div>
           <div class="col-lg-6 who-column">
-            <h3>Who This Is Not For</h3>
-            <ul class="who-list">
-              <li class="who-item"><span>❌</span> Those seeking specialized or nursing care.</li>
-              <li class="who-item"><span>❌</span> Those needing full-time personal assistance.</li>
-              <li class="who-item"><span>❌</span> People without a spare room.</li>
+            <h3 style="text-align: center;">Who This Is Not For</h3>
+            <ul class="who-list" style="text-align: center; list-style-position: inside;">
+              <li class="who-item" style="display: inline;"><span>❌</span> Those seeking specialized or nursing care.</li><li class="who-item" style="display: inline;"><span>❌</span> Those needing full-time personal assistance.</li><li class="who-item" style="display: inline;"><span>❌</span> People without a spare room.</li>
             </ul>
           </div>
         </div>
@@ -469,6 +467,16 @@
     }
     .who-column:last-child {
       margin-bottom: 0;
+    }
+    .who-column h3 {
+      text-align: center;
+    }
+    .who-column:last-child .who-list {
+      text-align: center;
+      list-style-position: inside;
+    }
+    .who-column:last-child .who-item {
+      display: inline;
     }
     .how-it-works-cards {
       flex-direction: column;
