@@ -411,16 +411,16 @@ span#arrow-down {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ddd;
   opacity: 1;
   border: 1px solid var(--yellow);
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.testimonials .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--yellow);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .testimonials {
     padding: 20px 0;
     width: 100%;
@@ -428,7 +428,7 @@ span#arrow-down {
     overflow-x: hidden;
   }
   .testimonials .container {
-    padding: 0 5px;
+    padding: 0;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -443,26 +443,30 @@ span#arrow-down {
     width: 100%;
     max-width: 100%;
     padding: 0;
-    margin: 5px 0;
+    margin: 0;
     overflow-x: hidden;
+    transform: none !important;
   }
   .testimonials .swiper-wrapper {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    transform: translate3d(0, 0, 0) !important;
   }
   .testimonials .swiper-slide {
     width: 100%;
     max-width: 100%;
-    padding: 0px;
+    padding: 0 5px;
     margin: 0;
     overflow-x: hidden;
+    flex-shrink: 0;
+    box-sizing: border-box;
   }
   .testimonials .testimonial-item {
     padding: 15px;
     width: 100%;
     max-width: 100%;
-    margin: 10px 0;
+    margin: 0;
     overflow-x: hidden;
   }
   .testimonials .testimonial-img {
@@ -480,16 +484,15 @@ span#arrow-down {
   }
 }
 
-/*--------------------------------------------------------------
-# CTA
---------------------------------------------------------------*/
+/* CTA */
 .cta {
-  padding: 60px 0  background: linear-gradient(to bottom, white 50%, #141611 50%);
+  padding: 60px 0;
+  background: linear-gradient(to bottom, white 50%, #141611 50%);
 }
 
 .cta .container {
   background-color: var(--yellow);
-  padding: 60px 15px;
+  padding: 60px 30px;
   text-align: center;
   color: #fff;
   border-radius: 18px;
@@ -506,7 +509,7 @@ span#arrow-down {
   font-weight: 400;
 }
 
-.cta .container .img {
+.cta .container img {
   max-width: 300px;
   margin-bottom: 30px;
 }
@@ -555,7 +558,7 @@ span#arrow-down {
   background-color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .cta .container {
     padding: 30px 15px;
   }
@@ -570,9 +573,7 @@ span#arrow-down {
   }
 }
 
-/*--------------------------------------------------------------
-# Dream
---------------------------------------------------------------*/
+/* Dream */
 .bg {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -598,9 +599,7 @@ span#arrow-down {
   padding-top: 80px;
 }
 
-/*--------------------------------------------------------------
-# FAQ
---------------------------------------------------------------*/
+/* FAQ */
 .faq {
   padding: 0 0 80px 0;
 }
@@ -690,7 +689,7 @@ span#arrow-down {
   color: var(--yellow);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq {
     padding: 20px 0;
   }
@@ -705,9 +704,7 @@ span#arrow-down {
   }
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/* Contact */
 .contact {
   padding: 0 0 60px 0;
 }
@@ -758,9 +755,7 @@ span#arrow-down {
   background: var(--yellow);
 }
 
-/*--------------------------------------------------------------
-# TEAM
---------------------------------------------------------------*/
+/* TEAM */
 .team {
   padding-bottom: 3rem;
 }
@@ -791,9 +786,7 @@ span#arrow-down {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Logo Wall
---------------------------------------------------------------*/
+/* Logo Wall */
 .logo-wall .logo img {
   height: 150px;
   width: auto;
@@ -833,9 +826,7 @@ span#arrow-down {
   opacity: 0;
 }
 
-/*--------------------------------------------------------------
-# Parts
---------------------------------------------------------------*/
+/* Parts */
 .parts {
   padding: 60px 0;
 }
@@ -862,9 +853,7 @@ span#arrow-down {
   left: 50%;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 #footer {
   background: #141611;
   padding: 30px 0;
@@ -1070,7 +1059,7 @@ span#arrow-down {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html, body {
     overflow-x: hidden;
   }
