@@ -426,10 +426,12 @@ span#arrow-down {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 0;
+    padding: 120px 0; /* Increased padding for blank space */
+    background-color: #f8f8f8;
   }
   .testimonials .container {
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
