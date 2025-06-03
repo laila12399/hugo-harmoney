@@ -225,17 +225,12 @@
     padding-bottom: 80px;
   }
   .section-spacing-non-hero {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-  .testimonials {
-    min-height: auto;
-    padding: 20px 0;
-    background-color: #f8f8f8;
   }
   .btn a, .call {
     display: inline-block;
@@ -390,42 +385,17 @@
   }
   @media (max-width: 768px) {
     html, body {
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .section-spacing {
       padding: 40px 0;
       min-height: auto;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .section-spacing-non-hero {
-      padding: 10px 0;
-      min-height: 100dvh;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    .testimonials {
-      min-height: 100dvh;
-      padding: 10px 0;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    .testimonials .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    .slides-1.swiper {
-      flex-grow: 1;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    .parts .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-    .how-it-works-cards {
-      flex-grow: 1;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      padding: 20px 0;
+      min-height: calc(100vh - 90px);
+      overflow-x: hidden;
     }
     .btn a, .call {
       padding: 10px 20px;
@@ -483,13 +453,13 @@
       font-size: 0.85rem;
     }
     .home-proposition-content h2 {
-      font-size: 1.56rem !important; /* 20% larger than 1.3rem */
+      font-size: 1.56rem !important;
     }
     .home-proposition-image img {
       padding: 15px 10px !important;
-      max-width: 85% !important; /* 15% smaller */
+      max-width: 85% !important;
       height: auto;
-      object-fit: contain; /* Prevent distortion */
+      object-fit: contain;
     }
     .logo-wall .row {
       display: flex;
@@ -508,16 +478,16 @@
     .logo-wall img {
       max-width: 80px;
       height: auto;
-      object-fit: contain; /* Prevent distortion */
+      object-fit: contain;
     }
     .click img {
       max-width: 32px;
       height: auto;
-      object-fit: contain; /* Prevent distortion */
+      object-fit: contain;
     }
     .logo-wall .container {
       padding: 10px 0;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .testimonials h2 {
       font-size: 1.8rem;
