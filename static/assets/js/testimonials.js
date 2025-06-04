@@ -5,17 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
       delay: 5000,
       disableOnInteraction: false,
     },
-    slidesPerView: 1,
-    spaceBetween: 20,
-    centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
       768: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
     },
   });
