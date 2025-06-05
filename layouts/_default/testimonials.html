@@ -4,29 +4,102 @@
     background: linear-gradient(45deg, #e0739b, #ea8a6b);
   }
   .dateInfo {
-    color: #e5e5e3;
+    color: #444444;
+  }
+  .titles .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titles .card .testimonial-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    display: block;
+  }
+  .titles .card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #000000;
+  }
+  .titles .card h4 {
+    font-size: 1.25rem;
+    color: #444444;
+    margin: 0 0 15px;
+  }
+  .titles .card .content p {
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0 auto 15px;
+    color: #000000;
+  }
+  .titles .card .content .full-text {
+    font-style: normal;
+  }
+  .titles .card .see-more-btn {
+    background: #000000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .titles .card .see-more-btn:hover {
+    background: #333333;
+  }
+  @media (max-width: 768px) {
+    .titles .card {
+      padding: 15px;
+      width: 100%;
+      max-width: 100%;
+    }
+    .titles .card .testimonial-img {
+      width: 80px;
+      height: 80px;
+    }
+    .titles .card h3 {
+      font-size: 1.5rem;
+    }
+    .titles .card h4 {
+      font-size: 1.25rem;
+    }
+    .titles .card .content p {
+      font-size: 0.9rem;
+    }
   }
 </style>
-<section class="titles">
+<section class="titles section-spacing-non-hero">
   <div class="container">
-    <div class="row">
-      <div style="font-size: 30px;margin-top: 25px;font-weight: bolder;">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center" style="font-size: 2.5rem; margin-top: 25px; font-weight: 700;">
         <span>Your Stories</span>
         <hr>
       </div>
       
-      <!-- Updated Testimonial Tile 1 (moved to the top) -->
+      <!-- Testimonial Tile 1 -->
       <div class="col-md-6 mt-5">
         <div class="card">
           <img src="/assets/img/t-bg/5t.webp" class="testimonial-img" alt="" />
           <h3>Baked Cakes and Walks for the Dog</h3>
-          <h4>York, Mar. 2023</h4>
+          <h4 class="dateInfo">York, Mar. 2023</h4>
           <div class="content">
             <p class="short-text">
-              86-year-old Margaret, who loves a well-kept home and her beloved dog Max, found the perfect match with 28-year-old Emily. A baker with a love for animals, Emily fills the house with the smell of fresh cakes and...
+              86-year-old <span class="person-description">Margaret</span>, who loves a well-kept home and her beloved dog Max, found the perfect match with 28-year-old <span class="person-description">Emily</span>. A baker with a love for animals, Emily fills the house with the smell of fresh cakes and...
             </p>
             <span class="full-text" style="display: none">
-              86-year-old Margaret, who loves a well-kept home and her beloved dog Max, found the perfect match with 28-year-old Emily. A baker with a love for animals, Emily fills the house with the smell of fresh cakes and Max gets more walks. Together, they’ve created a warm and joyful routine.
+              86-year-old <span class="person-description">Margaret</span>, who loves a well-kept home and her beloved dog Max, found the perfect match with 28-year-old <span class="person-description">Emily</span>. A baker with a love for animals, Emily fills the house with the smell of fresh cakes and Max gets more walks. Together, they’ve created a warm and joyful routine.
               <div style="text-align: left;">
                 <h4>Companion:</h4> "Baking for Margaret and taking Max for walks has made my time here truly special. We’ve built a lovely rhythm to our days."
               </div>
@@ -39,112 +112,18 @@
         </div>
       </div>
       
-      <!-- Existing Testimonial Tiles -->
-      <div class="col-md-6 mt-5">
-        <div class="card">
-          <img src="/assets/img/t-bg/1t.webp" class="testimonial-img" alt="" />
-          <h3>Garden Glee, Mealtime Ease</h3>
-          <h4>Harrow, Jan. 2024</h4>
-          <div class="content">
-            <p class="short-text">
-              Margaret and Robert, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old Sociology student Julian, makes dinners 3-4 nights a week and enjoys gardening...
-            </p>
-            <span class="full-text" style="display: none">
-              Margaret and Robert, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old Sociology student Julian, makes dinners 3-4 nights a week and enjoys gardening. Dinners have become the highlight of their day.
-              <div style="text-align: left;">
-                <h4>Companion:</h4>"Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment.”
-              </div>
-              <div style="text-align: left;">
-                <h4>Homeholder:</h4> "Having Julian around has added a delightful spark into our home. His company and assistance with chores have made our evening mealtimes genuinely enjoyable."
-              </div>
-            </span>
-            <button class="see-more-btn">See More</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Updated Testimonial Tile 3 (Evening Company & Cleaning Bliss) -->
-      <div class="col-md-6 mt-5">
-        <div class="card">
-          <img src="/assets/img/t-bg/4t.webp" class="testimonial-img" alt="" />
-          <h3>Evening Company & Cleaning Bliss</h3>
-          <h4>Maidenhead, Feb. 2023</h4>
-          <div class="content">
-            <p class="short-text">
-              Widowed 84-year-old Josephine, seeking companionship and a helping hand with daily chores, found solace when 26-year-old veterinarian Sarah joined her. Now, their evenings are brimming with shared stories...
-            </p>
-            <span class="full-text" style="display: none">
-              Widowed 84-year-old Josephine, seeking companionship and a helping hand with daily chores, found solace when 26-year-old veterinarian Sarah joined her. Now, their evenings are brimming with shared stories, and Sarah has lightened the cleaning load.
-              <div style="text-align: left;">
-                <h4>Companion:</h4> "Living with Josephine has been wonderful. We share stories, help each other out, and create a homey environment together."
-              </div>
-              <div style="text-align: left;">
-                <h4>Homeholder:</h4> "Having Sarah with me has been a blessing. She's not just a companion; she's become a friend who adds joy and assistance to my daily life."
-              </div>
-            </span>
-            <button class="see-more-btn">See More</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mt-5">
-        <div class="card">
-          <img src="/assets/img/t-bg/2-t.webp" class="testimonial-img" alt="" />
-          <h3>Chats & Chores</h3>
-          <h4>Brighton, Aug. 2023</h4>
-          <div class="content">
-            <p class="short-text">
-              36-year-old wheelchair using Sofia wanted someone to chat with and share household tasks. 31-year-old Restaurant manager Janet was seeking a positive environment and companionship. Together, they've...
-            </p>
-            <span class="full-text" style="display: none">
-              36-year-old wheelchair using Sofia wanted someone to chat with and share household tasks. 31-year-old Restaurant manager Janet was seeking a positive environment and companionship. Together, they've become a team, sharing chores and creating daily joyous moments.
-              <div style="text-align: left;">
-                <h4>Companion:</h4> "Living with Sofia has been incredible. We share chores, stories, and support each other through life's ups and downs. It's like having a built-in best friend!"
-              </div>
-              <div style="text-align: left;">
-                <h4>Family of Homeholder:</h4> "Janet being with Sofia has made such a positive impact on her life. They've formed a strong bond, and we're grateful for the happiness and companionship she's brought into Sofia's home."
-              </div>
-            </span>
-            <button class="see-more-btn">See More</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mt-5">
-        <div class="card">
-          <img src="/assets/img/t-bg/3-t.webp" class="testimonial-img" alt="" />
-          <h3>Crafting Connections</h3>
-          <h4>Paddington, May 2019</h4>
-          <div class="content">
-            <p class="short-text">
-              67-year-old retired carpenter John sought companionship and assistance, while 27-year-old teacher Edwardo desired good company and a homey environment. Together, they've found the perfect balance...
-            </p>
-            <span class="full-text" style="display: none">
-              67-year-old retired carpenter John sought companionship and assistance, while 27-year-old teacher Edwardo desired good company and a homey environment. Together, they've found the perfect balance, exploring new hobbies and sharing laughs.
-              <div style="text-align: left;">
-                <h4>Companion:</h4> "Being with John has been great for me. We're like two peas in a pod, always finding new ideas and sharing chores."
-              </div>
-              <div style="text-align: left;">
-                <h4>Family of Homeholder:</h4> "Edwardo's presence in John's home has been transformative. They've become inseparable, and we're thrilled to see John thriving with him by his side."
-              </div>
-            </span>
-            <button class="see-more-btn">See More</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Updated Testimonial Tile 2 -->
+      <!-- Testimonial Tile 2 -->
       <div class="col-md-6 mt-5">
         <div class="card">
           <img src="/assets/img/t-bg/6t.webp" class="testimonial-img" alt="" />
           <h3>Smartphone Support and Shared Love for Downton Abbey</h3>
-          <h4>Bristol, Dec. 2023</h4>
+          <h4 class="dateInfo">Bristol, Dec. 2023</h4>
           <div class="content">
             <p class="short-text">
-              Seventy-eight-year-old Edith, who treasures her Downton Abbey marathons and could use a bit of help with technology, found a wonderful match with 30-year-old Alice. Alice not only assists Edith with her smartphone but...
+              Seventy-eight-year-old <span class="person-description">Edith</span>, who treasures her Downton Abbey marathons and could use a bit of help with technology, found a wonderful match with 30-year-old <span class="person-description">Alice</span>. Alice not only assists Edith with her smartphone but...
             </p>
             <span class="full-text" style="display: none">
-              Seventy-eight-year-old Edith, who treasures her Downton Abbey marathons and could use a bit of help with technology, found a wonderful match with 30-year-old Alice. Alice not only assists Edith with her smartphone but also enjoys the beloved series. Together, they've created a routine that blends practical support with enjoyable companionship.
+              Seventy-eight-year-old <span class="person-description">Edith</span>, who treasures her Downton Abbey marathons and could use a bit of help with technology, found a wonderful match with 30-year-old <span class="person-description">Alice</span>. Alice not only assists Edith with her smartphone but also enjoys the beloved series. Together, they've created a routine that blends practical support with enjoyable companionship.
               <div style="text-align: left;">
                 <h4>Companion:</h4> "Being in Edith’s home has been such a delightful change. It’s so cozy and homey here.”
               </div>
@@ -156,14 +135,108 @@
           </div>
         </div>
       </div>
-
+      
+      <!-- Testimonial Tile 3 -->
+      <div class="col-md-6 mt-5">
+        <div class="card">
+          <img src="/assets/img/t-bg/4t.webp" class="testimonial-img" alt="" />
+          <h3>Evening Company & Cleaning Bliss</h3>
+          <h4 class="dateInfo">Maidenhead, Feb. 2023</h4>
+          <div class="content">
+            <p class="short-text">
+              Widowed 84-year-old <span class="person-description">Josephine</span>, seeking companionship and a helping hand with daily chores, found solace when 26-year-old <span class="person-description">Sarah</span> joined her. Now, their evenings are brimming with shared stories...
+            </p>
+            <span class="full-text" style="display: none">
+              Widowed 84-year-old <span class="person-description">Josephine</span>, seeking companionship and a helping hand with daily chores, found solace when 26-year-old <span class="person-description">Sarah</span> joined her. Now, their evenings are brimming with shared stories, and Sarah has lightened the cleaning load.
+              <div style="text-align: left;">
+                <h4>Companion:</h4> "Living with Josephine has been wonderful. We share stories, help each other out, and create a homey environment together."
+              </div>
+              <div style="text-align: left;">
+                <h4>Homeholder:</h4> "Having Sarah with me has been a blessing. She's not just a companion; she's become a friend who adds joy and assistance to my daily life."
+              </div>
+            </span>
+            <button class="see-more-btn">See More</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial Tile 4 -->
+      <div class="col-md-6 mt-5">
+        <div class="card">
+          <img src="/assets/img/t-bg/1t.webp" class="testimonial-img" alt="" />
+          <h3>Garden Glee, Mealtime Ease</h3>
+          <h4 class="dateInfo">Harrow, Jan. 2024</h4>
+          <div class="content">
+            <p class="short-text">
+              <span class="person-description">Margaret</span> and <span class="person-description">Robert</span>, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old <span class="person-description">Julian</span>, makes dinners 3-4 nights a week and enjoys gardening...
+            </p>
+            <span class="full-text" style="display: none">
+              <span class="person-description">Margaret</span> and <span class="person-description">Robert</span>, now in their 80s, had been living alone for several decades since their children moved out. 32-year-old <span class="person-description">Julian</span>, makes dinners 3-4 nights a week and enjoys gardening. Dinners have become the highlight of their day.
+              <div style="text-align: left;">
+                <h4>Companion:</h4> "Being with Margaret and Robert has been a blessing. We share meals, laughter, and it is so lovely to be in such a positive homey environment.”
+              </div>
+              <div style="text-align: left;">
+                <h4>Homeholder:</h4> "Having Julian around has added a delightful spark into our home. His company and assistance with chores have made our evening mealtimes genuinely enjoyable."
+              </div>
+            </span>
+            <button class="see-more-btn">See More</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial Tile 5 -->
+      <div class="col-md-6 mt-5">
+        <div class="card">
+          <img src="/assets/img/t-bg/2-t.webp" class="testimonial-img" alt="" />
+          <h3>Chats & Chores</h3>
+          <h4 class="dateInfo">Brighton, Aug. 2023</h4>
+          <div class="content">
+            <p class="short-text">
+              36-year-old <span class="person-description">Sofia</span> wanted someone to chat with and share household tasks. 31-year-old <span class="person-description">Janet</span> was seeking a positive environment and companionship. Together, they've...
+            </p>
+            <span class="full-text" style="display: none">
+              36-year-old <span class="person-description">Sofia</span> wanted someone to chat with and share household tasks. 31-year-old <span class="person-description">Janet</span> was seeking a positive environment and companionship. Together, they've become a team, sharing chores and creating daily joyous moments.
+              <div style="text-align: left;">
+                <h4>Companion:</h4> "Living with Sofia has been incredible. We share chores, stories, and support each other through life's ups and downs. It's like having a built-in best friend!"
+              </div>
+              <div style="text-align: left;">
+                <h4>Family of Homeholder:</h4> "Janet being with Sofia has made such a positive impact on her life. They've formed a strong bond, and we're grateful for the happiness and companionship she's brought into Sofia's home."
+              </div>
+            </span>
+            <button class="see-more-btn">See More</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial Tile 6 -->
+      <div class="col-md-6 mt-5">
+        <div class="card">
+          <img src="/assets/img/t-bg/3-t.webp" class="testimonial-img" alt="" />
+          <h3>Crafting Connections</h3>
+          <h4 class="dateInfo">Paddington, May 2019</h4>
+          <div class="content">
+            <p class="short-text">
+              67-year-old <span class="person-description">John</span> sought companionship and assistance, while 27-year-old <span class="person-description">Edwardo</span> desired good company and a homey environment. Together, they've found the perfect balance...
+            </p>
+            <span class="full-text" style="display: none">
+              67-year-old <span class="person-description">John</span> sought companionship and assistance, while 27-year-old <span class="person-description">Edwardo</span> desired good company and a homey environment. Together, they've found the perfect balance, exploring new hobbies and sharing laughs.
+              <div style="text-align: left;">
+                <h4>Companion:</h4> "Being with John has been great for me. We're like two peas in a pod, always finding new ideas and sharing chores."
+              </div>
+              <div style="text-align: left;">
+                <h4>Family of Homeholder:</h4> "Edwardo's presence in John's home has been transformative. They've become inseparable, and we're thrilled to see John thriving with him by his side."
+              </div>
+            </span>
+            <button class="see-more-btn">See More</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ======= CTA Section ======= -->
 {{ partial "cta.html" }}
-<!-- End CTA -->
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
